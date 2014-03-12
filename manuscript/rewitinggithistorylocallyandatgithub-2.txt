@@ -1,0 +1,35 @@
+##  Rewiting Git History (locally and at GitHub) 
+
+When fixing the [ASP.NET WCF REST help page 'Memory gates checking' error at AppHarbor](http://blog.diniscruz.com/2012/12/problem-with-environmentspecialfolderap.html), 
+
+I ended up with a number of Git Commits: locally [![image](images/image_thumb_25255B20_25255D.png)](http://lh5.ggpht.com/-8IrwMXmXaqE/UMhf_W-fsLI/AAAAAAAAHBU/S7QaPg_8WY8/s1600-h/image%25255B42%25255D.png) 
+
+and at GitHub [![image](images/image_thumb_25255B18_25255D.png)](http://lh3.ggpht.com/-uhDi8kGTIm0/UMhgB3kzwrI/AAAAAAAAHBk/GD4Ld_18S_o/s1600-h/image%25255B40%25255D.png).
+
+Once we found the solution (and pushed a new version of FluentSharp.CoreLib.dll to Nuget), it was time to clean up the history (since those commits don't really need to be in the [main TM master](https://github.com/TeamMentor/Master_3_3)). Yes I could had used a branch, but since this was part of the TeamCity deployment tests, It was useful to do it on the master branch (and see how fast TeamCity can be :)  )
+
+So what we want to do, is to **something that is not very common in Git: rewrite Git's history** (i.e. remove pushed commits). In practice this means that we want to 'go back' to the commit marked in blue (gitk image above) ,and remove the extra commits from the main Git History:
+
+Just in case something goes wrong, lets let's backup the current changes as a local branch :) 
+
+[![image](images/image_thumb_25255B5_25255D.png)](http://lh3.ggpht.com/-RyJVlpyxJRo/UMhgEvV0pcI/AAAAAAAAHB0/dD_W4skeLig/s1600-h/image%25255B11%25255D.png)
+
+Once that is done, we do a 'forced git reset':  [![image](images/image_thumb_25255B11_25255D.png)](http://lh4.ggpht.com/-epxnd4vkP14/UMhgHFs_6yI/AAAAAAAAHCE/HiqRgbEzdqI/s1600-h/image%25255B23%25255D.png)
+
+This does the trick, and now the (local) history looks good:
+
+  [![image](images/image_thumb_25255B9_25255D.png)](http://lh6.ggpht.com/-3BCB0osrcsY/UMhgJPMdSMI/AAAAAAAAHCQ/zHbTeebKNqw/s1600-h/image%25255B19%25255D.png) and [![image](images/image_thumb_25255B10_25255D.png)](http://lh5.ggpht.com/-fO5Jd40SzYU/UMhgK7uFObI/AAAAAAAAHCk/kZ7wqt5ZP_o/s1600-h/image%25255B22%25255D.png)
+
+Next,  to remove these commits from GitHub ... [![image](images/image_thumb_25255B12_25255D.png)](http://lh3.ggpht.com/-uhDi8kGTIm0/UMhgB3kzwrI/AAAAAAAAHC0/6-4UAeuSOpg/s1600-h/image%25255B26%25255D.png)
+
+  
+....we do a **_git push --force _** ![image](images/image_thumb_25255B13_25255D.png)   
+And GitHub's version has been moved back: [![image](images/image_thumb_25255B14_25255D.png)](http://lh5.ggpht.com/-wL6jHkU_a1M/UMhgRfvbjzI/AAAAAAAAHDE/MSaLechLoD0/s1600-h/image%25255B32%25255D.png)
+
+Fiinally we update ( on the TeamMentor VS Projects) the FluentSharp.CoreLib.dll via NuGet:
+
+[![image](images/image_thumb_25255B15_25255D.png)](http://lh6.ggpht.com/-T15-4O8mGZg/UMhgTfEYCAI/AAAAAAAAHDU/RfWVqt8B1kQ/s1600-h/image%25255B35%25255D.png) and commit it: [![image](images/image_thumb_25255B16_25255D.png)](http://lh6.ggpht.com/-Jsv542JUKdg/UMhgWG7t7ZI/AAAAAAAAHDk/aBOgklxm1S0/s1600-h/image%25255B38%25255D.png)
+
+  
+Creating the desired Git Commit History: [![image](images/image_thumb_25255B21_25255D.png)](http://lh4.ggpht.com/-Yyi4yDATITI/UMhgYBgfl5I/AAAAAAAAHD0/amgD61erCGA/s1600-h/image%25255B45%25255D.png)  
+

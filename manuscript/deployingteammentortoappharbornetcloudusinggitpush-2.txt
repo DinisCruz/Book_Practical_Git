@@ -1,0 +1,82 @@
+##  Deploying TeamMentor to AppHarbor (.NET Cloud) using Git push 
+
+Now that AppHarbor supports git publishing (i.e. they create a git repository for an 'AppHarbor Application'), it is very easy and fast to deploy a new version of TeamMentor.
+
+First step is to go to AppHarbor.com and create an application (for this example I'm calling it **'Testing-AppHarbor'**):  
+
+
+[![](images/Screen_Shot_2012-10-17_at_15_15_02.png)](http://1.bp.blogspot.com/-zCsgeLSmPO8/UH69iXIhEhI/AAAAAAAAAH8/xkqyG-b55AQ/s1600/Screen+Shot+2012-10-17+at+15.15.02.png)
+
+  
+Once the application is created, click on the bottom-left 'Repository URL' button, which will copy to your clipboard the AppHarbor Git url:
+
+[![](images/Screen_Shot_2012-10-17_at_15_16_06.png)](http://4.bp.blogspot.com/-fFn2wyXzakk/UH69uC65cGI/AAAAAAAAAIE/dTTlBnyC58w/s1600/Screen+Shot+2012-10-17+at+15.16.06.png)
+
+  
+In this example it was: https://DinisCruz@appharbor.com/testing-appharbor.git
+
+Next open an GitBash on the repository you want to push and execute:
+
+**_   $ git remote add appharbor_test https://DinisCruz@appharbor.com/testing-appharbor.git_**  
+**_  
+_****_   $ git push appharbor_test master_**  
+**  
+**After a bit (depending on your upload speed) you should get a Git push message
+
+[![](images/Screen_Shot_2012-10-17_at_15_26_33.png)](http://2.bp.blogspot.com/-S1Y5R-NLgnc/UH7AosnPGaI/AAAAAAAAAJk/XZ__PGCCkuw/s1600/Screen+Shot+2012-10-17+at+15.26.33.png)
+
+  
+Back in the AppHarbor website,  the application page should look like this:
+
+[![](images/Screen_Shot_2012-10-17_at_15_23_49.png)](http://2.bp.blogspot.com/-RB4NR6cVX2o/UH7AZ8O04AI/AAAAAAAAAIc/zxhaee1p43c/s1600/Screen+Shot+2012-10-17+at+15.23.49.png)
+
+  
+You can click on the icon under the 'Status' column (the one animating) to see the current status of the build (note that sometimes AppHarbor takes a couple minutes to trigger the compilation process)
+
+[![](images/Screen_Shot_2012-10-17_at_15_24_00.png)](http://1.bp.blogspot.com/-Eqof_uyuvRU/UH7Act3Q5hI/AAAAAAAAAIk/m-FqIofKrKA/s1600/Screen+Shot+2012-10-17+at+15.24.00.png)
+
+  
+The **'Details' **link can be used to see the MSBuild compilation log (very useful when the compilation fails)
+
+[![](images/Screen_Shot_2012-10-17_at_15_24_11.png)](http://2.bp.blogspot.com/-Hq56HGu2MF4/UH7AfUkpjgI/AAAAAAAAAIs/v_qWnD_wBqs/s1600/Screen+Shot+2012-10-17+at+15.24.11.png)
+
+  
+Once the build and deployment is done, if you go back to the Application page you should see that your build is now Active
+
+[![](images/Screen_Shot_2012-10-17_at_15_24_23.png)](http://1.bp.blogspot.com/-ulPl2qdrvI4/UH7Aga7g8iI/AAAAAAAAAI0/vW0RZ84Mvk4/s1600/Screen+Shot+2012-10-17+at+15.24.23.png)
+
+  
+And clicking on 'Go to your application' will take you to the website you just created
+
+[![](images/Screen_Shot_2012-10-17_at_15_24_59.png)](http://3.bp.blogspot.com/-WTaNEDuX6GE/UH7AhymFgwI/AAAAAAAAAI4/3cxLm-tOwrc/s1600/Screen+Shot+2012-10-17+at+15.24.59.png)
+
+  
+By default there are no libraries installed from a [TeamMentor/Master](http://github.com/teammentor/master) clone/copy, but this is easily solved by:
+
+  * logging in as **Admin**, 
+  * going to the **Control Panel**
+  * choosing the **Advanced Admin Tools **option
+  * using the **Install/Upload Libraries** tool.
+
+  
+For example, click on the **_'Top 20 Vulnerabilities'_** link to add the Library hosted at GitHub's [TeamMentor/Library_Top_Vulnerabilities](https://github.com/TeamMentor/Library_Top_Vulnerabilities) (TeamMentor engine will go to that repository, download the ZIP file and install it)
+
+[![](images/Screen_Shot_2012-10-17_at_15_25_28.png)](http://3.bp.blogspot.com/-own6cpU9e9Y/UH7AjvTeSPI/AAAAAAAAAJE/7BUEPffzpvM/s1600/Screen+Shot+2012-10-17+at+15.25.28.png)
+
+  
+Once that is done, click on 'Open Main Page' to go back to the main TM Gui where the 'Top 20 Vulnerabilities' Library is now installed:
+
+[![](images/Screen_Shot_2012-10-17_at_15_25_43.png)](http://3.bp.blogspot.com/-Du0w9sHAlHo/UH7AlvwOxEI/AAAAAAAAAJM/QIRsMOjIBUE/s1600/Screen+Shot+2012-10-17+at+15.25.43.png)
+
+**Auto deploy on GitHub Commit**  
+**  
+**So far we talked about how to push an git repository into AppHarbor from your local disk, but that is not the only way you can do it.
+
+AppHarbor also supports [GitHub Service Hooks](https://github.com/github/github-services) which can be configured via the GitHub's repository admin panel.
+
+For example, here is how I use AppHarbor to create a new deployment every-time I do a Git Push into the main TeamMentor/Master repository (which is very useful for QA and Testing)
+
+[![](images/Screen_Shot_2012-10-17_at_15_51_21.png)](http://2.bp.blogspot.com/-IDDsiBay0Po/UH7GAGvU-1I/AAAAAAAAAJ4/Tv9ieIbTp8I/s1600/Screen+Shot+2012-10-17+at+15.51.21.png)
+
+  
+

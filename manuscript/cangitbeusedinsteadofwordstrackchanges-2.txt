@@ -1,0 +1,13 @@
+##  Can Git be used instead of Word's 'Track Changes' 
+
+Absolutely.
+
+Text changes are just a simplified version of source code :)
+
+Here are a number of really amazing 'non-code' stuff that is happening with Git's content-versioning capabilities:
+
+  * [Bundes-Git -- German Laws on GitHub](http://okfnlabs.org/blog/2012/12/13/bundesgit-german-laws-on-github.html) 
+  * [GitLaw: GitHub for Laws and Legal Documents - a Tourniquet for American Liberty](http://blog.abevoelker.com/gitlaw-github-for-laws-and-legal-documents-a-tourniquet-for-american-liberty/)  (with [Y's discussion here](http://news.ycombinator.com/item?id=3967921))
+  * [Using Git for writing thesis [closed]](http://stackoverflow.com/questions/7775881/using-git-for-writing-thesis) 
+  * [Could Git be used to track bills in Congress?](http://www.quora.com/Could-Git-be-used-to-track-bills-in-Congress) 
+  * [A must watch TED talk about GIT and democracy](http://blog.diniscruz.com/2012/10/a-must-watch-ted-talk-about-git-and.html)

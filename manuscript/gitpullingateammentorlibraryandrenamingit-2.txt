@@ -1,0 +1,123 @@
+##  Git pulling a TeamMentor Library and renaming it 
+
+Here is an example of how to use the new TM 3.3 capabilities to load libraries from GitHub and to rename them.
+
+Let's start with a version of TM that looks like this:
+
+[![image](images/image_thumb1.png)](http://lh4.ggpht.com/-i8sVwP4UQ_o/UV0-nzevGOI/AAAAAAAAA1o/sSg3ZpMWe5A/s1600-h/image%25255B2%25255D.png)
+
+And let's say that we wanted to add the TM4TM Library to this server
+
+[![image](images/image_thumb_25255B1_25255D1.png)](http://lh4.ggpht.com/-juoviTMFku4/UV0-o9Qbn0I/AAAAAAAAA14/to6LXTpHEi8/s1600-h/image%25255B5%25255D.png)
+
+First thing to do is to copy the Git's **_Read-Only Url_**
+
+[![image](images/image_thumb_25255B2_25255D1.png)](http://lh5.ggpht.com/-ZuI7ub09qMw/UV0-qHcTMdI/AAAAAAAAA2I/DMoQVJCUAio/s1600-h/image%25255B8%25255D.png)
+
+And add it to the TBot's Secret Data file:
+
+[![image](images/image_thumb_25255B4_25255D1.png)](http://lh5.ggpht.com/-_nLp_bwFSr0/UV0-rMd7A_I/AAAAAAAAA2Y/3xxYA5hQ370/s1600-h/image%25255B14%25255D.png)
+
+Before we reload the cache (which will do the git pull using NGit), lets see what the Library's folder looks like.
+
+In this instance of TM, as we can see by the TMConfig.config file:
+
+[![image](images/image_thumb_25255B5_25255D1.png)](http://lh3.ggpht.com/-FU2-tK2weNw/UV0-sMhN_gI/AAAAAAAAA2o/DTEzB9lbE2c/s1600-h/image%25255B17%25255D.png)
+
+The Library files are located in the TM_Libraries_12 folder:
+
+[![image](images/image_thumb_25255B6_25255D1.png)](http://lh4.ggpht.com/-bpmWSg_x-_k/UV0-tQRFD1I/AAAAAAAAA24/O79OKxld36I/s1600-h/image%25255B20%25255D.png)
+
+And if we now trigger the cache reload:
+
+[![image](images/image_thumb_25255B7_25255D1.png)](http://lh6.ggpht.com/-6GaiADStYNo/UV0-udUPMUI/AAAAAAAAA3I/Eq5DAROHyl8/s1600-h/image%25255B23%25255D.png)
+
+We will see that there is a new TM4TM folder:
+
+[![image](images/image_thumb_25255B8_25255D1.png)](http://lh4.ggpht.com/-PbMHrPT9y_4/UV0-vv50GNI/AAAAAAAAA3Y/SsiR8Q1AEL0/s1600-h/image%25255B26%25255D.png)
+
+which is a git repository
+
+[![image](images/image_thumb_25255B17_25255D1.png)](http://lh4.ggpht.com/-FLyw53OTUMY/UV0-w1N3okI/AAAAAAAAA3o/WFfLvPxsIcI/s1600-h/image%25255B32%25255D.png)
+
+with its remote set to the Git;s **_Read-Only Url_**
+
+[![image](images/image_thumb_25255B18_25255D1.png)](http://lh3.ggpht.com/-UhMqFqnHKbI/UV0-yCK1ecI/AAAAAAAAA34/5rm8X3tJgaQ/s1600-h/image%25255B35%25255D.png)
+
+After the cache reloads:
+
+[![image](images/image_thumb_25255B19_25255D1.png)](http://lh4.ggpht.com/-WCjRGv_f_Ao/UV0-zaZxcYI/AAAAAAAAA4I/ZNjIUCTS5hA/s1600-h/image%25255B38%25255D.png)
+
+There are now 8 Libraries loaded in TM:
+
+[![image](images/image_thumb_25255B20_25255D1.png)](http://lh4.ggpht.com/-YHIwLc_4F9w/UV0-0h7IEOI/AAAAAAAAA4Y/3TfOhOgsTQ0/s1600-h/image%25255B41%25255D.png)
+
+The reason for the extra 6 libraries (when we only added one new repository) is that from TM 3.3, there can be more than one library file in library folder (note: the recommendation is have one library xml file per folder)
+
+[![image](images/image_thumb_25255B21_25255D1.png)](http://lh4.ggpht.com/-GgprDPmIYsg/UV0-14SPi2I/AAAAAAAAA4o/tws74koZWGE/s1600-h/image%25255B44%25255D.png)
+
+Also note that the library name/caption is now independent from the xml file name:
+
+[![image](images/image_thumb_25255B22_25255D1.png)](http://lh6.ggpht.com/-deC26KHyX_w/UV0-3CB4sPI/AAAAAAAAA44/zwM5bwXV5aw/s1600-h/image%25255B47%25255D.png)
+
+Let's now open TM's Edit mode
+
+[![image](images/image_thumb_25255B33_25255D1.png)](http://lh3.ggpht.com/-PnBysWfz4h8/UV0-4MeNlaI/AAAAAAAAA5I/3BlqRSSLlEA/s1600-h/image%25255B52%25255D.png)
+
+and use it to rename the _TM4TM_RTST2 _Library:  
+**_  
+_** [![image](images/image_thumb_25255B41_25255D.png)](http://lh3.ggpht.com/-0TMdndn9UEI/UV0-5mwnIRI/AAAAAAAAA5Y/IHNaNRzX38g/s1600-h/image%25255B57%25255D.png)
+
+from:
+
+[![image](images/image_thumb_25255B52_25255D.png)](http://lh5.ggpht.com/-mW3m_m9lkTo/UV0-6nsJ0MI/AAAAAAAAA5o/i-8lUxU9Rcg/s1600-h/image%25255B63%25255D.png)
+
+to:
+
+[![image](images/image_thumb_25255B59_25255D.png)](http://lh4.ggpht.com/-6XKbucmgy78/UV0-7ogQKWI/AAAAAAAAA54/vdOC5UL4Ei0/s1600-h/image%25255B67%25255D.png)
+
+After the rename, a number of thinks happened.
+
+**1) The TM4TM.xml library file contents changed:**
+
+[![image](images/image_thumb_25255B60_25255D1.png)](http://lh6.ggpht.com/-tqSMkYS8cPs/UV0-8x8VGlI/AAAAAAAAA6I/ulENi9GCnz4/s1600-h/image%25255B70%25255D.png)
+
+**2) There was a local commit with the change:**
+
+[![image](images/image_thumb_25255B61_25255D.png)](http://lh5.ggpht.com/-Nr5lPx7Pyo8/UV0--EBHFzI/AAAAAAAAA6Y/HjH4MZH1cTk/s1600-h/image%25255B73%25255D.png)
+
+**3) the auto pull to GitHub failed**
+
+This is confirmed by the commit list at GitHub:
+
+[![image](images/image_thumb_25255B64_25255D.png)](http://lh3.ggpht.com/-hx9IWugCGGc/UV0-_OpBwnI/AAAAAAAAA6o/Pah4dHaUAjk/s1600-h/image%25255B82%25255D.png)
+
+and the 'push error' we got on the TBot's **_DebugInfo_** page
+
+[![image](images/image_thumb_25255B62_25255D.png)](http://lh6.ggpht.com/-Dn_arNFsZcQ/UV0_AQWnWyI/AAAAAAAAA64/hMXWP0cfZ7U/s1600-h/image%25255B76%25255D.png)
+
+In this case I do want to push the changes, so back in GitHub I copied the **_SSH_** git url
+
+[![image](images/image_thumb_25255B65_25255D.png)](http://lh3.ggpht.com/-OtQONVeyFQs/UV0_Bfj4coI/AAAAAAAAA7I/e32UNAx2IOk/s1600-h/image%25255B85%25255D.png)
+
+And use it directly on a git push (I could also had done this by setting up a new remote)
+
+[![image](images/image_thumb_25255B66_25255D.png)](http://lh6.ggpht.com/-NCDISDXklYQ/UV0_DOy8fAI/AAAAAAAAA7Y/1uYWF1tSd60/s1600-h/image%25255B88%25255D.png)
+
+Now the commit created by TM (on library rename) exists in GitHub:
+
+[![image](images/image_thumb_25255B67_25255D.png)](http://lh6.ggpht.com/-kmepeuLRwvo/UV0_EBQIi9I/AAAAAAAAA7o/i8SrjIfGAw4/s1600-h/image%25255B91%25255D.png)
+
+**Removing the extra Library files:**
+
+Since we don't need the extra libraries xml files, I just removed them (and committed the changes)
+
+[![image](images/image_thumb_25255B68_25255D.png)](http://lh4.ggpht.com/-rjEV-fKKuGY/UV1A0fo5CvI/AAAAAAAAA78/EIGtyLF9xlw/s1600-h/image%25255B94%25255D.png)
+
+Which means that after cache reload,
+
+[![image](images/image_thumb_25255B69_25255D.png)](http://lh5.ggpht.com/-Qou4aRY5dxI/UV1A11_wvSI/AAAAAAAAA8M/kkKMtZQzBOM/s1600-h/image%25255B97%25255D.png)
+
+there are now 3 libraries in my local TM instance:
+
+[![image](images/image_thumb_25255B70_25255D.png)](http://lh6.ggpht.com/-FF1VYsX-jYg/UV1A2zJZ4tI/AAAAAAAAA8c/n_QuFZH9dhA/s1600-h/image%25255B100%25255D.png)

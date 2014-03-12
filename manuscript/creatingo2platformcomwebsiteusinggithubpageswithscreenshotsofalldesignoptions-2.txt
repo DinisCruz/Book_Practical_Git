@@ -1,0 +1,158 @@
+##  Creating o2platform.com website using GitHub Pages (with screenshots of all design options) 
+
+In order to set-up a site for the [http://o2platform.com](http://o2platform.com/) domain, I just used GitHub Pages to create and publish a brand new site.
+
+This is what it looks like:
+
+[![](images/Screen_Shot_2013-05-25_at_23_17_38.png)](http://1.bp.blogspot.com/-Nt4NjhegeI4/UaE6DxKDtlI/AAAAAAAACos/1X8__tL25OU/s1600/Screen+Shot+2013-05-25+at+23.17.38.png)
+
+  
+
+
+What do you think? 
+
+  
+
+
+Please see below the other design options and let me know if I made a mistake. Also if you want help in editing this site, ping me with your GitHub account, and I'll give you push access (or fork the [o2platform.github.com](https://github.com/o2platform/o2platform.github.com) repo and send me  pull requests)
+
+  
+
+
+**Here is how I created it:**  
+
+
+**  
+**
+
+I went to the [https://github.com/o2platform/o2platform.github.com](https://github.com/o2platform/o2platform.github.com)** **repo, and on the settings page, I clicked on the **_Automatic Page Generator_**
+
+[![](images/Screen_Shot_2013-05-25_at_23_28_10.png)](http://2.bp.blogspot.com/-MJWT1gKzNsE/UaE7FgqEy9I/AAAAAAAACrU/7XSt5pxLo20/s1600/Screen+Shot+2013-05-25+at+23.28.10.png)
+
+which opened up this page, where I added the content that is current on this blog's [O2 Platform](http://blog.diniscruz.com/p/owasp-o2-platform.html) page:
+
+  
+
+
+[![](images/Screen_Shot_2013-05-25_at_22_48_38.png)](http://4.bp.blogspot.com/-MpRvZ6GagFQ/UaE6UFn6yEI/AAAAAAAACo4/aPeHX-Yi1AQ/s1600/Screen+Shot+2013-05-25+at+22.48.38.png)
+
+  
+
+
+When finished I clicked on **_Continue to Layouts_**
+
+  
+
+
+[![](images/Screen_Shot_2013-05-25_at_22_48_48.png)](http://3.bp.blogspot.com/-eJ49ijClRhY/UaE6UDhMy0I/AAAAAAAACo0/Bnmm05DHHFc/s1600/Screen+Shot+2013-05-25+at+22.48.48.png)
+
+  
+
+
+And I checkout the multiple design options:
+
+  
+
+
+**Slate:**
+
+  
+
+
+[![](images/Screen_Shot_2013-05-25_at_22_50_19.png)](http://2.bp.blogspot.com/-CRSo8lC_wJ0/UaE6UHpocBI/AAAAAAAACo8/qmZy7iPjPUY/s1600/Screen+Shot+2013-05-25+at+22.50.19.png)
+
+  
+
+
+** Merlot:**  
+
+
+[![](images/Screen_Shot_2013-05-25_at_22_50_33.png)](http://1.bp.blogspot.com/-eulZl4pguoY/UaE6UzNyrNI/AAAAAAAACpE/bBBwTjVrKCA/s1600/Screen+Shot+2013-05-25+at+22.50.33.png)
+
+  
+**Time Machine:**
+
+[![](images/Screen_Shot_2013-05-25_at_22_50_46.png)](http://1.bp.blogspot.com/-5ukjPooqygA/UaE6VIozDXI/AAAAAAAACpM/xq2pplJvM0A/s1600/Screen+Shot+2013-05-25+at+22.50.46.png)
+
+  
+**Minimal:**
+
+[![](images/Screen_Shot_2013-05-25_at_22_50_57.png)](http://1.bp.blogspot.com/-Uct04-5oo2M/UaE6VS9EEwI/AAAAAAAACpU/JLegd-w2fWI/s1600/Screen+Shot+2013-05-25+at+22.50.57.png)
+
+  
+**Leap Day:**
+
+[![](images/Screen_Shot_2013-05-25_at_22_51_06.png)](http://1.bp.blogspot.com/-1LtneRh8ajs/UaE6WE_9USI/AAAAAAAACpc/7TLBG0zSyzk/s1600/Screen+Shot+2013-05-25+at+22.51.06.png)
+
+  
+**Modernist:**
+
+[![](images/Screen_Shot_2013-05-25_at_22_51_22.png)](http://3.bp.blogspot.com/-F_eTqLZu0xc/UaE6WTXUo_I/AAAAAAAACpo/3Lf5s6Sk31Y/s1600/Screen+Shot+2013-05-25+at+22.51.22.png)
+
+  
+
+
+** Hack:**  
+**  
+**
+
+[![](images/Screen_Shot_2013-05-25_at_22_51_32.png)](http://4.bp.blogspot.com/-xhOFWPFRkdo/UaE6WogFoaI/AAAAAAAACps/YT_46pTxSXM/s1600/Screen+Shot+2013-05-25+at+22.51.32.png)
+
+**  
+****Midnight:**
+
+[![](images/Screen_Shot_2013-05-25_at_22_51_45.png)](http://4.bp.blogspot.com/-dXLlD5n17tI/UaE6XMuDThI/AAAAAAAACp0/2zGrPzdctco/s1600/Screen+Shot+2013-05-25+at+22.51.45.png)
+
+  
+**Architect:**
+
+[![](images/Screen_Shot_2013-05-25_at_22_52_03.png)](http://4.bp.blogspot.com/-5uJk_rSWlf0/UaE6Xl_QSGI/AAAAAAAACqA/0Yo3T0BBZnE/s1600/Screen+Shot+2013-05-25+at+22.52.03.png)
+
+  
+**Tactile:**
+
+[![](images/Screen_Shot_2013-05-25_at_22_52_12.png)](http://1.bp.blogspot.com/--vSoPkMfdCw/UaE6YWQk6LI/AAAAAAAACqQ/5nzuw0C5Cy4/s1600/Screen+Shot+2013-05-25+at+22.52.12.png)
+
+  
+
+
+**  And finally Dinky**
+
+[![](images/Screen_Shot_2013-05-25_at_22_56_18.png)](http://3.bp.blogspot.com/-70se40jHeDw/UaE6ZOcDk1I/AAAAAAAACqU/CT2Yie68P4I/s1600/Screen+Shot+2013-05-25+at+22.56.18.png)
+
+  
+
+
+which was my preferred choice , so I clicked on **Publish**, and here it is in action (using the default domain provided by GitHub)** **
+
+[![](images/Screen_Shot_2013-05-25_at_22_56_38.png)](http://2.bp.blogspot.com/-YvnRbhhqwbA/UaE6ZjOrYQI/AAAAAAAACqg/eZo_RLduAXM/s1600/Screen+Shot+2013-05-25+at+22.56.38.png)
+
+  
+Next step was to set up custom domain, which is explained here:
+
+[![](images/Screen_Shot_2013-05-25_at_23_03_00.png)](http://1.bp.blogspot.com/-WUPgA_p7Pr0/UaE6Z1-7YQI/AAAAAAAACqw/DZT2uK1hPJE/s1600/Screen+Shot+2013-05-25+at+23.03.00.png)
+
+  
+
+
+and is basically a case of creating new file:
+
+[![](images/Screen_Shot_2013-05-25_at_23_03_12.png)](http://1.bp.blogspot.com/-na3K3F8Ad3U/UaE6aGg0KlI/AAAAAAAACqo/E1hqXJMMDX0/s1600/Screen+Shot+2013-05-25+at+23.03.12.png)
+
+  
+Called CNAME, with the contents of the domain
+
+[![](images/Screen_Shot_2013-05-25_at_23_03_54.png)](http://4.bp.blogspot.com/-h2BfPpFJlkQ/UaE6asEwjpI/AAAAAAAACq4/ysyj-L0kIyk/s1600/Screen+Shot+2013-05-25+at+23.03.54.png)
+
+  
+After saving it (and local cache flushed), the GitHub pages now point to [http://o2platform.com](http://o2platform.com/)  
+**  
+**
+
+[![](images/Screen_Shot_2013-05-25_at_23_17_38.png)](http://3.bp.blogspot.com/-2nBf2QTGSXk/UaE6a7hRJJI/AAAAAAAACrA/db3LTIEsxuQ/s1600/Screen+Shot+2013-05-25+at+23.17.38.png)
+
+  
+
+
+  
+

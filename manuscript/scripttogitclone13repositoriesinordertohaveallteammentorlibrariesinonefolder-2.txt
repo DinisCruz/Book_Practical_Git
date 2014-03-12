@@ -1,0 +1,44 @@
+##  Script to Git Clone 13 repositories in order to have all TeamMentor Libraries in one folder 
+
+Part of the push for the 3.4 release of [TeamMentor](https://teammentor.net/), I wanted to have a copy of all TeamMentor libraries locally (there are 13 libraries on the 3.4 release).
+
+Since O2 Platform's FluentSharp has native Git support, I was able to do create the clones using this script (note how simple it is to create a clone from a GitHub repo):  
+  
+  
+The script takes about 1m to run:
+
+[![image](images/image_thumb1.png)](http://lh3.ggpht.com/-kzBK-7KCkpk/UkbBIY-7p7I/AAAAAAAAQrc/P4U5ZEGNlRY/s1600-h/image%25255B2%25255D.png)
+
+And the end result is a folder with all libraries cloned:
+
+[![image](images/image_thumb_25255B1_25255D1.png)](http://lh5.ggpht.com/-n1pdHiL5TOM/UkbBKMX2lgI/AAAAAAAAQrs/q_6yOt8ktSo/s1600-h/image%25255B5%25255D.png)
+
+With each folder containing the git repository for that library
+
+[![image](images/image_thumb_25255B2_25255D1.png)](http://lh6.ggpht.com/-cM7MTGq4XH4/UkbBLZlWFfI/AAAAAAAAQr8/emfHR21RaEc/s1600-h/image%25255B8%25255D.png)
+
+Next, I zipped all these files into the **SI Library --3.4.zip **file **(**note that they all must be on the root of the zip)
+
+[![image](images/image_thumb_25255B3_25255D1.png)](http://lh4.ggpht.com/-E_vcwkTrSls/UkbDhd-s5DI/AAAAAAAAQsQ/hAN9rs-8x7s/s1600-h/image%25255B11%25255D.png)
+
+Then, on a local QA TM instance, I:
+
+  * went into the admin panel, 
+  * chose up upload the zip, 
+  * triggered the installation (i.e. unzip) of those libraries
+  * rebuilt the cache:
+
+  
+[![image](images/image_thumb_25255B4_25255D1.png)](http://lh3.ggpht.com/-9_gVnnSz-Go/UkbDiprOxkI/AAAAAAAAQsg/WPHYDvexyiE/s1600-h/image%25255B14%25255D.png)
+
+Once that was completed, a reload of the home page shows the 13 libraries:
+
+[![image](images/image_thumb_25255B5_25255D1.png)](http://lh6.ggpht.com/-5yPI9n2Vl6U/UkbDk6LodWI/AAAAAAAAQsw/hvlYAWPOlb0/s1600-h/image%25255B17%25255D.png)
+
+Including the new **_Html5_** library:
+
+[![image](images/image_thumb_25255B6_25255D1.png)](http://lh5.ggpht.com/-mxsGj6xnUr4/UkbDnzxjPlI/AAAAAAAAQtA/4Rgik02Mhyg/s1600-h/image%25255B20%25255D.png)
+
+... and the new **_Scala_** library
+
+[![image](images/image_thumb_25255B7_25255D1.png)](http://lh6.ggpht.com/-m1_G1dMyHNg/UkbDqny18TI/AAAAAAAAQtQ/xOwrMMlc-2c/s1600-h/image%25255B23%25255D.png)

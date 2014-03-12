@@ -1,0 +1,56 @@
+##  Example of two TeamMentor sites using the same GitHub Content Library 
+
+Now that we [TeamMentor](https://teammentor.net/) 3.3. is able to automatically commit, pull and push from live GitHub repositories, we are able to support quite interesting set-up and workflows.
+
+For example at the moment there are two live TM4TM sites:  
+
+
+  * [https://tm-tm4tm.azurewebsites.net](https://tm-tm4tm.azurewebsites.net/) (hosted as an Azure website, deployed from TeamCity)
+  * [https://tm4tm.teammentor.net](https://tm4tm.teammentor.net/) (hosted in an Azure VM, deployed by SI's MK directly on IIS)
+
+Both are configured to consume data from the [https://github.com/TMContent/Lib_TM4TM](https://github.com/TMContent/Lib_TM4TM) repository:  
+[![image](images/image_thumb_25255B2_25255D1.png)](http://lh5.ggpht.com/-BXeBY8BY008/UYDwQjHqkSI/AAAAAAAAByY/RgbnJJ_ngYc/s1600-h/image%25255B8%25255D.png)
+
+Yesterday, Serge was making some changes on the [https://tm-tm4tm.azurewebsites.net](https://tm-tm4tm.azurewebsites.net/)  server, which where automatically committed (locally) and pushed into the _Lib_TM4TM _GitHub Repo:
+
+[![image](images/image_thumb_25255B3_25255D1.png)](http://lh3.ggpht.com/-D1WmkIlmWkA/UYDwTV1VMyI/AAAAAAAAByo/ZHkkSQj3zY4/s1600-h/image%25255B11%25255D.png)
+
+For example, here is one of the articles that Serge changed: [https://tm-tm4tm.azurewebsites.net/article/Code_Example](https://tm-tm4tm.azurewebsites.net/article/Code_Example)
+
+[![image](images/image_thumb_25255B5_25255D1.png)](http://lh6.ggpht.com/-ij0Tndoiw88/UYDwWVygfoI/AAAAAAAABy4/-dbS_9j-ou4/s1600-h/image%25255B17%25255D.png)
+
+which looks like this on the [**https://tm-tm4tm.azurewebsites.net**/article/Code_Example](https://tm-tm4tm.azurewebsites.net/article/Code_Example) server
+
+[![image](images/image_thumb_25255B4_25255D1.png)](http://lh4.ggpht.com/-wUmbNbdjB6U/UYDwZ6LkkwI/AAAAAAAABzI/ZL3q5bAfs4w/s1600-h/image%25255B14%25255D.png)
+
+and like this on the [**https://tm4tm.teammentor.net**/article/Code_Example](https://tm4tm.teammentor.net/article/Code_Example) server
+
+[![image](images/image_thumb_25255B7_25255D1.png)](http://lh5.ggpht.com/-sPrYk2mdic4/UYDwcTA_gVI/AAAAAAAABzY/C6nZDblcW1I/s1600-h/image%25255B23%25255D.png)
+
+So at the moment the same page has different content on these servers.
+
+There are two ways to fix this:  
+
+
+  1. make a change on the [https://tm4tm.teammentor.net](https://tm4tm.teammentor.net/) server (which will trigger a git pull and push), and do a cache reset
+  2. do a cache reset (which will also do a git pull)
+
+Since a cache reset will be needed on both cases, that is our best option in this case.
+
+So, I opened the TBot page for the tm4tm.teammentor.net server:
+
+[![image](images/image_thumb_25255B8_25255D1.png)](http://lh3.ggpht.com/-7mBBGxIiRNM/UYDwexdzsbI/AAAAAAAABzo/yQPE_oHF91o/s1600-h/image%25255B26%25255D.png)
+
+And triggered a cache reload:
+
+[![image](images/image_thumb_25255B9_25255D1.png)](http://lh5.ggpht.com/-3NyNmRZ8eVI/UYDwg7hxWYI/AAAAAAAABz4/RlrOMjfN17M/s1600-h/image%25255B29%25255D.png)
+
+A quick look at the server logs confirms that a git pull took place:
+
+[![image](images/image_thumb_25255B10_25255D1.png)](http://lh5.ggpht.com/-jYz76GbgQTo/UYDwja3bwcI/AAAAAAAAB0I/3eE8pGX8DME/s1600-h/image%25255B32%25255D.png)
+
+And the [**https://tm4tm.teammentor.net**/article/Code_Example](https://tm4tm.teammentor.net/article/Code_Example)  is now updated with the latest content:
+
+[![image](images/image_thumb_25255B11_25255D1.png)](http://lh4.ggpht.com/-uEIG6443VC8/UYDwmGJvnkI/AAAAAAAAB0Y/3jtttlabrZw/s1600-h/image%25255B35%25255D.png)
+
+Note that the current plan is to run TBot as a constant server thread, which will then be able to monitor the GitHub's content repository and automatically do git pulls (when needed). 

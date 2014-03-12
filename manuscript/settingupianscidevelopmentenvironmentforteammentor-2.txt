@@ -1,0 +1,102 @@
+##  Setting up Ian's CI Development Environment (for TeamMentor) 
+
+Now that Ian (and Kofi) have pushed a couple commits (to [his fork of TeamMentor](https://github.com/IanIan123/Dev)) its time to set-up Ian's CI dev environment, so that his commits can be automatically tested and viewed on a live instance of TeamMentor.
+
+First think to do is to go to Azure and create a website to hold Ian's Fork
+
+[![image](images/image_thumb3.png)](http://lh6.ggpht.com/-bTZXDCNFYkU/UXWAAx6xrPI/AAAAAAAABp4/iN7Gll06Bw0/s1600-h/image7.png) [![image](images/image_thumb6.png)](http://lh5.ggpht.com/-cT02IrJb_0Y/UXWACOXH-fI/AAAAAAAABqI/yVL9yJeXbEs/s1600-h/image12.png)
+
+Which is going to be [http://tm-ian.azurewebsites.net/](http://tm-ian.azurewebsites.net/)
+
+See the post [Creating a new TeamMentor test site using TeamCity, GitHub and Azure](http://www.blogger.com/blog.diniscruz.com/2013/03/creating-new-teammentor-test-site-using.html) for more details about how TeamCity is usally configured. The only major change for Ian's version, is that TeamCity is going to track the 'azure' branch (vs the master branch)
+
+[![image](images/image_thumb7.png)](http://lh5.ggpht.com/-6EavphbenZ0/UXWADTn-iZI/AAAAAAAABqY/6lBW5vR3RYQ/s1600-h/image15.png)
+
+(See my next post for more details on how this azure branch was created)
+
+Once TM is set-up and this TeamCity build is 'Run' , the Azure site goes from:
+
+[![image](images/image_thumb_25255B5_25255D1.png)](http://lh5.ggpht.com/-YBSzyJAsXFI/UXWAE1oE1JI/AAAAAAAABqo/fdb2GmEzwAw/s1600-h/image%25255B11%25255D.png)
+
+to:  
+ [![image](images/image_thumb_25255B6_25255D1.png)](http://lh6.ggpht.com/-R4aKUbF3P4I/UXWAGAc0DHI/AAAAAAAABq4/yVtYF5GazVI/s1600-h/image%25255B12%25255D.png)   
+to:
+
+[![image](images/image_thumb_25255B7_25255D1.png)](http://lh4.ggpht.com/-42ZZtoNd5UI/UXWAHdoVkaI/AAAAAAAABrI/TMs19zmRALY/s1600-h/image%25255B13%25255D.png)
+
+And when completed we will have a clean TM site based on Ian's repository (**_azure _**branch):
+
+[![image](images/image_thumb_25255B9_25255D1.png)](http://lh3.ggpht.com/-8hBplkL4DWQ/UXWAIpMvzzI/AAAAAAAABrY/DJB9lkH22JA/s1600-h/image%25255B19%25255D.png)
+
+Finally, so that Ian has some data to play with, I logged in as admin and quickly added a couple libraries:
+
+[![image](images/image_thumb_25255B25_25255D1.png)](http://lh3.ggpht.com/-r7cJWg9XsOs/UXWAJ7i-Y2I/AAAAAAAABro/H0EIXzEApC0/s1600-h/image%25255B67%25255D.png)
+
+**Running NUnit tests in TeamCity:**  
+**  
+**I also configured TeamCity to run the NUnit UnitTests from Ian's solution.
+
+And in this case there is 1 test that fails:
+
+[![image](images/image_thumb_25255B8_25255D1.png)](http://lh3.ggpht.com/-tN3tWIHzuUs/UXWALTg4RWI/AAAAAAAABr4/EuNBKTQ6WFU/s1600-h/image%25255B16%25255D.png)
+
+  
+which is also failing locally (i.e. in VisualStudio):
+
+[![image](images/image_thumb_25255B10_25255D1.png)](http://lh4.ggpht.com/-x9k-6WT-OjI/UXWAMl_46NI/AAAAAAAABsI/D3881iV1Tos/s1600-h/image%25255B22%25255D.png)
+
+Which means that there is a side effect of one of Ian's code changes (which he will need to fix on his repo :) )
+
+**Confirming Git to TeamCity to Azure**  
+**  
+**To double check that the workflow is working ok, let's make a file change:
+
+In the TM Website Settings,js file:
+
+[![image](images/image_thumb_25255B11_25255D1.png)](http://lh5.ggpht.com/-kpLCbp-Ew5M/UXWAN_UQiTI/AAAAAAAABsY/Xoue-WvLbGI/s1600-h/image%25255B25%25255D.png)
+
+lets append Ian's name to the build version:
+
+[![image](images/image_thumb_25255B12_25255D1.png)](http://lh3.ggpht.com/-7qnVZdA9-z0/UXWAPDzFYSI/AAAAAAAABso/GgGTChggeqE/s1600-h/image%25255B28%25255D.png)
+
+This change is picked up by Git:
+
+[![image](images/image_thumb_25255B13_25255D1.png)](http://lh5.ggpht.com/-pcfJFg2eSWs/UXWAQVGKCuI/AAAAAAAABs4/zwMb9_bhUeo/s1600-h/image%25255B31%25255D.png)
+
+Where we can commit it locally (note the 'azure' branch)
+
+[![image](images/image_thumb_25255B15_25255D1.png)](http://lh3.ggpht.com/-DyEUDS11iuU/UXWARse_0NI/AAAAAAAABtI/pfqsqH0sdJA/s1600-h/image%25255B37%25255D.png)
+
+and Push it to GitHub:
+
+[![image](images/image_thumb_25255B16_25255D1.png)](http://lh4.ggpht.com/-ju3lYlU5VDU/UXWATSi5esI/AAAAAAAABtY/CS9yNHpd0tU/s1600-h/image%25255B40%25255D.png)
+
+Making sure both local and remote branches are **_azure_**:
+
+[![image](images/image_thumb_25255B17_25255D1.png)](http://lh6.ggpht.com/-UYmbKz9bkpM/UXWAU3dx5nI/AAAAAAAABto/fhMP3OhUg-A/s1600-h/image%25255B43%25255D.png)
+
+After the push is done:
+
+[![image](images/image_thumb_25255B18_25255D1.png)](http://lh3.ggpht.com/-tRg3Nn6MnQo/UXWAWQd8WQI/AAAAAAAABt4/cXgCpIP7VZc/s1600-h/image%25255B46%25255D.png)
+
+TeamCity with trigger the build (TeamCity checks for new GitHub commits every 60sec):
+
+[![image](images/image_thumb_25255B19_25255D1.png)](http://lh6.ggpht.com/-W3Hy2U7lX0A/UXWAXqf2P3I/AAAAAAAABuI/xs1ks1bMEuE/s1600-h/image%25255B49%25255D.png)
+
+Azure will be pushed the new version (which is fast):
+
+[![image](images/image_thumb_25255B20_25255D1.png)](http://lh3.ggpht.com/-JLyGbfA-d1Q/UXWAYlyjdzI/AAAAAAAABuY/Dh9aR4M6atA/s1600-h/image%25255B52%25255D.png)
+
+A refresh of the [https://tm-ian.azurewebsites.net](https://tm-ian.azurewebsites.net/) site confirms the change (notice the 'Ian' next to the version):
+
+[![image](images/image_thumb_25255B21_25255D1.png)](http://lh3.ggpht.com/-9gbP-_H_YjM/UXWAZ6rqeSI/AAAAAAAABuo/bGq9EgFpJZc/s1600-h/image%25255B55%25255D.png)   
+**  
+****Re-deploying a previous 'Azure deployed' version.**  
+**  
+**Note that it is also possible to go back a couple deployed versions in Azure. Just select the deployment and click on '**REDEPLOY'**  
+**  
+**[![image](images/image_thumb_25255B26_25255D1.png)](http://lh4.ggpht.com/-ZL6ErwLywog/UXWAbdTZRLI/AAAAAAAABu4/5csXTDJvl9I/s1600-h/image%25255B70%25255D.png)
+
+Which will change the active deployment:
+
+[![image](images/image_thumb_25255B24_25255D1.png)](http://lh5.ggpht.com/--AByV_yAaTg/UXWAcnbha-I/AAAAAAAABvI/F8-wW9XR6r4/s1600-h/image%25255B64%25255D.png)

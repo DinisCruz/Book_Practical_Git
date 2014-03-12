@@ -1,0 +1,49 @@
+##  Pretty cool visualisation of the 'GitHub based' TeamMentor Development+QA+Release workflow 
+
+Roman created this nice Visio diagram with out current 'GitHub based' workflow for [TeamMentor](http://teammentor.net/):
+
+  
+
+
+[![](images/TeamMentor_Development_Repos_and_Process.jpg)](http://4.bp.blogspot.com/-utMUhuapMOA/UJuoYaWMpGI/AAAAAAAAB4Y/IVmeIy9ylIc/s1600/TeamMentor+Development+Repos+and+Process.jpg)
+
+  
+
+
+  
+
+
+Although this is still a draft, it is already a good representation of how we are using Git's powerful forking/cloning capabilities to implement solid Development + QA + Release workflows.  
+
+
+  
+
+
+Roman is also creating simpler versions of this diagram, for:
+
+  * the cases where we push a patch on a released version (for example targeted bugs or security fixes)
+  * the workflow used to manage the multiple TeamMentor's Content repositories
+
+  
+
+
+Let me know if you have any ideas or suggestions on how to make this even better :)
+
+  
+
+
+One area we still need to do some work (and help), is the automation of some of these steps/workflow. We have figured out the git commands, and now we need to automate their execution.
+
+  
+
+
+**Related Git/GitHub posts:**
+
+  * [Creating the final TeamMentor with SI Library repository via multiple Git pulls and pushes](http://diniscruz.blogspot.co.uk/2012/10/creating-final-teammentor-with-si.html) 
+  * [Adding Tags to TeamMentor Master repository](http://diniscruz.blogspot.co.uk/2012/10/adding-tags-to-teammentor-master.html) 
+  * [Going back in time using Git's checkout](http://diniscruz.blogspot.co.uk/2012/10/going-back-in-time-using-gits-checkout.html) 
+  * [Handling content changes made on hosted site created by Git clone (with auto Git commits and pushes?)](http://diniscruz.blogspot.co.uk/2012/10/handling-content-changes-made-on-hosted.html) 
+  * [The need to create forks/clones for TeamMentor.net website](http://diniscruz.blogspot.co.uk/2012/10/the-need-to-create-forksclones-for.html) 
+  * [Deploying TeamMentor to AppHarbor (.NET Cloud) using Git push](http://diniscruz.blogspot.co.uk/2012/10/deploying-teammentor-to-appharbor-net.html) 
+  * [Git and GitHub commands to create and deploy new version of TeamMentor](http://diniscruz.blogspot.co.uk/2012/10/git-and-github-commands-to-create-and.html) 
+  * [Using a Git Branch to fix a Bug](http://diniscruz.blogspot.co.uk/2012/10/using-git-branch-to-fix-bug.html) 

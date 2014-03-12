@@ -1,0 +1,19 @@
+##  GitHub is having some probs today 
+
+Here is what a GitHub Commit page looks like:  
+  
+
+
+[![](images/Screen_Shot_2013-01-10_at_11_18_31.png)](http://4.bp.blogspot.com/-kLUCsR-Boh4/UO6jwEbMXSI/AAAAAAAAHVQ/JEBwyrekrkU/s1600/Screen+Shot+2013-01-10+at+11.18.31.png)
+
+ Here is the [status page](https://status.github.com/)  
+
+
+[![](images/Screen_Shot_2013-01-10_at_11_19_40.png)](http://3.bp.blogspot.com/-NPkXwFQOZvE/UO6j2ThngFI/AAAAAAAAHVY/gmPzdSullu4/s1600/Screen+Shot+2013-01-10+at+11.19.40.png)
+
+ And the [Status messages](https://status.github.com/messages) page:
+
+[![](images/Screen_Shot_2013-01-10_at_11_19_46.png)](http://4.bp.blogspot.com/-O-2vJ0KeWbo/UO6j2cN23TI/AAAAAAAAHVc/gWzH6NQhQbw/s1600/Screen+Shot+2013-01-10+at+11.19.46.png)
+
+  
+

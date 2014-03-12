@@ -1,0 +1,126 @@
+##  Creating TeamMentor release 3.3.2 (3.2 version with HotFix 2) 
+
+Now that the two P0 issues are marked as fixed (after a round of QA):  
+[![image](images/image_thumb1.png)](http://lh5.ggpht.com/-gzhYcOmYzj4/UbYENSQZSfI/AAAAAAAANLk/VqSTjwzITGg/s1600-h/image%25255B2%25255D.png)
+
+It's time to publish the 3.3.2 TeamMentor release.
+
+At the moment the code changes are in the 3_3_2_HotFix branch
+
+[![image](images/image_thumb_25255B1_25255D1.png)](http://lh4.ggpht.com/-3T4jAor04gQ/UbYEOa6MOzI/AAAAAAAANL0/oI9EACIMwVc/s1600-h/image%25255B5%25255D.png)
+
+Which contains the commits that made up the**_ 3.3.2 -- RC2 _**version (with the last commit being the **_852d877290_**)
+
+[![image](images/image_thumb_25255B2_25255D1.png)](http://lh5.ggpht.com/-nuHgsNyK-CY/UbYEPYp5Q5I/AAAAAAAANME/QAF5xCaAS1U/s1600-h/image%25255B8%25255D.png)
+
+As set in our release process, to make this the official official version, I will remove the **RC2** bit from the version number and make it the final commit for this release.
+
+So I opened a Git Bash on a local copy of that repo TeamMentor/Master (same thing as doing a git clone and pull of the 3_3_2_HotFix branch)
+
+[![image](images/image_thumb_25255B4_25255D1.png)](http://lh5.ggpht.com/-noDu7rAjiCs/UbYERk_QECI/AAAAAAAANMk/h_N0f9GpjC4/s1600-h/image%25255B14%25255D.png)
+
+A quick look using **_git log --decorate --graph --oneline --date-order _**shows that the latest commit is **852d877 **(which matches the version at GitHub that was QAed and checked for this release)
+
+[![image](images/image_thumb_25255B7_25255D1.png)](http://lh5.ggpht.com/-E68XNbudCtY/UbYESwHv0eI/AAAAAAAANM0/eFFf4UDW-Sw/s1600-h/image%25255B23%25255D.png)
+
+My next steps was to change the version number,
+
+... commit that small change:
+
+[![image](images/image_thumb_25255B8_25255D1.png)](http://lh6.ggpht.com/-Lfl9q3Vov6M/UbYEUP2bpGI/AAAAAAAANNE/WXUi72xutE0/s1600-h/image%25255B26%25255D.png)
+
+... add the v3.3.2 tag (see [Adding Tags to TeamMentor Master repository](https://www.blogger.com/blog.diniscruz.com/2012/10/adding-tags-to-teammentor-master.html) for more details on tagging)
+
+[![image](images/image_thumb_25255B9_25255D1.png)](http://lh6.ggpht.com/-1N3C9BGD3SU/UbYEVETLi4I/AAAAAAAANNQ/CmsEOpNg4Iw/s1600-h/image%25255B29%25255D.png)
+
+... and pushed into TeamMentor/Master the commit and tag:
+
+[![image](images/image_thumb_25255B10_25255D1.png)](http://lh5.ggpht.com/-gHrHEVjNI7c/UbYEWKcuvmI/AAAAAAAANNk/KDgnClKP-ys/s1600-h/image%25255B32%25255D.png)
+
+Just to confirm, let's take a look at GitHub:
+
+**Main page shows the 3.3.2 commit**
+
+[![image](images/image_thumb_25255B11_25255D1.png)](http://lh4.ggpht.com/-0TEDFvSaxr8/UbYEXTAA-2I/AAAAAAAANN0/UR0eNFhmjWA/s1600-h/image%25255B35%25255D.png)
+
+... so does the **commit page**:
+
+[![image](images/image_thumb_25255B12_25255D1.png)](http://lh4.ggpht.com/-1hOrxsEGb0Q/UbYEYX0o99I/AAAAAAAANOA/Eb1IlqVwcU8/s1600-h/image%25255B38%25255D.png)
+
+... and the **Tags view**:
+
+[![image](images/image_thumb_25255B13_25255D1.png)](http://lh6.ggpht.com/-P3qpi5fGSe8/UbYEZZl6LCI/AAAAAAAANOU/x7IEQVVgWv8/s1600-h/image%25255B41%25255D.png)
+
+...and the **Network** graph:
+
+[![image](images/image_thumb_25255B14_25255D1.png)](http://lh3.ggpht.com/-Tyd28t_SYb4/UbYEatAeqnI/AAAAAAAANOk/LPBrZv5hfVU/s1600-h/image%25255B44%25255D.png)
+
+The deployment of this version is now passed to the hands of the Infrastructure team, which will update all TM sites currently managed by SI.
+
+On the development side, the last thing to do, is to add this version to the TeamMentor/Dev fork so that it is part of the next release
+
+At the moment TeamMentor/Dev is on this commit
+
+[![image](images/image_thumb_25255B15_25255D1.png)](http://lh6.ggpht.com/-TvQwf8uZpHE/UbYEb7kULbI/AAAAAAAANO0/vIweC6vZtOY/s1600-h/image%25255B47%25255D.png)
+
+In a local copy of the this repo, I did a pull from TeamMentor/Master
+
+[![image](images/image_thumb_25255B16_25255D1.png)](http://lh3.ggpht.com/-ZI9sPbIHfX8/UbYEc9ednyI/AAAAAAAANPE/JLcSZnHQNyY/s1600-h/image%25255B50%25255D.png)
+
+... which failed (on master) because there has been updates done on this repo (since the last merge).
+
+So I created a new branch called **_3_3_2_merge_**  
+**_  
+_**[![image](images/image_thumb_25255B17_25255D1.png)](http://lh6.ggpht.com/-Dc1qTb1Rkjk/UbYEdy4QWWI/AAAAAAAANPU/XXv7igVa6nQ/s1600-h/image%25255B53%25255D.png)
+
+**Forced pulled **the 3.3.2 code into it (the code from TeamMentor/Master)
+
+[![image](images/image_thumb_25255B18_25255D1.png)](http://lh5.ggpht.com/-msK_5j4PGzA/UbYEe-vv1wI/AAAAAAAANPk/4A7kztOH_m4/s1600-h/image%25255B56%25255D.png)
+
+switch back into master branch and merged with **_3_3_2_merge_** branch
+
+[![image](images/image_thumb_25255B19_25255D1.png)](http://lh5.ggpht.com/-2bHSht42cRM/UbYEf4h_rHI/AAAAAAAANPw/5TfPM6ptt8A/s1600-h/image%25255B59%25255D.png)
+
+...which had (as expected) a couple conflicts), with I'm going to resolve using
+
+[![image](images/image_thumb_25255B24_25255D1.png)](http://lh3.ggpht.com/-EbfXNa4DJSE/UbYEheRv_qI/AAAAAAAANQE/dXEyqO6x1VA/s1600-h/image%25255B63%25255D.png)
+
+... which lists the conflicts
+
+[![image](images/image_thumb_25255B25_25255D1.png)](http://lh3.ggpht.com/-3AQH-cR-QkA/UbYEiuqWy2I/AAAAAAAANQU/fxZyLyo-eOA/s1600-h/image%25255B66%25255D.png)
+
+... and in this case was mainly the version number:
+
+[![image](images/image_thumb_25255B26_25255D1.png)](http://lh3.ggpht.com/-8tE3oMTjd0o/UbYEj2EFj8I/AAAAAAAANQk/csDM5wIK3AY/s1600-h/image%25255B69%25255D.png)
+
+... easily fixed by making the local version the one to use:
+
+[![image](images/image_thumb_25255B28_25255D1.png)](http://lh4.ggpht.com/-JLz4C4nDxi4/UbYElIBd8aI/AAAAAAAANQ0/ylkwkwVgm-Q/s1600-h/image%25255B75%25255D.png)
+
+... next I resolved the dlls by selecting one of them (doesn't really mater since they will be recompiled soon)
+
+[![image](images/image_thumb_25255B38_25255D1.png)](http://lh4.ggpht.com/-ZqLi8OypTcY/UbYEmVaQVqI/AAAAAAAANRE/HoEvkXlj-68/s1600-h/image%25255B82%25255D.png)
+
+... and commited the merge:
+
+[![image](images/image_thumb_25255B39_25255D1.png)](http://lh4.ggpht.com/-SHEe5E0mysY/UbYEnm0nrMI/AAAAAAAANRU/aKv3UcqeX74/s1600-h/image%25255B85%25255D.png)
+
+....which we can now see on Gitk:
+
+[![image](images/image_thumb_25255B40_25255D1.png)](http://lh4.ggpht.com/-ppTTMinlLk0/UbYEpdk48zI/AAAAAAAANRk/4KeOYxhEdEo/s1600-h/image%25255B88%25255D.png)
+
+The final step is to push these commits into TeamMentor/Dev
+
+[![image](images/image_thumb_25255B42_25255D1.png)](http://lh6.ggpht.com/-19m5DinR2x0/UbYEqd5y9eI/AAAAAAAANRw/KtUQUGX4u7U/s1600-h/image%25255B94%25255D.png)
+
+.... which can be seen on the following couple graphs:
+
+[![image](images/image_thumb_25255B43_25255D1.png)](http://lh6.ggpht.com/-SziV3O9u_aI/UbYErX-G2II/AAAAAAAANSE/16CnEfmEjTE/s1600-h/image%25255B97%25255D.png)
+
+The image above shows the TeamMentor/Dev commit done before the 3.3.2 merge, and below is the last commit made
+
+[![image](images/image_thumb_25255B44_25255D.png)](http://lh5.ggpht.com/-Y-upW72zgNU/UbYEsdHxcaI/AAAAAAAANSU/QATq3S-OSZM/s1600-h/image%25255B100%25255D.png)
+
+It might be easier to read with out the labels (in blue is the **_TeamMentor/Dev_** code in black is the**_ TeamMentor/Master_** code:
+
+[![image](images/image_thumb_25255B45_25255D1.png)](http://lh6.ggpht.com/-VS91v5qkEGg/UbYEteluIaI/AAAAAAAANSk/cCvQw8S4v4g/s1600-h/image%25255B103%25255D.png)

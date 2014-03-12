@@ -1,0 +1,156 @@
+##  Creating QA versions of TeamMentor UserData repository, and using branches to show/test the multiple config options 
+
+Now that a number of TeamMentor settings can be configured from the UserData repositories, we need a way to test and document what can be done.
+
+Let's start by creating  a public GitHub repository ([https://github.com/TeamMentor/UserData_Customizations](https://github.com/TeamMentor/UserData_Customizations)) to hold the multiple examples/tests:  
+  
+[![image](images/image_thumb_25255B25_25255D1.png)](http://lh3.ggpht.com/-SHkUqOZoCzE/UV6MXtbqfBI/AAAAAAAAA_w/dzk6XfLdDf8/s1600-h/image%25255B54%25255D.png)
+
+Set the GitUser location to it:
+
+[![image](images/image_thumb_25255B29_25255D1.png)](http://lh5.ggpht.com/-WkEzaIknry4/UV6MY8LzqtI/AAAAAAAABAA/qyR8sQFHX4o/s1600-h/image%25255B60%25255D.png)
+
+And reload the user data:
+
+[![image](images/image_thumb_25255B23_25255D1.png)](http://lh3.ggpht.com/-EGOGEJn6FtA/UV6MZ8UJEhI/AAAAAAAABAQ/I1GBpS5ysdI/s1600-h/image%25255B48%25255D.png)
+
+Once the reload is complete, there will be a new folder called **_User_Data_Git_UserData_Customizations_** in the local XmlDatabase folder:**_ _**  
+**_  
+_**[![image](images/image_thumb_25255B31_25255D1.png)](http://lh6.ggpht.com/-dU7bzAv1xD8/UV6MaxHwbLI/AAAAAAAABAg/QPb4IwzMLz4/s1600-h/image%25255B66%25255D.png)
+
+Note that if you are running TM from localhost (as in the current example) then the user data will not be auto commited (due to the dynamic nature of UserData, if GitAutoCommit was enabled it would not be possible to load userdata repositories used on live TM sites (like the multiple _Site_nnn.git _ones) without creating commit conflicts):
+
+[![image](images/image_thumb_25255B32_25255D1.png)](http://lh4.ggpht.com/-sizOFk4kj_k/UV6Mb61KGsI/AAAAAAAABAw/ZDntWBuo4ZY/s1600-h/image%25255B69%25255D.png)
+
+Before we move to the branches let's commit the current TMSecretData.config and admin files:
+
+[![image](images/image_thumb_25255B33_25255D1.png)](http://lh3.ggpht.com/-2G5EZcuztOE/UV6Mdf9PueI/AAAAAAAABBA/VUwrqYz9PrU/s1600-h/image%25255B72%25255D.png)
+
+**Use Case #1: Changing version by running Customized Javascript code**
+
+The first example is going to show how to execute some Javascript in the main TM Gui from a file provided in the user data folder.
+
+Let's create a branch to hold the changes:
+
+[![image](images/image_thumb_25255B34_25255D1.png)](http://lh4.ggpht.com/-lJZ6ygL8caU/UV6MeZSgcGI/AAAAAAAABBQ/2k6CZ7lIjrE/s1600-h/image%25255B75%25255D.png)
+
+Add a folder called **_WebRoot_Files_**:
+
+[![image](images/image_thumb_25255B35_25255D1.png)](http://lh5.ggpht.com/-I0ENkPQ5oC8/UV6NgFwis0I/AAAAAAAABBk/Vfe_6OlnEOU/s1600-h/image%25255B78%25255D.png)
+
+Add a folder called **__Customizations_** (inside the **_WebRoot_Files_**)
+
+[![image](images/image_thumb_25255B36_25255D1.png)](http://lh6.ggpht.com/-1l_0miy_FVg/UV6NhHyLd0I/AAAAAAAABB0/Fweoyl9C6Hw/s1600-h/image%25255B81%25255D.png)
+
+Add a JavaScript file called **_TM_Custom_Settings.js_** inside the **__Customizations_** folder:
+
+[![image](images/image_thumb_25255B42_25255D.png)](http://lh3.ggpht.com/-vof8LZ4DhGU/UV6NiZdnn1I/AAAAAAAABCE/hspc7RFUx9E/s1600-h/image%25255B95%25255D.png)
+
+Note: the reason for this file, is that it is automatically included (if it exists) in the Javascript consolidated download that is done on the main TM GUI. Here is the mapping file that also shows the execution order of this script:
+
+[![image](images/image_thumb_25255B40_25255D.png)](http://lh3.ggpht.com/-TGXkIKaakVQ/UV6NlVq3Q0I/AAAAAAAABCU/d0vJperCoBs/s1600-h/image%25255B89%25255D.png)
+
+Next edit the **_TM_Custom_Settings.js_** file and use it to (for example) change the **_TM.tmVersion_** value.
+
+[![image](images/image_thumb_25255B51_25255D.png)](http://lh4.ggpht.com/-4vWXwZj3QE4/UV6NpLrZiwI/AAAAAAAABCk/vTnVgmxuYuE/s1600-h/image%25255B114%25255D.png)   
+And in TBot , trigger a **_Cache Reload_**  
+[![image](images/image_thumb_25255B50_25255D.png)](http://lh3.ggpht.com/-i3VL7ssBVxc/UV6Rxw0hHdI/AAAAAAAABDI/jqanFzTPyYg/s1600-h/image%25255B113%25255D.png)
+
+If you keep an eye in the TM_WebSite folder (the root of the TM website), you will see that it looks like this before the the **_Cache Reload_**  
+**_  
+_**[![image](images/image_thumb_25255B43_25255D1.png)](http://lh4.ggpht.com/-D24_aCbo9SY/UV6RzKa9WqI/AAAAAAAABDY/gNV8QlBDfws/s1600-h/image%25255B98%25255D.png)
+
+and like this after the **_Cache Reload_**:
+
+[![image](images/image_thumb_25255B45_25255D.png)](http://lh4.ggpht.com/-DMeKE3fGElE/UV6R0J4xx5I/AAAAAAAABDo/2su-4Eheopw/s1600-h/image%25255B104%25255D.png)
+
+What happened is that the contents of the UserData's WebRoot_Files was copied into TM's web root.
+
+Which means that the **_TM_Custom_Settings.js_** created above is now part of TM:
+
+[![image](images/image_thumb_25255B46_25255D1.png)](http://lh3.ggpht.com/-HW6aiZTKP6A/UV6R1FM0udI/AAAAAAAABD4/5hTuDTn0wes/s1600-h/image%25255B107%25255D.png)
+
+A hard refresh of the browser, will now show the customized **_TM.tmVersion_** value:
+
+[![image](images/image_thumb_25255B47_25255D1.png)](http://lh6.ggpht.com/-Q3Aql069umU/UV6R2N4TO5I/AAAAAAAABEI/z8Mh4akpBes/s1600-h/image%25255B110%25255D.png)
+
+To wrap up this branch, let's modify the README.md file:
+
+[![image](images/image_thumb_25255B52_25255D1.png)](http://lh3.ggpht.com/-EV23M2YfUG4/UV6R3F3IzPI/AAAAAAAABEY/jO9zOtrJSP4/s1600-h/image%25255B117%25255D.png)
+
+Commit the changes:
+
+ [![image](images/image_thumb_25255B53_25255D.png)](http://lh5.ggpht.com/-Hq7HYUXUpvw/UV6R4GwSMVI/AAAAAAAABEo/LjLmq7OXUxA/s1600-h/image%25255B120%25255D.png)
+
+And push the branch to GitHub (note the explicit branch mapping on the git push command):
+
+[![image](images/image_thumb_25255B54_25255D.png)](http://lh6.ggpht.com/-URfE8c863hc/UV6R5Or_LFI/AAAAAAAABE4/p0uYebcaqO4/s1600-h/image%25255B123%25255D.png)
+
+A quick look at GitHubs repo:
+
+[![image](images/image_thumb_25255B55_25255D.png)](http://lh5.ggpht.com/-ErjOpXWa-po/UV6R5zZzL9I/AAAAAAAABFI/u-7FUrVaynw/s1600-h/image%25255B126%25255D.png)
+
+will show our branch and modified files:
+
+[![image](images/image_thumb_25255B56_25255D1.png)](http://lh6.ggpht.com/-Z1BtHYmjipM/UV6R7HFnQhI/AAAAAAAABFY/SKi8rGlXX1Y/s1600-h/image%25255B129%25255D.png)
+
+**  
+****Use Case #2: Setting Google Analytics (server-side) value by running Customized C# code**  
+**  
+**In this example we will set enabled and configure the Server side google analytics settings (used to provide metrics on TM usage)
+
+Note: see the **_[Running Customized C# code loaded from TeamMentor's UserData repository](http://blog.diniscruz.com/2013/04/running-customized-c-code-loaded-from.html)  _**post to understand the role of the **_FirstScriptToInvoke.h2_** script
+
+Let's create a new branch called **UseCase_CSharp_Customization**,** **using as a starting point the existing **_UseCase_Javascript_Customization_**  
+**_  
+_**[![image](images/image_thumb_25255B58_25255D1.png)](http://lh5.ggpht.com/-aoNZaPzYmhM/UV6R8YZpeHI/AAAAAAAABFo/KK944Oz_ZJM/s1600-h/image%25255B135%25255D.png)
+
+Modify the **_\WebRoot_Files\_Customizations\TM_Custom_Settings.js_** file:
+
+[![image](images/image_thumb_25255B59_25255D1.png)](http://lh6.ggpht.com/-2AgYelOA_8E/UV6R93I0c5I/AAAAAAAABF0/0SVhuz3nAGE/s1600-h/image%25255B138%25255D.png)
+
+In the User data repository (which is checkout into the **_UseCase_CSharp_Customization_** branch), add the **_H2Scripts_** folder
+
+[![image](images/image_thumb_25255B60_25255D1.png)](http://lh3.ggpht.com/-yh3aP9Uqi1k/UV6R-1BlQrI/AAAAAAAABGI/6QrAepkeAHk/s1600-h/image%25255B141%25255D.png)
+
+Inside that folder add the **_FirstScriptToInvoke.h2_** file
+
+[![image](images/image_thumb_25255B62_25255D1.png)](http://lh6.ggpht.com/-ari35YLGKME/UV6R_pw97AI/AAAAAAAABGY/3I7MExCuBTk/s1600-h/image%25255B147%25255D.png)
+
+Which ([as explained in this post](http://blog.diniscruz.com/2013/04/running-customized-c-code-loaded-from.html)) will be executed on startup.
+
+Before adding code to the **_FirstScriptToInvoke.h2_** file, its to good to test/debug that code using the TM's CSharp REPL:
+
+[![image](images/image_thumb_25255B95_25255D.png)](http://lh4.ggpht.com/-PEb8JL_8gyc/UV6SAp8_41I/AAAAAAAABGo/Mmlessu3VL0/s1600-h/image%25255B210%25255D.png)
+
+and confirm on the log viewer that Google Analytics (GA) calls are now being logged:
+
+[![image](images/image_thumb_25255B96_25255D.png)](http://lh4.ggpht.com/-05wniWS2Ot4/UV6SBcKwldI/AAAAAAAABG4/dSLVcpRzSJw/s1600-h/image%25255B213%25255D.png)
+
+Once we're happy with the C# snippet to execute, we can add it to the **_FirstScriptToInvoke.h2_** file:
+
+[![image](images/image_thumb_25255B98_25255D.png)](http://lh4.ggpht.com/-VQ90QP7HBe8/UV6SCoO3OVI/AAAAAAAABHI/AlSJs8IIhrg/s1600-h/image%25255B219%25255D.png)
+
+To double check that the Google Analytics (GA) settings are being configured on TM setup, I restarted Cassini, and confirmed that the log viewer shows the **_FirstScriptToInvoke.h2_** file execution:
+
+[![image](images/image_thumb_25255B99_25255D.png)](http://lh3.ggpht.com/-YQsr1Lw6I3g/UV6SDsvyFjI/AAAAAAAABHY/SlWfoukmsMQ/s1600-h/image%25255B222%25255D.png)
+
+and the successful configuration/use of Google Analytics:
+
+[![image](images/image_thumb_25255B100_25255D.png)](http://lh5.ggpht.com/-vlOKIZfDTVg/UV6SEhFkNDI/AAAAAAAABHo/52U84L-W0LM/s1600-h/image%25255B225%25255D.png)
+
+Final step is to update the README.md file
+
+[![image](images/image_thumb_25255B101_25255D.png)](http://lh5.ggpht.com/-rPLfKUCruBM/UV6SFo0o8dI/AAAAAAAABH4/UIsnpDVPgII/s1600-h/image%25255B228%25255D.png)
+
+Add the files to git
+
+[![image](images/image_thumb_25255B102_25255D.png)](http://lh3.ggpht.com/-KkC2E--5tyk/UV6SGcDTIXI/AAAAAAAABII/21-k8G5IICQ/s1600-h/image%25255B231%25255D.png)
+
+Commit the changes:
+
+[![image](images/image_thumb_25255B103_25255D.png)](http://lh3.ggpht.com/-6jjvXFEDAPw/UV6SHq_KAuI/AAAAAAAABIY/kTgNIumzzZE/s1600-h/image%25255B234%25255D.png)
+
+And push Commit into a new branch at GitHub:
+
+[![image](images/image_thumb_25255B104_25255D.png)](http://lh4.ggpht.com/-ZuzGEM6LToc/UV6SIWOYLZI/AAAAAAAABIo/2X8IplP-OWE/s1600-h/image%25255B237%25255D.png)

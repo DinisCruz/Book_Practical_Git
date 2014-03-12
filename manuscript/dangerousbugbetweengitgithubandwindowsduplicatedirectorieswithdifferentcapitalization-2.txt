@@ -1,0 +1,35 @@
+##  Dangerous bug between Git, GitHub and Windows (duplicate directories with different capitalization) 
+
+After doing [this rename](https://github.com/michaelhidalgo/Dev/commit/2bb8505ef95969fac0a9057baf963b8c4f8e6708), here is what GitHub looks like:  
+  
+[![image](images/image_thumb_25255B2_25255D.png)](http://lh6.ggpht.com/-UtP-wRRwNno/UO702JcjWhI/AAAAAAAAHbI/WBs9B5c1lf0/s1600-h/image%25255B4%25255D.png)
+
+Note the two Web Applications folders!!!
+
+I have hit this issue in the past, and I think it is something to do with Windows capitalization inconsistencies (as seen on the windows search), Git and GitHub
+
+Note how my local folder looks good.
+
+[![image](images/image_thumb_25255B4_25255D.png)](http://lh6.ggpht.com/-RQAlyd9R92c/UO705CPjsGI/AAAAAAAAHbY/Shdu_NcAmrQ/s1600-h/image%25255B8%25255D.png)
+
+Even weirder is the fact that the commit message looks good (note the renames):
+
+[![image](images/image_thumb_25255B6_25255D.png)](http://lh6.ggpht.com/-n7zEnuGUmYM/UO708ZhSqMI/AAAAAAAAHbo/vYWf0L-HVWk/s1600-h/image%25255B12%25255D.png)
+
+Let's try to do a git clone to see if what happens locally:
+
+[![image](images/image_thumb_25255B13_25255D1.png)](http://lh4.ggpht.com/-pPnBYbT9gyw/UO70_MS5ULI/AAAAAAAAHb4/h7tlr3i0Klc/s1600-h/image%25255B25%25255D.png)
+
+[![image](images/image_thumb_25255B11_25255D1.png)](http://lh3.ggpht.com/-JcDB39RAndk/UO71DVcPesI/AAAAAAAAHcI/GC9VeQenacQ/s1600-h/image%25255B23%25255D.png) [![image](images/image_thumb_25255B9_25255D1.png)](http://lh4.ggpht.com/-5S319cG1VDY/UO71GcAYb2I/AAAAAAAAHcY/1fcekX31Hvw/s1600-h/image%25255B21%25255D.png) [![image](images/image_thumb_25255B14_25255D1.png)](http://lh6.ggpht.com/-Ah_6gGARdvA/UO71LZOC6cI/AAAAAAAAHco/Y9iT1QGBsmc/s1600-h/image%25255B28%25255D.png)
+
+Humm, the clone looks good, so I wonder if this will self correct after the next commits:
+
+[![image](images/image_thumb_25255B16_25255D1.png)](http://lh5.ggpht.com/-CJp_n_BtIk4/UO71NwHfOQI/AAAAAAAAHc4/DaxftFGY5i4/s1600-h/image%25255B32%25255D.png)
+
+Question: **Any ideas on how to fix this? **
+
+My only thought at the moment is to:  
+a) delete that folder (from Git)  
+b) commit and push the delete  
+c) add that folder   
+d) commit and push 
