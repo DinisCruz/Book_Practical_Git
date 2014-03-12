@@ -30,11 +30,9 @@ More specifically (using some Git commands)
   * pull (using tree merge strategy) tm_library into the Library_Data/XmlDatabase/TM_Libraries folder
   * push all branches to origin
 
-## Step-by-Step workflow:
+### Step-by-Step workflow:
 
-  
-
-
+ 
 **1) Create a local clone from the version to upgrade and back it up:**
 
   
