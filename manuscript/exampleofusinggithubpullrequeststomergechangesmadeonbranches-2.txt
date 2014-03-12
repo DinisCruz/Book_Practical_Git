@@ -61,16 +61,15 @@ Here is how the Network Graph looks like after all merges have occurred:
 
 At the moment there are only two branches that need to be merged:
 
-#1 [https://github.com/TeamMentor/Dev/pull/85](https://github.com/TeamMentor/Dev/pull/85) : currently conflicting (i.e the merge cannot happen automatically):
+1) [https://github.com/TeamMentor/Dev/pull/85](https://github.com/TeamMentor/Dev/pull/85) : currently conflicting (i.e the merge cannot happen automatically):
 
 [![image](images/image_thumb_25255B18_25255D1.png)](http://lh4.ggpht.com/-Mrits6FCW1k/Ui8Q0zzVU8I/AAAAAAAAQJo/Dz7LP3OkFyQ/s1600-h/image%25255B39%25255D.png)
 
-#2 [https://github.com/TeamMentor/Dev/pull/87](https://github.com/TeamMentor/Dev/pull/87) -- no idea what issue this is fixing (the link to the GitHub issue is missing)
+2) [https://github.com/TeamMentor/Dev/pull/87](https://github.com/TeamMentor/Dev/pull/87) -- no idea what issue this is fixing (the link to the GitHub issue is missing)
 
 [![image](images/image_thumb_25255B19_25255D1.png)](http://lh3.ggpht.com/-BJdqqiBR45Q/Ui8Q2KPTWuI/AAAAAAAAQJ4/cKRdsv33mwc/s1600-h/image%25255B42%25255D.png)
 
 Hopefully this shows the power of Git and GitHub's commit/review workflow where:  
-
 
   * each bug has a separate Issue, Branch and Pull Request
   * code review of proposed changes is really easy to do
@@ -86,18 +85,18 @@ To do that, I opened a (local) clone of TeamMentor/Dev:
 [![image](images/image_thumb_25255B21_25255D1.png)](http://lh3.ggpht.com/-WiE1SxcnWXM/Ui8Q3L2zIAI/AAAAAAAAQKI/QontvvInkPk/s1600-h/image%25255B48%25255D.png)
 
 ... updated it (since it is out of date with the changes made directly on the GitHub's version), using the command: **_$ git pull origin_**  
-**_  
-_**[![image](images/image_thumb_25255B22_25255D1.png)](http://lh5.ggpht.com/-YB0WpPT5gT4/Ui8Q4PmlPSI/AAAAAAAAQKc/8ViqBQp524A/s1600-h/image%25255B51%25255D.png)
+  
+[![image](images/image_thumb_25255B22_25255D1.png)](http://lh5.ggpht.com/-YB0WpPT5gT4/Ui8Q4PmlPSI/AAAAAAAAQKc/8ViqBQp524A/s1600-h/image%25255B51%25255D.png)
 
 ... see all branches available, using the command:  **$ git branch --a**  
-**  
-**[![image](images/image_thumb_25255B23_25255D1.png)](http://lh6.ggpht.com/-6jTnXZjNfqk/Ui8Q5dYB6xI/AAAAAAAAQKo/_IVNMH-Y-Ms/s1600-h/image%25255B54%25255D.png)
+
+[![image](images/image_thumb_25255B23_25255D1.png)](http://lh6.ggpht.com/-6jTnXZjNfqk/Ui8Q5dYB6xI/AAAAAAAAQKo/_IVNMH-Y-Ms/s1600-h/image%25255B54%25255D.png)
 
 ... merged **_3.4_Release_** branch into **_master_** branch, using the command **$ git merge remotes/origin/3.4_Release**  
-**  
-**[![image](images/image_thumb_25255B24_25255D1.png)](http://lh6.ggpht.com/-29ZLe5rifRc/Ui8Q6qoEvLI/AAAAAAAAQK8/MB4QUXWXncM/s1600-h/image%25255B57%25255D.png)
 
-... pushed these changes into GitHub, using the command $ git push origin master:master
+[![image](images/image_thumb_25255B24_25255D1.png)](http://lh6.ggpht.com/-29ZLe5rifRc/Ui8Q6qoEvLI/AAAAAAAAQK8/MB4QUXWXncM/s1600-h/image%25255B57%25255D.png)
+
+... pushed these changes into GitHub, using the command **$ git push origin master:master**
 
 [![image](images/image_thumb_25255B25_25255D1.png)](http://lh3.ggpht.com/-rEtwE06hQNs/Ui8Q7wYg1yI/AAAAAAAAQLM/bLP32QPmkto/s1600-h/image%25255B60%25255D.png)
 
@@ -122,8 +121,8 @@ Let's start by opening up the solution file in VisualStudio 2010:
 [![image](images/image_thumb_25255B35_25255D1.png)](http://lh3.ggpht.com/-ApKGH6DtIKY/Ui8RAvIJOHI/AAAAAAAAQMQ/0P16UNMOa8c/s1600-h/image%25255B79%25255D.png)
 
 Next, change the version number to **_TM 3.4 -- Dev 20_**  
-**_  
-_**[![image](images/image_thumb_25255B36_25255D1.png)](http://lh3.ggpht.com/-EHPGsOmpPFA/Ui8RBkJtxdI/AAAAAAAAQMc/3u16fgNkHws/s1600-h/image%25255B82%25255D.png)
+  
+[![image](images/image_thumb_25255B36_25255D1.png)](http://lh3.ggpht.com/-EHPGsOmpPFA/Ui8RBkJtxdI/AAAAAAAAQMc/3u16fgNkHws/s1600-h/image%25255B82%25255D.png)
 
 And start TM locally (just to see is all looks good):
 
@@ -163,22 +162,22 @@ The fix is to update that file:
 **Committing changes made locally.**
 
 Keeping up with the model of only doing commits on branches, I quickly created a new branch, using the command: **_$ git checkout --b 3.4_Dll_Updates_**  
-**_  
-_**[![image](images/image_thumb_25255B55_25255D1.png)](http://lh4.ggpht.com/-jwBLawqCpog/Ui8RK2GFFyI/AAAAAAAAQOs/5TYfQRLoWz8/s1600-h/image%25255B110%25255D.png)
+
+[![image](images/image_thumb_25255B55_25255D1.png)](http://lh4.ggpht.com/-jwBLawqCpog/Ui8RK2GFFyI/AAAAAAAAQOs/5TYfQRLoWz8/s1600-h/image%25255B110%25255D.png)
 
 (note how the small changes I made were also marked as 'Modified (namely the version change, the UnitTests fixes and the recompiled dlls)
 
 ... added the files to be committed using the command: **_$ git add ._**  
-**_  
-_**[![image](images/image_thumb_25255B57_25255D1.png)](http://lh4.ggpht.com/-ZbjlIvTmw8o/Ui8RLuc66pI/AAAAAAAAQPA/1RbZbvsWM64/s1600-h/image%25255B116%25255D.png)
+
+![image](images/image_thumb_25255B57_25255D1.png)](http://lh4.ggpht.com/-ZbjlIvTmw8o/Ui8RLuc66pI/AAAAAAAAQPA/1RbZbvsWM64/s1600-h/image%25255B116%25255D.png)
 
 ... created an commit using the command: **_$ git commit -m 'Changing version, adding compiled Dlls, fixing couple UnitTests'_**  
-**_  
-_**[![image](images/image_thumb_25255B58_25255D1.png)](http://lh3.ggpht.com/-LeMHylGleQA/Ui8RMmbhZBI/AAAAAAAAQPQ/GKNp-3Oa4Uk/s1600-h/image%25255B119%25255D.png)
 
-.. pushed this branch to GitHub (not 100% necessary, but it will help with the graph), using the command **_$ git push origin 3.4_Dll_Updates:3.4_Dll_Updates_**  
-**_  
-_****_... _**applied these changes to the 3.4_Release branch (locally and at GitHub), using the commands:  
+[![image](images/image_thumb_25255B58_25255D1.png)](http://lh3.ggpht.com/-LeMHylGleQA/Ui8RMmbhZBI/AAAAAAAAQPQ/GKNp-3Oa4Uk/s1600-h/image%25255B119%25255D.png)
+
+... pushed this branch to GitHub (not 100% necessary, but it will help with the graph), using the command **_$ git push origin 3.4_Dll_Updates:3.4_Dll_Updates_**  
+
+... applied these changes to the 3.4_Release branch (locally and at GitHub), using the commands:  
 
 
   * _$ git push origin 3.4_Dll_Updates:3.4_Dll_Updates_
@@ -208,8 +207,8 @@ Finally we update master with these changes, using the commands:
 [![image](images/image_thumb_25255B64_25255D1.png)](http://lh6.ggpht.com/-GYpXNqx-zvc/Ui8RRXYhO4I/AAAAAAAAQQM/ol01rNC6j60/s1600-h/image%25255B137%25255D.png)
 
 **Testing QA version created by TeamCity and deployed to Azure:**  
-**  
-**As shown in  [past blog posts](http://blog.diniscruz.com/search/label/TeamCity), we also have TeamCity configured to monitor TeamMentor commits and auto-publish new builds into Azure.
+  
+As shown in  [past blog posts](http://blog.diniscruz.com/search/label/TeamCity), we also have TeamCity configured to monitor TeamMentor commits and auto-publish new builds into Azure.
 
 In this case after the latest commit into GitHub TeamMentor/Dev master repo, TeamCity picked up the changes and:  
 
@@ -248,13 +247,12 @@ A final test is to go to the main [https://github.com/TeamMentor/Dev](https://gi
 [![image](images/image_thumb_25255B66_25255D1.png)](http://lh5.ggpht.com/-DShe7gjVhEg/Ui8RXpZbnGI/AAAAAAAAQRw/nRFCAgKqbXk/s1600-h/image%25255B143%25255D.png)
 
 ...which will start the .Net Cassini webserver on port _12120:_  
-_  
-_[![image](images/image_thumb_25255B67_25255D1.png)](http://lh3.ggpht.com/-epoNm9uqKuI/Ui8RY_f46wI/AAAAAAAAQSA/0hZ3aa1qE6w/s1600-h/image%25255B146%25255D.png)
 
-(note how the version number matches the commit made earlier)
+[![image](images/image_thumb_25255B67_25255D1.png)](http://lh3.ggpht.com/-epoNm9uqKuI/Ui8RY_f46wI/AAAAAAAAQSA/0hZ3aa1qE6w/s1600-h/image%25255B146%25255D.png)
+
+_(note how the version number matches the commit made earlier)_
 
 At this stage:  
-
 
   * TM is just about ready for a final round of QA
   * TM 3.4 RC1 will be created as soon as:
