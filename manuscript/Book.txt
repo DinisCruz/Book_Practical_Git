@@ -64,7 +64,7 @@ fixingacouplebugsandpushingnewteammentor34devversionfrom4to5-2.txt
 gourcevisualisationofteammentorgitdevelopment18monthsin180seconds-2.txt
 
 august2013-2.txt
-creatingacloneofwebgoatongithub-2.txt
+creatingacloneofwebgoatongithub-2.md
 
 september2013-2.txt
 gitflowmovingpatchesfromonecommitintoanothercommit-2.txt
