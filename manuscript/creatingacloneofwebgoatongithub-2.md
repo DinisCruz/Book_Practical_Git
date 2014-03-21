@@ -11,9 +11,9 @@ But since there wasn't a source code download option (in the current [download p
 
 [![image](images/image_thumb1.png)](http://lh5.ggpht.com/-gRJndFAf5iQ/UhIQeGD-VsI/AAAAAAAAPKM/fpShsb1987o/s1600-h/image%25255B2%25255D.png) 
 
-... I quickly created a clone of it using the **_$ git svn clone -s _****_http://webgoat.googlecode.com/svn_****_ webgoat_**  
-**_  
-_**... which downloaded the entire source code and available history:
+... I quickly created a clone of it using the **_$ git svn clone -s_** **_http://webgoat.googlecode.com/svn_** **_ webgoat_**  
+
+... which downloaded the entire source code and available history:
 
 [![image](images/image_thumb_25255B2_25255D1.png)](http://lh6.ggpht.com/-fAnB-eS4PW4/UhIQfTRyzQI/AAAAAAAAPKc/qQIMTP-usyo/s1600-h/image%25255B8%25255D.png)
 
@@ -21,17 +21,17 @@ When completed (it took a little bit since there was quite a bit of history)
 
 [![image](images/image_thumb_25255B3_25255D1.png)](http://lh4.ggpht.com/-UbMJZtdz_uQ/UhIQgrDfbgI/AAAAAAAAPKs/eNAI14q4N54/s1600-h/image%25255B11%25255D.png)
 
-I had this** File Structure:**  
-**  
-**[![image](images/image_thumb_25255B4_25255D1.png)](http://lh3.ggpht.com/-Jrq_vlxhcWE/UhIQhj1WeaI/AAAAAAAAPK4/kQGrcyRMx8k/s1600-h/image%25255B14%25255D.png)
+I had this **File Structure:**  
+
+[![image](images/image_thumb_25255B4_25255D1.png)](http://lh3.ggpht.com/-Jrq_vlxhcWE/UhIQhj1WeaI/AAAAAAAAPK4/kQGrcyRMx8k/s1600-h/image%25255B14%25255D.png)
 
 and
 
 [![image](images/image_thumb_25255B5_25255D1.png)](http://lh6.ggpht.com/-vvg4PF13JTA/UhIQivLxRnI/AAAAAAAAPLI/qW8hd5xqASo/s1600-h/image%25255B17%25255D.png)
 
 This Git repo **Size:**  
-**  
-**[![image](images/image_thumb_25255B16_25255D1.png)](http://lh3.ggpht.com/-dIzdmliUtd4/UhIQkHOIqKI/AAAAAAAAPLc/8ECrcV5SG9Q/s1600-h/image%25255B50%25255D.png)
+  
+[![image](images/image_thumb_25255B16_25255D1.png)](http://lh3.ggpht.com/-dIzdmliUtd4/UhIQkHOIqKI/AAAAAAAAPLc/8ECrcV5SG9Q/s1600-h/image%25255B50%25255D.png)
 
 This Git **History:**
 
@@ -41,13 +41,13 @@ which goes back all the way to 2006!
 
 [![image](images/image_thumb_25255B7_25255D1.png)](http://lh6.ggpht.com/-vRO37k5HJvY/UhIQmgUVwKI/AAAAAAAAPL4/IFHEfjNSsg4/s1600-h/image%25255B23%25255D.png)
 
-These **Braches:**  
-**  
-**[![image](images/image_thumb_25255B9_25255D1.png)](http://lh4.ggpht.com/-lKjOPEe15iE/UhIQn0LCeoI/AAAAAAAAPMM/cT_Otd-R6Oo/s1600-h/image%25255B29%25255D.png)
+These **Braches:**
+
+[![image](images/image_thumb_25255B9_25255D1.png)](http://lh4.ggpht.com/-lKjOPEe15iE/UhIQn0LCeoI/AAAAAAAAPMM/cT_Otd-R6Oo/s1600-h/image%25255B29%25255D.png)
 
 Note that after the svn clone the current git **_master_** branch is the original svn **_truck._**  
-**_  
-_**But as we can see by the above list, there is already an **_webgoat-6.0_** branch going on (in fact most of the recent code updates are done there), so here is how we can create+checkout a git tracking branch for it:
+
+But as we can see by the above list, there is already an **_webgoat-6.0_** branch going on (in fact most of the recent code updates are done there), so here is how we can create+checkout a git tracking branch for it:
 
 [![image](images/image_thumb_25255B10_25255D1.png)](http://lh5.ggpht.com/-vAJRwcJIs3o/UhIQo4gHfmI/AAAAAAAAPMc/u9Puf6FBHLY/s1600-h/image%25255B32%25255D.png)
 
@@ -67,9 +67,9 @@ On the local repo add a remote:
 
 [![image](images/image_thumb_25255B14_25255D1.png)](http://lh6.ggpht.com/-0PRdmOC_CYY/UhIQtf9KkoI/AAAAAAAAPNc/ZxWhYDxN-b8/s1600-h/image%25255B44%25255D.png)
 
-... and**_ push --all _**  
-**_  
-_**[![image](images/image_thumb_25255B15_25255D1.png)](http://lh3.ggpht.com/-Nl4ZNwkVoXc/UhIQuRVLA2I/AAAAAAAAPNs/JgoA85x8wxM/s1600-h/image%25255B47%25255D.png)
+... and **_push --all_**
+
+[![image](images/image_thumb_25255B15_25255D1.png)](http://lh3.ggpht.com/-Nl4ZNwkVoXc/UhIQuRVLA2I/AAAAAAAAPNs/JgoA85x8wxM/s1600-h/image%25255B47%25255D.png)
 
 Once the upload completes:
 
@@ -80,8 +80,8 @@ Once the upload completes:
 [![image](images/image_thumb_25255B18_25255D1.png)](http://lh3.ggpht.com/-SXElH_FIeeI/UhIQwmP28qI/AAAAAAAAPOM/AS4tjVUIinE/s1600-h/image%25255B56%25255D.png)
 
 including the **webgoat-6.0 branch:**  
-**  
-**[![image](images/image_thumb_25255B19_25255D1.png)](http://lh4.ggpht.com/-PBB4g4pCx4M/UhIQxqnD-NI/AAAAAAAAPOc/oD3QsKIMgmE/s1600-h/image%25255B59%25255D.png)
+
+[![image](images/image_thumb_25255B19_25255D1.png)](http://lh4.ggpht.com/-PBB4g4pCx4M/UhIQxqnD-NI/AAAAAAAAPOc/oD3QsKIMgmE/s1600-h/image%25255B59%25255D.png)
 
 Finally I updated the OWASP WebGoat page to make references to this new GitHub repo:
 
