@@ -7,7 +7,7 @@ The book is still under development, so if you spot any issues or have recommend
 
 ## Book Sections
 
-See [Table of Contents](/Table_of_contents.md) for the full list of chapters
+See [Table of Contents](/Table_of_Contents.md) for the full list of chapters
 
 ## Code samples and snippets
 
