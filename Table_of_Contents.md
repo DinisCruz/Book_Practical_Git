@@ -10,9 +10,10 @@ This book as the following chapters (still to be mapped into sections)
 
 (need link back to this Table of Contents) 
 
-* [Using a Git Branch to fix a Bug.md](Using a Git Branch to fix a Bug)
-* [Using Git Branches to fix Issues added to TeamMentor's GitHub repository](Using Git Branches to fix Issues added to TeamMentor's GitHub repository.md)
-* [GitHub is having some probs today](GitHub is having some probs today.md)
-* [Git Flow - Moving patches from one Commit into another Commit](Git Flow - Moving patches from one Commit into another Commit.md)
+* [Using a Git Branch to fix a Bug.md](/manuscript/Using a Git Branch to fix a Bug.md)
+* [Using Git Branches to fix Issues added to TeamMentor's GitHub repository](/manuscript/Using Git Branches to fix Issues added to TeamMentor's GitHub repository.md)
+* [GitHub is having some probs today](/manuscript/GitHub is having some probs today.md)
+* [Git Flow - Moving patches from one Commit into another Commit](/manuscript/Git Flow - Moving patches from one Commit into another Commit.md)
+* [Creating a version TeamMentor which uses the new GitUserData.config file](/manuscript/Creating a version TeamMentor which uses the new GitUserData.config file.md)
 
 This is not the full list of chapters. See the [Book.txt](/manuscript/book.txt) file for the published chapters
