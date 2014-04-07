@@ -91,4 +91,14 @@ Just to confirm that all is ok, let's try renaming that file in GitHub:
 
 Where this technique will really show its power, is when we create **_*.aspx_** server-side pages, **_*.html_** client-side pages, **_*.ashx_** asp.net handlers  or **_*.cshtml_** Razor pages (these last ones will need to be placed inside a special **_TBot_** folder).
 
-I will show how this works in one of my next blog posts. 
+I will show how this works in one of my next blog posts.
+
+
+
+
+
+
+
+- - - 
+[Table of Contents](../Table_of_Contents.md)
+
