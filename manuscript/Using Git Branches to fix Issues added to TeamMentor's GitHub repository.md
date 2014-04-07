@@ -12,7 +12,7 @@ This is the currently workflow that I'm following when coding/fixing TeamMentor 
   * Push to GitHub
 
 **Lets look at this in action.**  
-****  
+
 Here is a simple issue to fix: [https://github.com/TeamMentor/Master/issues/389](https://github.com/TeamMentor/Master/issues/389)
 
 [![image](images/image_thumb_25255B1_25255D1.png)](http://lh4.ggpht.com/-9dFF2Pi1Uik/UVXNUil8GkI/AAAAAAAAAe4/nZaS3DpXfvU/s1600-h/image%25255B5%25255D.png)
