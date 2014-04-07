@@ -9,8 +9,8 @@ First step is to get the latest version of TeamMentor from GitHub, where we can 
 [![image](images/image_thumb1.png)](http://lh6.ggpht.com/-9UwscqzAAdA/UVHaM4VdvrI/AAAAAAAAATY/5e2h3yXcIn4/s1600-h/image%25255B2%25255D.png)
 
 Using the Zip file has an example, unzip the 10Mb file into a local folder, and click on **_start_TeamMentor.bat_**  
-**_  
-_**[![image](images/image_thumb_25255B1_25255D1.png)](http://lh6.ggpht.com/-OhU63WhoxMo/UVHaOOiAn8I/AAAAAAAAATo/UtLW-UEUdqA/s1600-h/image%25255B5%25255D.png)
+
+[![image](images/image_thumb_25255B1_25255D1.png)](http://lh6.ggpht.com/-OhU63WhoxMo/UVHaOOiAn8I/AAAAAAAAATo/UtLW-UEUdqA/s1600-h/image%25255B5%25255D.png)
 
 This will open an empty TM site, and a new Library_Data folder should had been created:
 
@@ -49,8 +49,8 @@ After the data is saved, go back to the commands list:
 [![image](images/image_thumb_25255B14_25255D1.png)](http://lh3.ggpht.com/-2dCJWTYLSFg/UVHaaqdbVmI/AAAAAAAAAV0/OU_c7BbJGOA/s1600-h/image%25255B44%25255D.png)
 
 Go to the **Reload Server Objects**  
-**  
-**[![image](images/image_thumb_25255B15_25255D1.png)](http://lh5.ggpht.com/-uec5SGbwpTw/UVHacQU6Z8I/AAAAAAAAAWI/8LTAIsm4KBU/s1600-h/image%25255B47%25255D.png)
+
+[![image](images/image_thumb_25255B15_25255D1.png)](http://lh5.ggpht.com/-uec5SGbwpTw/UVHacQU6Z8I/AAAAAAAAAWI/8LTAIsm4KBU/s1600-h/image%25255B47%25255D.png)
 
 And click on 'Reload UserData':
 
