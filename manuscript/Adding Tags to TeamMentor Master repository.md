@@ -2,8 +2,6 @@
 
 With 3.2 out, its time to add some [Git Tags](http://git-scm.com/book/en/Git-Basics-Tagging) to the main [TeamMentor/Master](https://github.com/TeamMentor/Master/) repository (which at the moment has none):  
   
-
-
 [![](images/CropperCapture_5B10_5D1.jpg)](http://1.bp.blogspot.com/-rHYfla9Q9Rc/UIvGminyqsI/AAAAAAAAA0U/8G6ycjL-Dyk/s1600/CropperCapture%5B10%5D.jpg)
 
   
@@ -16,13 +14,7 @@ Next we push that tag into GitHub using **$ git push tm_master v3.2**
 
 [![](images/CropperCapture_5B11_5D1.jpg)](http://2.bp.blogspot.com/-gEwgHdCj388/UIvHI5hSbXI/AAAAAAAAA0k/-mbbo6zWCq4/s1600/CropperCapture%5B11%5D.jpg)
 
-  
-
-
 And if we look back in GitHub's Tag page, we will see that our **v3.2 **tag is in there:
-
-  
-
 
 [![](images/CropperCapture_5B12_5D1.jpg)](http://4.bp.blogspot.com/-xxFkp25rlvM/UIvHgQQX9YI/AAAAAAAAA0s/yU5gufcHTFc/s1600/CropperCapture%5B12%5D.jpg)
 
@@ -42,9 +34,6 @@ We can use this ID value to create the 3.1 tag
 
 [![](images/CropperCapture_255B15_255D.jpg)](http://1.bp.blogspot.com/-95YJ09Ov3W0/UIvIpgIRI6I/AAAAAAAAA1E/TMQSilUKWJw/s1600/CropperCapture%255B15%255D.jpg)
 
-  
-
-
 [![](images/CropperCapture_255B16_255D.jpg)](http://1.bp.blogspot.com/-V53tIoskGpk/UIvIqayi0UI/AAAAAAAAA1I/Mzp4oK8YejE/s1600/CropperCapture%255B16%255D.jpg)
 
   
@@ -57,15 +46,16 @@ Which we use to create the 3.0 tag:
 
 [![](images/CropperCapture_255B19_255D.jpg)](http://1.bp.blogspot.com/-5mOeGVDE3r4/UIvJjyK4FSI/AAAAAAAAA1o/4v5cEqGYW7Y/s1600/CropperCapture%255B19%255D.jpg)
 
-  
-
-
 After pushing to GitHub, the Tag page looks like this:
-
-  
-
 
 [![](images/CropperCapture_255B20_255D.jpg)](http://4.bp.blogspot.com/-flasZE9Sqnw/UIvJkh7UKNI/AAAAAAAAA1w/VhEIWned38I/s1600/CropperCapture%255B20%255D.jpg)
 
-  
 What is really cool about these Git Tags is that they also provide a nice location to download a particular release :) 
+
+
+
+
+
+
+- - - 
+[Table of Contents](../Table_of_Contents.md)
