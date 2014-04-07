@@ -11,7 +11,7 @@ See [Table of Contents](/Table_of_Contents.md) for the full list of chapters
 
 ## Code samples and snippets
 
-All code samples and snippets are in the [Code](code) section
+All code samples and snippets are in the [Code](Code) section
 
 ## Issues and Discussion group
 
