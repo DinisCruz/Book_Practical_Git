@@ -18,7 +18,7 @@ This book as the following chapters (still to be mapped into sections)
 * [Fixing the Merge conflict caused by one extra commit on TeamMentor master](/manuscript/Fixing_the_Merge_conflict_caused_by_one_extra_commit_on_TeamMentor_master.md)
 * [Using Git Branches to fix Issues added to TeamMentor's GitHub repository](/manuscript/Using Git Branches to fix Issues added to TeamMentor's GitHub repository.md)
 * [Git Flow - Moving patches from one Commit into another Commit](/manuscript/Git Flow - Moving patches from one Commit into another Commit.md)
-* * [Creating a version TeamMentor which uses the new GitUserData.config file](/manuscript/Creating_a_version_TeamMentor_which_uses_the_new_GitUserData.config_file.md)
+* [Creating a version TeamMentor which uses the new GitUserData.config file](/manuscript/Creating_a_version_TeamMentor_which_uses_the_new_GitUserData.config_file.md)
 
 
 
