@@ -166,3 +166,10 @@ To delete a branch in Github, we do a push from an 'empty branch' into an 'exist
 In this case, if I wanted to delete the 3.4_Merge branch at the TeamMentor/Master repository, I would use: 
 
     $ git push git@github.com:TeamMentor/Master.git :3.4_Merge
+
+
+
+
+
+- - - 
+[Table of Contents](../Table_of_Contents.md)
