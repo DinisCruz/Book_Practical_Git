@@ -7,12 +7,12 @@ In practice this means that the [TeamMentor/Master](https://github.com/TeamMento
 [![image](images/image_thumb_25255B4_25255D1.png)](http://lh3.ggpht.com/-TwP_Fzl0AFk/UkwmmWqhxiI/AAAAAAAAQuE/oUlPVb-Xi7U/s1600-h/image%25255B14%25255D.png)
 
 ... with the master branch on the commit **fe26934d489e65660bd67be7811effcbccad1d19**  
-**  
-**[![image](images/image_thumb_25255B5_25255D1.png)](http://lh6.ggpht.com/-YTarBTx-0TY/Ukwmnffgm-I/AAAAAAAAQuU/D4wjyHW1-wA/s1600-h/image%25255B17%25255D.png) 
+
+[![image](images/image_thumb_25255B5_25255D1.png)](http://lh6.ggpht.com/-YTarBTx-0TY/Ukwmnffgm-I/AAAAAAAAQuU/D4wjyHW1-wA/s1600-h/image%25255B17%25255D.png) 
 
 .. .and the 3_3_3_Hotfix branch on commit **b97a470ffa173d67a9c74373593eea03eb7a2da4**  
-**  
-**[![image](images/image_thumb_25255B6_25255D1.png)](http://lh6.ggpht.com/-HSNVl1QGCBk/Ukwmonc_HvI/AAAAAAAAQug/bxV7DbmwEas/s1600-h/image%25255B20%25255D.png)
+
+[![image](images/image_thumb_25255B6_25255D1.png)](http://lh6.ggpht.com/-HSNVl1QGCBk/Ukwmonc_HvI/AAAAAAAAQug/bxV7DbmwEas/s1600-h/image%25255B20%25255D.png)
 
 But looking at the [TeamMentor/Dev](https://github.com/TeamMentor/Dev/) Graph
 
@@ -39,8 +39,8 @@ But if we look at that extra commit from [TeamMentor/Master](https://github.com/
 Note that GitHub will not allow a Pull Request to be made in cases like this, since GitHub has no online merge capabilities.
 
 **Ok, so how do we solve this?**  
-**  
-**The solution is to:  
+
+The solution is to:  
 
 
   1. create a local branch pointing to **b97a470ffa173d67a9c74373593eea03eb7a2da4**
@@ -53,18 +53,18 @@ Note that GitHub will not allow a Pull Request to be made in cases like this, si
 
   
 In a local clone of [TeamMentor/Dev](https://github.com/TeamMentor/Dev/)   we start by to create a branch that is pointing to **b97a470ffa173d67a9c74373593eea03eb7a2da4**   
-**  
-**This can be done using the command: **$ git checkout **b97a470ffa173d67a9c74373593eea03eb7a2da4** **  
-****  
-****[![image](images/image_thumb_25255B12_25255D1.png)](http://lh5.ggpht.com/-ZAwTGhwLErM/UkwmthpOiBI/AAAAAAAAQv0/NF8ob46Bxp8/s1600-h/image%25255B38%25255D.png)
+
+This can be done using the command: **$ git checkout **b97a470ffa173d67a9c74373593eea03eb7a2da4** **  
+
+[![image](images/image_thumb_25255B12_25255D1.png)](http://lh5.ggpht.com/-ZAwTGhwLErM/UkwmthpOiBI/AAAAAAAAQv0/NF8ob46Bxp8/s1600-h/image%25255B38%25255D.png)
 
 Followed by (as the help says) with: **$ git checkout -b 3.4_Merge**  
-**  
-**[![image](images/image_thumb_25255B15_25255D1.png)](http://lh5.ggpht.com/-at7Qaj-dnPY/UkwmutoqfCI/AAAAAAAAQwA/kPY0jFMyCRs/s1600-h/image%25255B47%25255D.png)
+
+[![image](images/image_thumb_25255B15_25255D1.png)](http://lh5.ggpht.com/-at7Qaj-dnPY/UkwmutoqfCI/AAAAAAAAQwA/kPY0jFMyCRs/s1600-h/image%25255B47%25255D.png)
 
 Next we do a pull from TeamMentor/Master using **$ git pull git@github.com:TeamMentor/Master.git master:3.4_Merge**  
-**  
-**[![image](images/image_thumb_25255B16_25255D1.png)](http://lh5.ggpht.com/-aGtQhK0S1ek/UkwmvqmeVOI/AAAAAAAAQwU/AcNR31rDmLs/s1600-h/image%25255B50%25255D.png)
+
+[![image](images/image_thumb_25255B16_25255D1.png)](http://lh5.ggpht.com/-aGtQhK0S1ek/UkwmvqmeVOI/AAAAAAAAQwU/AcNR31rDmLs/s1600-h/image%25255B50%25255D.png)
 
 The command above is basically saying:
 
@@ -73,15 +73,14 @@ _Go to the **git@github.com:TeamMentor/Master.git** repo and merge/add the commi
 Note how the line **_b97a470..fe26934  master     -> 3.4_Merge _**(from screenshot above) shows how we went form the **b97a470ffa173d67a9c74373593eea03eb7a2da4** commit to the **fe26934d489e65660bd67be7811effcbccad1d19 **commit
 
 Next we merge into the **_3.4_Merge_** branch, the contents of the **master** branch (which contains the 3.4 code) using: **$ git merge master**  
-**  
-**[![image](images/image_thumb_25255B17_25255D1.png)](http://lh3.ggpht.com/-eEZenJLIRBw/UkwmwnkgX4I/AAAAAAAAQwk/LZuZnygwK-E/s1600-h/image%25255B53%25255D.png)
+
+[![image](images/image_thumb_25255B17_25255D1.png)](http://lh3.ggpht.com/-eEZenJLIRBw/UkwmwnkgX4I/AAAAAAAAQwk/LZuZnygwK-E/s1600-h/image%25255B53%25255D.png)
 
 .... which predictably failed with a conflict on **_Settings.js_**  
-**_  
-_****  
-****Solving git conflicts**  
-**  
-**My preferred UI to solve conflicts is the one provided by TortoiseGit, which you can access from here:
+
+**Solving git conflicts**  
+
+My preferred UI to solve conflicts is the one provided by TortoiseGit, which you can access from here:
 
 [![image](images/image_thumb_25255B26_25255D1.png)](http://lh6.ggpht.com/-oQ2k-lH1aCU/UkwmyJlVtbI/AAAAAAAAQw0/7lphfLyWhzk/s1600-h/image%25255B57%25255D.png)
 
@@ -94,8 +93,8 @@ _****
 [![image](images/image_thumb_25255B28_25255D1.png)](http://lh4.ggpht.com/-1Af4X_UkhkI/Ukwm0QL-WDI/AAAAAAAAQxU/GmFTRoAVJxE/s1600-h/image%25255B63%25255D.png)
 
 ... chose the option to **_Use 'theirs' text block_**  
-**_  
-_**[![image](images/image_thumb_25255B33_25255D1.png)](http://lh4.ggpht.com/-CnPnrZW4iyU/Ukwm1nV1wcI/AAAAAAAAQxk/0XVYs1EkGt0/s1600-h/image%25255B67%25255D.png)
+
+[![image](images/image_thumb_25255B33_25255D1.png)](http://lh4.ggpht.com/-CnPnrZW4iyU/Ukwm1nV1wcI/AAAAAAAAQxk/0XVYs1EkGt0/s1600-h/image%25255B67%25255D.png)
 
 ... which will update the bottom pane with the fixed version of Settings.js (in this case with no changes from before)
 
@@ -161,9 +160,9 @@ Hopefully this provided a good example of how to use Git and TortoiseGit to easi
 
   
 **Tip: How to delete branches in GitHub:**  
-**  
-**To delete a branch in Github, we do a push from an 'empty branch' into an 'existing branch'
 
-In this case, if I wanted to delete the 3.4_Merge branch at the TeamMentor/Master repository, I would use: **$ git push **[**git@github.com:TeamMentor/Master.git**](mailto:git@github.com:TeamMentor/Master.git)** :3.4_Merge**  
-**  
-**[![image](images/image_thumb_25255B2_25255D1.png)](http://lh4.ggpht.com/-wlnIHqXh5aw/UkwnHB8jjAI/AAAAAAAAQ1k/qVEs9ILdl1c/s1600-h/image%25255B8%25255D.png)
+To delete a branch in Github, we do a push from an 'empty branch' into an 'existing branch'
+
+In this case, if I wanted to delete the 3.4_Merge branch at the TeamMentor/Master repository, I would use: 
+
+    $ git push git@github.com:TeamMentor/Master.git :3.4_Merge
