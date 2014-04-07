@@ -4,6 +4,7 @@ This book as the following chapters (still to be mapped into sections)
 
 * [Adding files to TeamMentor's web root via a UserData folder (synced with GitHub)](/manuscript/Adding files to TeamMentor's web root via a UserData folder (synced with GitHub).md)
 * [Approving a GitHub Pull Request Workflow](/manuscript/Approving a GitHub Pull Request Workflow.md)
+
 (need link back to this Table of Contents) 
 
 * [Using a Git Branch to fix a Bug](/manuscript/Using a Git Branch to fix a Bug.md)
