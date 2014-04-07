@@ -2,6 +2,10 @@
 
 In 2014, here are the changes made (per version):
 
+* **v0.12 (.. April)
+    * renamed number of files to have the name of the post (with spaces) and with MD extension
+    * added Table_of_Contents.md file
+    
 * **v0.10 (11th March)**
     * First release of book with raw import from blogger posts (no formatting or editing done)
     * Created Git repo on local dropbox sync folder
