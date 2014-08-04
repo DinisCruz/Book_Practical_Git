@@ -10,7 +10,7 @@ For example I was working last night on a CRSF fix for TeamMentor (more on that 
 [![](images/Screen_Shot_2012-10-04_at_14_56_56.png)](http://4.bp.blogspot.com/-3kpU9Glfl_M/UG2V3QJJ5KI/AAAAAAAAAJk/Oli1gnbYFg4/s1600/Screen+Shot+2012-10-04+at+14.56.56.png)
 
   
-As you can see by the Commits, I did a number of changes that where only pushed to the crst_test branch** ($ git push origin crst_test:crst_test**)** **and not be propagated to the main code base.
+As you can see by the Commits, I did a number of changes that where only pushed to the crst_test branch (**$ git push origin crst_test:crst_test**) and not be propagated to the main code base.
 
 Then then once I finally found the issue and fixed (see last commit), I went back to the the main branch (**$ git checkout master**) added my fixes, commit them and pushed them to the master branch (**$ git push origin master**).
 
