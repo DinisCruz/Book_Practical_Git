@@ -1,18 +1,18 @@
 1.Leanpub-book-originally-based-on-Blog-posts.md
 2.Change-log.md
 
-#october2012-2.txt
-#usingagitbranchtofixabug-2.txt
-#gitandgithubcommandstocreateanddeploynewversionofteammentor-2.txt
-#ideasyncbloggerpostswithagithubrepository-2.txt
-#approvingagithubpullrequestworkflow-2.txt
-#deployingteammentortoappharbornetcloudusinggitpush-2.txt
-#theneedtocreateforksclonesforteammentornetwebsite-2.txt
-#usinggitbranchestodealwiththemulticonfigvariationsofteammentor-2.txt
-#handlingcontentchangesmadeonhostedsitecreatedbygitclonewithautogitcommitsandpushes-2.txt
-#goingbackintimeusinggitscheckout-2.txt
-#addingtagstoteammentormasterrepository-2.txt
-#creatingthefinalteammentorwithsilibraryrepositoryviamultiplegitpullsandpushs-2.txt
+october2012.md
+1.Using-a-Git-Branch-to-fix-a-Bug.md
+2.Git-and-GitHub-commands-to-create-and-deploy-new-version-of-TeamMentor.md
+3.Idea-Sync-Blogger-Posts-with-a-GitHub-repository.md
+4.Approving-a-GitHub-Pull-Request-Workflow.md
+5.Deploying-TeamMentor-to-AppHarbor-(.NET-Cloud)-using-Git-push.md
+6.The-need-to-create-forks-clones-for-TeamMentor.net-website.md
+7.Using-Git-Branches-to-deal-with-the-multi-config-variations-of-TeamMentor.md
+8.Handling-content-changes-made-on-hosted-site-created-by-Git-clone.md
+9.Going-back-in-time-using-Git's-checkout.md
+10.Adding-Tags-to-TeamMentor-Master-repository.md
+11.Creating-the-final-TeamMentor-with-SI-Library-repository-via-multiple-Git-pulls-and-pushes.md
 
 #november2012-2.txt
 #prettycoolvisualisationofthegithubbasedteammentordevelopmentqareleaseworkflow-2.txt
