@@ -81,7 +81,7 @@ which becomes **_Active Deployment_** once it is completed:
 
 One of the nice hacks the Azure team did with their git implementation is to provide good messages/info in the git data sent back on pushes (the lines in dark-orange below where created by Azure):
 
-[![](images/creating-a-new-17.jpg)
+![](images/creating-a-new-17.jpg)
 
 Once the push in complete, we can browse the Azure site:
 

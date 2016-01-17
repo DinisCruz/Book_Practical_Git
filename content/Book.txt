@@ -33,9 +33,9 @@ march2013.md
 #GitHub.com-needs-to-improve-their-the-'Normal'-status-definition-and-error-reporting-dashboard.md
 #Another-GitHub-'Normal'-status-that-doesn't-allow-me-to-Push.md
 #Prob-with-(older-version-of)-NGit-where-it-was-failing-to-create-Git-repositories-in-Azure-TeamCity.md
-Creating-a-version-TeamMentor-which-uses-the-new-GitUserData.config-file.md
-Changing-the-'View-TM-article-by-anonymous-users'-status-via-GitHub.md
-Creating-a-new-TeamMentor-test-site-using-TeamCity,-GitHub-and-Azure.md
+#Creating-a-version-TeamMentor-which-uses-the-new-GitUserData.config-file.md
+#Changing-the-'View-TM-article-by-anonymous-users'-status-via-GitHub.md
+#Creating-a-new-TeamMentor-test-site-using-TeamCity,-GitHub-and-Azure.md
 Using-Git-Branches-to-fix-Issues-added-to-TeamMentor's-GitHub-repository.md
 Extracting-content-files-from-a-Azure-deployed-version-of-TeamMentor.md
 Using-NGit-to-create-native-Git-support-in-Azure-deployed-app-(with-automatic-pushes-and-pulls).md
