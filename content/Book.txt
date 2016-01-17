@@ -14,19 +14,19 @@
 #Adding-Tags-to-TeamMentor-Master-repository.md
 #Creating-the-final-TeamMentor-with-SI-Library-repository-via-multiple-Git-pulls-and-pushes.md
 
-november2012.md
+#november2012.md
 #Pretty-cool-visualization-of-GitHub-based-workflow.md
 
-december2012.md
+#december2012.md
 #Comparing-two-GitHub-Issues-List.md
 #Using-TeamCity-to-build-on-Git-Commit-deploy-to-AppHarbor-and-open-browser.md
 #Minimum-required-files-to-run-git.exe-on-windows-for-clone,-push-and-pull.md
 #Rewriting-Git-History-(locally-and-at-GitHub).md
 
-january2013.md
-GitHub-is-having-some-probs-today.md
-Dangerous-bug-between-Git,-GitHub-and-Windows.md
-Can-Git-be-used-instead-of-Word's-Track-Changes.md
+#january2013.md
+#GitHub-is-having-some-probs-today.md
+#Dangerous-bug-between-Git,-GitHub-and-Windows.md
+#Can-Git-be-used-instead-of-Word's-Track-Changes.md
 
 march2013.md
 Seeing-an-NGit-Diff-by-using-reflection-to-access-the-internal-Sharpen.ByteArrayOutputStream-Class.md
