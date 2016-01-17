@@ -14,14 +14,14 @@
 #Adding-Tags-to-TeamMentor-Master-repository.md
 #Creating-the-final-TeamMentor-with-SI-Library-repository-via-multiple-Git-pulls-and-pushes.md
 
-november2012-2.txt
-prettycoolvisualisationofthegithubbasedteammentordevelopmentqareleaseworkflow-2.txt
+november2012.txt
+Pretty-cool-visualization-of-GitHub-based-workflow.md
 
-#december2012-2.txt
-#comparingtwogithubissueslist-2.txt
-#usingteamcitytobuildongitcommitdeploytoappharborandopenbrowser-2.txt
-#minimumrequiredfilestorungitexeonwindowsforclonepushandpull-2.txt
-#rewitinggithistorylocallyandatgithub-2.txt
+december2012.txt
+Comparing-two-GitHub-Issues-List.md
+Using-TeamCity-to-build-on-Git-Commit-deploy-to-AppHarbor-and-open-browser.md
+Minimum-required-files-to-run-git.exe-on-windows-for-clone,-push-and-pull.md
+Rewriting-Git-History-(locally-and-at-GitHub).md
 
 #january2013-2.txt
 #githubishavingsomeprobstoday-2.txt

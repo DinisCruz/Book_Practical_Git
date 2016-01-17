@@ -1,4 +1,4 @@
-##  Comparing two GitHub Issues List 
+## Comparing two GitHub Issues List
 
 Is there a way to compare two GitHub Issues lists?
 
@@ -6,16 +6,12 @@ What I need is a programatic way to compare the items that exist in two GitHub r
 
 Recently we moved the TeamMentor issues/bug list into the public repository: [https://github.com/TeamMentor/Master/issues](https://github.com/TeamMentor/Master/issues)
 
-[![](images/Screen_shot_2012-12-05_at_03_42_09.png)](http://3.bp.blogspot.com/-Q5mhVYfLAvo/UL7CyAWAIcI/AAAAAAAAGLU/BHnNKumDlvQ/s1600/Screen+shot+2012-12-05+at+03.42.09.png)
+![](images/Screen_shot_2012-12-05_at_03_42_09.png)
 
-  
 Before (when started to use GitHub for TeamMentor development) we used the private repository [https://github.com/DinisCruz/TeamMentor-v3.0/issues](https://github.com/DinisCruz/TeamMentor-v3.0/issues)
 
-[![](images/Screen_shot_2012-12-05_at_03_44_09.png)](http://1.bp.blogspot.com/-yh3SaywXqsk/UL7DGicLryI/AAAAAAAAGLc/R2nvg99BwZA/s1600/Screen+shot+2012-12-05+at+03.44.09.png)
-
-  
-
+![](images/Screen_shot_2012-12-05_at_03_44_09.png)
 
 When we did the switch, we manually moved a number of issues into the new public repository, but I want to make sure we don't lose anything (since these issue's list are also our brain-dump of ideas for future releases)
 
-So, any tools or services that currently do this? 
+So, any tools or services that currently do this?
