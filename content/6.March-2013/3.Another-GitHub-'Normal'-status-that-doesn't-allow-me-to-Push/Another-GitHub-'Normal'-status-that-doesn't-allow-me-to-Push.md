@@ -1,19 +1,9 @@
 ## Another GitHub 'Normal' status that doesn't allow me to Push
 
 It took me 5 attempts over about 10m (from 7:40pm on 11th Mar 2013) to get a commit pushed into GitHub's servers:  
-  
-[![image](images/image_thumb1.png)](http://lh6.ggpht.com/-IYgixIp07GY/UT42KeXqehI/AAAAAAAAKac/VogExZqbgi8/s1600-h/image%25255B2%25255D.png)
+
+![](images/another-github-1.png)
 
 It looks like GitHub is having DDos probs, which is another reason why they need to improve they visibility into what is going on:
 
-[![image](images/image_thumb_25255B1_25255D1.png)](http://lh5.ggpht.com/-hmMK-foi1t4/UT42M1MTi3I/AAAAAAAAKao/Haqkm48xc3Y/s1600-h/image%25255B5%25255D.png)
-
-
-
-
-
-
-
-
-- - - 
-[Table of Contents](../Table_of_Contents.md)
+![](images/another-github-2.png)
