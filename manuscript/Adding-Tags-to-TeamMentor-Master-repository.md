@@ -2,7 +2,7 @@
 
 With 3.2 out, its time to add some [Git Tags](http://git-scm.com/book/en/Git-Basics-Tagging) to the main [TeamMentor/Master](https://github.com/TeamMentor/Master/) repository (which at the moment has none):  
 
-![](images/CropperCapture_5B10_5D1.jpg)
+![](images/adding-tags-1.jpg)
 
 In a local Git Bash of this repository, we can create a tag using **$ git tag -a v3.2  -m '3.2 Release'**
 
@@ -10,11 +10,11 @@ In a local Git Bash of this repository, we can create a tag using **$ git tag -a
 
 Next we push that tag into GitHub using **$ git push tm_master v3.2**
 
-![](images/CropperCapture_5B11_5D1.jpg)
+![](images/adding-tags-2.jpg)
 
 And if we look back in GitHub's Tag page, we will see that our **v3.2** tag is in there:
 
-![](images/CropperCapture_5B12_5D1.jpg)
+![](images/adding-tags-3.jpg)
 
 At the moment we are keeping track of the previous versions using Git Branches (but I think that tags will do a better job)
 

@@ -1,0 +1,18 @@
+##  Minimum required files to run git.exe on windows (for clone, push and pull)
+
+I want to add native Git support to TeamMentor (and O2) and don't want to ship the entire git folder structure that is installed with [msysgit](http://code.google.com/p/msysgit/)  
+
+I found the [minimal required files to just use git-clone](https://groups.google.com/forum/?fromgroups=#!topic/msysgit/BugV7r6eFyY) post that implies that the only files that are needed for a git clone are :
+
+  * git-clone.exe
+  * git-fetch-pack.exe
+  * git-index-pack.exe
+  * git.exe
+  * libcurl-4.dll
+  * libiconv2.dll
+
+Is this correct?
+
+What about for git pushes, pulls and commits?
+
+I'm sure I saw this on a tool I used the other day (which had git support), but I can't remember which one
