@@ -71,59 +71,60 @@ to the admin user that is in **_XmlDatabase\User_Data_** and not in the newly cr
 
 After logging in, open the **_Edit SecretData_** command:
 
-![](images/image_thumb_25255B20_25255D1.png)
+![](images/creating-version-17.png)
 
 Which should look like this (with correct values for the Rijndael and SMTP fields):
 
-![](images/creating-version-17.png)
+![](images/creating-version-18.png)
 
 The value that we want to change is the **_Libraries_Git_Repositories_**, which should point to the Git repo we want to add to this TM instance. In this case:
 
-![](images/creating-version-18.png)
+![](images/creating-version-19.png)
 
 Add the git url as an item in the **_Libraries_Git_Repositories_** Javascript array:
 
-![](images/creating-version-19.png)
+![](images/creating-version-20.png)
 
 After the data is saved, open the **_Reload Server Objects_** again:
 
-![](images/creating-version-20.png)
+![](images/creating-version-21.png)
 
 And this time around click on the **_Reload Cache_** button:
 
-![](images/image_thumb_25255B25_25255D.png)](http://lh6.ggpht.com/-178tHC3UzV0/UVHaooM2i8I/AAAAAAAAAYY/cRLvFO7DjVM/s1600-h/image%25255B77%25255D.png)
+![](images/creating-version-22.png)
 
-Once that is completed, if your open the **_XmlDatabase/TM_Libraries _**folder, you should see a new **_Vulnerabilities_** subfolder
+Once that is completed, if your open the **_XmlDatabase/TM_Libraries_** folder, you should see a new **_Vulnerabilities_** subfolder
 
-![](images/image_thumb_25255B26_25255D1.png)](http://lh3.ggpht.com/-59LmX993Xdk/UVHaqGl9-zI/AAAAAAAAAYo/WimikQswUfk/s1600-h/image%25255B80%25255D.png)
+![](images/creating-version-23.png)
 
 Which is in fact a git clone:
 
-![](images/image_thumb_25255B27_25255D1.png)](http://lh6.ggpht.com/-620t88PHr70/UVHarkleMlI/AAAAAAAAAY4/BWuzNyWUW2A/s1600-h/image%25255B83%25255D.png)
+![](images/creating-version-24.png)
 
-of the git repository configured on the **_Libraries_Git_Repositories _**value
+of the git repository configured on the **_Libraries_Git_Repositories_** value
 
-![](images/image_thumb_25255B28_25255D1.png)](http://lh6.ggpht.com/-oeAZugPNDkY/UVHatL98BEI/AAAAAAAAAZI/D3dyP1VpzgI/s1600-h/image%25255B86%25255D.png)
+![](images/creating-version-25.png)
 
 Quickly opening the main TM page, will now show the **_Vulnerabilities_** Library:
 
-![](images/image_thumb_25255B31_25255D1.png)](http://lh4.ggpht.com/-1dhVyQYi7U4/UVHauS3NoKI/AAAAAAAAAZY/GQLbJOvHFrc/s1600-h/image%25255B95%25255D.png)
+![](images/creating-version-26.png)
 
 Final step is to do manually commit the changes made to the **_User_Data_Git_Site_vulnerabilities.teammentor.net_** local repository (note: auto commit and push is disabled on the UserData when running TM from localhost)
 
-![](images/image_thumb_25255B29_25255D1.png)](http://lh4.ggpht.com/-Xy_syfVyNX4/UVHawNfeXyI/AAAAAAAAAZk/Tz4PrExu1o8/s1600-h/image%25255B89%25255D.png)
+![](images/creating-version-27.png)
 
 Which will put those updates in GitHub
 
-![](images/image_thumb_25255B30_25255D1.png)](http://lh5.ggpht.com/-23LySkmncOw/UVHaxhgxdZI/AAAAAAAAAZ4/6r6IDSlc2aQ/s1600-h/image%25255B92%25255D.png)
+![](images/creating-version-28.png)
 
 Now that we have this GitHub repository configured, we can configure the **_Git UserLocation_** of live QA server:
 
-![](images/image_thumb_25255B32_25255D1.png)](http://lh3.ggpht.com/---lZ_8uRy3Y/UVHay9jOiHI/AAAAAAAAAaI/metUyhPVtZA/s1600-h/image%25255B98%25255D.png)
+![](images/creating-version-29.png)
 
 And after reloading the cache:  
-![](images/image_thumb_25255B33_25255D1.png)](http://lh5.ggpht.com/-d33nP6-rZLg/UVHa0M0zyYI/AAAAAAAAAaY/rT4HA3E1vrg/s1600-h/image%25255B101%25255D.png)
+
+![](images/creating-version-30.png)
 
 The [https://tm-vulnerabilities.azurewebsites.net](https://tm-vulnerabilities.azurewebsites.net/) will now have the **_Lib_Vulnerabilities_** library
 
- ![](images/image_thumb_25255B34_25255D1.png)](http://lh6.ggpht.com/-eoQdsUIEReI/UVHa1bEv_8I/AAAAAAAAAao/N5uKmLWPYgs/s1600-h/image%25255B104%25255D.png)
+ ![](images/creating-version-31.png)
