@@ -2,7 +2,7 @@
 
 From the end of the [So if my blog account is compromised can I sue Google?](http://diniscruz.blogspot.co.uk/2012/10/so-if-my-blog-account-is-compromised.html) post comes an interesting WebService idea:
 
-**Sync Blogger posts with a GitHub repository **  
+**Sync Blogger posts with a GitHub repository**
 
 The idea is to backup the contents of a blogger account into a Git repository hosted by GitHub, which would give it version control and reusability.
 

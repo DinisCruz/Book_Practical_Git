@@ -62,7 +62,7 @@ After completion the target folder should look like this:
 
 ![](images/CropperCapture_5B10_5D.jpg)
 
-To quickly test TeamMentor, double click on_ 'start TeamMentor.bat'_
+To quickly test TeamMentor, double click on _'start TeamMentor.bat'_
 
 ![](images/CropperCapture_5B11_5D.jpg)
 

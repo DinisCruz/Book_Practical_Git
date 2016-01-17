@@ -14,14 +14,14 @@ c) there is a master version of the code+content (which is a 'virtual copy' of t
 
 d) there is a website that is based on the code + content version (i.e. [http://teammentor.net](http://teammentor.net/)) , BUT has a number of specific requirements.
 
-    * the content should not be publicly available (not TM default), ie require account creation
-    * specific SI requirements (see this list: [https://github.com/TeamMentor/Master/issues?milestone=3&page=1&state=open](https://github.com/TeamMentor/Master/issues?milestone=3&page=1&state=open))
+* the content should not be publicly available (not TM default), ie require account creation
+* specific SI requirements (see this list: [https://github.com/TeamMentor/Master/issues?milestone=3&page=1&state=open](https://github.com/TeamMentor/Master/issues?milestone=3&page=1&state=open))
 
 e) how to deal with changes to [http://teammentor.net](http://teammentor.net/) , that are only relevant to that site (i.e will not be propagated to the main Code+Content repo)
 
-   * interestingly in the case of TeamMentor.net site, (at least at the moment), the only changes will be on the Code (where the content is the same as the one in  [https://github.com/TeamMentor/Library_SI](https://github.com/TeamMentor/Library_SI))
+* interestingly in the case of TeamMentor.net site, (at least at the moment), the only changes will be on the Code (where the content is the same as the one in  [https://github.com/TeamMentor/Library_SI](https://github.com/TeamMentor/Library_SI))
 
-   * but I can see how as our content generation capabilities improves (and we start to have fresh and 'current/recent-events' articles)  we might want to push those into [teammentor.net](http://teammentor.net/) (since they will be the best advertisement for TM that we could ever get)
+* but I can see how as our content generation capabilities improves (and we start to have fresh and 'current/recent-events' articles)  we might want to push those into [teammentor.net](http://teammentor.net/) (since they will be the best advertisement for TM that we could ever get)
 
 f) since [teammentor.net](http://teammentor.net/) is a 'read-only' website, there is also an argument (from a security point of view) that that site should not have the advanced editing capabilities that TeamMentor has (this is also a feature that I can see customers wanting)
 
