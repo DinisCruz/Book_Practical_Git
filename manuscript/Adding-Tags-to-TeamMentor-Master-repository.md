@@ -42,4 +42,4 @@ After pushing to GitHub, the Tag page looks like this:
 
 ![](images/CropperCapture_255B20_255D.jpg)
 
-What is really cool about these Git Tags is that they also provide a nice location to download a particular release :) 
+What is really cool about these Git Tags is that they also provide a nice location to download a particular release :)

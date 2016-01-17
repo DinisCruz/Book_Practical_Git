@@ -4,8 +4,8 @@
 october2012.md
 Using-a-Git-Branch-to-fix-a-Bug.md
 Git-and-GitHub-commands-to-create-and-deploy-new-version-of-TeamMentor.md
-3.Idea-Sync-Blogger-Posts-with-a-GitHub-repository.md
-4.Approving-a-GitHub-Pull-Request-Workflow.md
+Idea-Sync-Blogger-Posts-with-a-GitHub-repository.md
+Approving-a-GitHub-Pull-Request-Workflow.md
 5.Deploying-TeamMentor-to-AppHarbor-(.NET-Cloud)-using-Git-push.md
 6.The-need-to-create-forks-clones-for-TeamMentor.net-website.md
 7.Using-Git-Branches-to-deal-with-the-multi-config-variations-of-TeamMentor.md
