@@ -106,7 +106,6 @@ Creates the local repository on a local folder.
 ![](images/prob-with-older-4.png)
 
 {lang="csharp"}  
-
     var runTime = "Sharpen.dll".assembly().type("Runtime");  
     var properties = (Hashtable)runTime.invokeStatic("GetProperties");  
     "There are {0} properties".debug(properties.size());  

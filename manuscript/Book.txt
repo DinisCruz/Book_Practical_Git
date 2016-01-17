@@ -29,10 +29,10 @@
 #Can-Git-be-used-instead-of-Word's-Track-Changes.md
 
 march2013.md
-Seeing-an-NGit-Diff-by-using-reflection-to-access-the-internal-Sharpen.ByteArrayOutputStream-Class.md
-GitHub.com-needs-to-improve-their-the-'Normal'-status-definition-and-error-reporting-dashboard.md
-Another-GitHub-'Normal'-status-that-doesn't-allow-me-to-Push.md
-Prob-with-(older-version-of)-NGit-where-it-was-failing-to-create-Git-repositories-in-Azure-TeamCity.md
+#Seeing-an-NGit-Diff-by-using-reflection-to-access-the-internal-Sharpen.ByteArrayOutputStream-Class.md
+#GitHub.com-needs-to-improve-their-the-'Normal'-status-definition-and-error-reporting-dashboard.md
+#Another-GitHub-'Normal'-status-that-doesn't-allow-me-to-Push.md
+#Prob-with-(older-version-of)-NGit-where-it-was-failing-to-create-Git-repositories-in-Azure-TeamCity.md
 Creating-a-version-TeamMentor-which-uses-the-new-GitUserData.config-file.md
 Changing-the-'View-TM-article-by-anonymous-users'-status-via-GitHub.md
 Creating-a-new-TeamMentor-test-site-using-TeamCity,-GitHub-and-Azure.md
