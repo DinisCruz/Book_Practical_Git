@@ -1,4 +1,4 @@
-##  Another GitHub 'Normal' status that doesn't allow me to Push 
+## Another GitHub 'Normal' status that doesn't allow me to Push
 
 It took me 5 attempts over about 10m (from 7:40pm on 11th Mar 2013) to get a commit pushed into GitHub's servers:  
   

@@ -1,0 +1,131 @@
+## Extracting content files from a Azure deployed version of TeamMentor (pre 3.3 git support), starting with a failed SFTP attemp and ending with a CSharp REPL script
+
+I was asked by Serge to retrieve some changes he made to a test version of TM hosted in Azure.
+
+This site was hosted at [https://tm-hashes.azurewebsites.net](https://tm-hashes.azurewebsites.net/) and since this was a version before the built-in Git Support (where git TM Libraries are natively supported by TM), the only way to get the files was to copy them from the live server.
+
+So my first attempt was to use SFTP (which Azure supports) to connect directly to the web root.
+
+To get the STFP address, I went into Azure's control panel for the tm-hashes site:
+
+[![image](images/image_thumb1.png)](http://lh3.ggpht.com/-mhjwsAgUOY8/UVXgM2Wew9I/AAAAAAAAAiA/W1K61HuFL8c/s1600-h/image%25255B2%25255D.png)
+
+Copied the SFTP address and opened it in local windows explorer (which will require login into the **_tm-hashes\tmci_** account):
+
+[![image](images/image_thumb_25255B1_25255D1.png)](http://lh5.ggpht.com/--1oxMyV7ZPM/UVXgN6b8qyI/AAAAAAAAAiQ/qe4Exe27UsM/s1600-h/image%25255B5%25255D.png)
+
+Navigated to the site's webroot (which are the deployed files)
+
+[![image](images/image_thumb_25255B2_25255D1.png)](http://lh5.ggpht.com/-EvogZiWenb8/UVXgO7RQRmI/AAAAAAAAAig/2rwXs04JTxg/s1600-h/image%25255B8%25255D.png)
+
+Then into TM's **_Library_Data _**folder, which is located inside the **_App_Data _**folder (because this is the main location where this site's IIS account has 'write privileges')
+
+[![image](images/image_thumb_25255B3_25255D1.png)](http://lh5.ggpht.com/-dCPlPDP2v0k/UVXgQNrzBOI/AAAAAAAAAiw/sIw41SQCogs/s1600-h/image%25255B11%25255D.png)
+
+In there we can find the **_XmlDatabase\TM_Libraries_** folder which contains all libraries currently loaded in this server
+
+[![image](images/image_thumb_25255B4_25255D1.png)](http://lh6.ggpht.com/-zZBvF4NiYXs/UVXgRWk7soI/AAAAAAAAAjA/LbTuERDdxp4/s1600-h/image%25255B14%25255D.png)
+
+Back in my local VM, I have clone of the target git repository ([https://github.com/TMContent/Lib_Hashes](https://github.com/TMContent/Lib_Hashes)):
+
+[![image](images/image_thumb_25255B5_25255D1.png)](http://lh5.ggpht.com/-akE_bPBVT0U/UVXgSogV-xI/AAAAAAAAAjQ/2TUvVw1Co4k/s1600-h/image%25255B17%25255D.png)
+
+into which I'm going to copy the folders from the SFTP live site:
+
+[![image](images/image_thumb_25255B16_25255D1.png)](http://lh6.ggpht.com/-Mqkwes1bFOk/UVXgUNbUunI/AAAAAAAAAjg/XOJBpivJzKE/s1600-h/image%25255B24%25255D.png)
+
+After some time of starting the drop ....
+
+[![image](images/image_thumb_25255B20_25255D1.png)](http://lh3.ggpht.com/-hIzS-a4a8hI/UVXgVCvJt2I/AAAAAAAAAjw/od1HucJslyI/s1600-h/image%25255B30%25255D.png)
+
+.... I confirm the overwrite
+
+[![image](images/image_thumb_25255B17_25255D1.png)](http://lh3.ggpht.com/-kWpfgT675uw/UVXgWKiZytI/AAAAAAAAAkA/y5StIGFrrkw/s1600-h/image%25255B27%25255D.png)
+
+.... and it looks like it will take 1 hour
+
+[![image](images/image_thumb_25255B21_25255D1.png)](http://lh5.ggpht.com/-u-aVLEQwH94/UVXgXt3laZI/AAAAAAAAAkQ/hhlAiyIV8qk/s1600-h/image%25255B33%25255D.png)
+
+or maybe 6 hours :
+
+[![image](images/image_thumb_25255B22_25255D1.png)](http://lh5.ggpht.com/-txCWEnCClAg/UVXgY31ohpI/AAAAAAAAAkg/MaGKwjKYd6M/s1600-h/image%25255B36%25255D.png)
+
+After 38m of copying it is now down to 3h
+
+[![image](images/image_thumb_25255B23_25255D1.png)](http://lh6.ggpht.com/-UEIS13OgQPE/UVXgat1e3yI/AAAAAAAAAkw/XrDx3djN-gQ/s1600-h/image%25255B39%25255D.png)
+
+hummm..... F&*^!!    (after 1h and a bit of copying)
+
+[![image](images/image_thumb_25255B24_25255D1.png)](http://lh5.ggpht.com/-BjVrNMEA3VQ/UVXgb6iQoQI/AAAAAAAAAlA/ztq7BGIk0xI/s1600-h/image%25255B42%25255D.png)
+
+That kinda sucks
+
+I think I need to try a different approach :)
+
+**Time to open up the C# REPL included in TM:**
+
+[![image](images/image_thumb_25255B25_25255D1.png)](http://lh4.ggpht.com/-BycsD1LBXRU/UVXgc8Krp3I/AAAAAAAAAlQ/_fyD3jCOqhs/s1600-h/image%25255B45%25255D.png)
+
+Get the path to the Xml Libraries folder:
+
+[![image](images/image_thumb_25255B31_25255D1.png)](http://lh3.ggpht.com/-Z69OLMnEcu4/UVXgdwsmN5I/AAAAAAAAAlg/b_DHl9UjQJQ/s1600-h/image%25255B63%25255D.png)
+
+Confirm that the folders we want are in there:
+
+[![image](images/image_thumb_25255B32_25255D1.png)](http://lh5.ggpht.com/-E_zmVxn2CXM/UVXgezcMOeI/AAAAAAAAAlw/EfnesB3ZkJE/s1600-h/image%25255B66%25255D.png)
+
+Lets first try to zip the forth library:
+
+[![image](images/image_thumb_25255B34_25255D1.png)](http://lh5.ggpht.com/-Ph13k2ceXes/UVXggGmLW7I/AAAAAAAAAmA/XDAyBoJhCwY/s1600-h/image%25255B72%25255D.png)
+
+Which is the Android one:
+
+[![image](images/image_thumb_25255B35_25255D1.png)](http://lh4.ggpht.com/-JuI_WQ2bzVQ/UVXgg8a7KbI/AAAAAAAAAmQ/1kBxE70nAq0/s1600-h/image%25255B75%25255D.png)
+
+After the script shown above executes, a quick look at the ftp site shows the expected Android.zip in there:
+
+[![image](images/image_thumb_25255B36_25255D1.png)](http://lh6.ggpht.com/-1I1ECk7F-es/UVXgiU8fFfI/AAAAAAAAAmg/Yja6WBG45oU/s1600-h/image%25255B78%25255D.png)
+
+Which contains the files we want to get:
+
+[![image](images/image_thumb_25255B37_25255D1.png)](http://lh6.ggpht.com/-R9ZjQsiZ6Dw/UVXgjotSo1I/AAAAAAAAAmw/-dJGcyRC4M0/s1600-h/image%25255B81%25255D.png)
+
+Next lets do the zip of the entire Libraries folder:
+
+[![image](images/image_thumb_25255B38_25255D1.png)](http://lh4.ggpht.com/-pp3Hoz-5Mak/UVXgkoagK0I/AAAAAAAAAnA/CP1BHkyDr18/s1600-h/image%25255B84%25255D.png)
+
+It takes about 1m to create the 11Mb file
+
+[![image](images/image_thumb_25255B39_25255D.png)](http://lh4.ggpht.com/-oRpSUmY_SnY/UVXgmCc2iNI/AAAAAAAAAnQ/yjKsRvPzmgw/s1600-h/image%25255B87%25255D.png)
+
+Which can now be copied locally
+
+[![image](images/image_thumb_25255B43_25255D.png)](http://lh3.ggpht.com/-a4UNiVT4z6I/UVXgnAO5CTI/AAAAAAAAAng/aPcatGEUTYI/s1600-h/image%25255B95%25255D.png)
+
+...note how this is much faster than the multiple hours wait we experienced above:
+
+[![image](images/image_thumb_25255B46_25255D.png)](http://lh5.ggpht.com/-81p-YAaErdc/UVXgonhJZxI/AAAAAAAAAnw/4HzK14LXXB4/s1600-h/image%25255B98%25255D.png)
+
+Once the zip file is downloaded:
+
+[![image](images/image_thumb_25255B47_25255D.png)](http://lh6.ggpht.com/-UC3zHDPBJhM/UVXgp2mpz3I/AAAAAAAAAoA/VwUosXSS57g/s1600-h/image%25255B101%25255D.png)
+
+I unziped the files into the Lib_Hashes folder:
+
+[![image](images/image_thumb_25255B48_25255D.png)](http://lh4.ggpht.com/-PirDmUrCpAE/UVXgq3trKLI/AAAAAAAAAoQ/G2J_6r2Nbrc/s1600-h/image%25255B104%25255D.png)
+
+Choosing to overwrite the existing files:
+
+[![image](images/image_thumb_25255B56_25255D.png)](http://lh6.ggpht.com/-m1S4OU0vZIA/UVXgsX5PGmI/AAAAAAAAAog/0th9TQ-IaJ0/s1600-h/image%25255B109%25255D.png)
+
+After the copy, Git will pick up the changed files:
+
+[![image](images/image_thumb_25255B57_25255D.png)](http://lh5.ggpht.com/-RifGNeE_zDw/UVXgtqNtnZI/AAAAAAAAAow/bHy-XMCta2c/s1600-h/image%25255B112%25255D.png)
+
+Which we can commit:
+
+[![image](images/image_thumb_25255B58_25255D.png)](http://lh4.ggpht.com/-iSfVgpXehUY/UVXgu0dnB8I/AAAAAAAAApA/UMLkYUKBHmQ/s1600-h/image%25255B115%25255D.png)
+
+And push to GitHub:
+
+[![image](images/image_thumb_25255B60_25255D.png)](http://lh6.ggpht.com/-MgxEIwRzO0o/UVXgvxB1noI/AAAAAAAAApQ/eP1NJqALjto/s1600-h/image%25255B119%25255D.png)

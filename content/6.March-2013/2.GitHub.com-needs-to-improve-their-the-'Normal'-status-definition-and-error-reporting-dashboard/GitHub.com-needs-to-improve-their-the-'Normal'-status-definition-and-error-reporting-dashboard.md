@@ -1,0 +1,17 @@
+## GitHub.com needs to improve their the 'Normal' status definition and error reporting dashboard
+
+At the moment (i.e. when I wrote this post), all should be 'Normal' with GitHub, since according [to their status](https://status.github.com/), their world looks like this:   
+  
+[![image](images/image_thumb_25255B2_25255D1.png)](http://lh3.ggpht.com/-L89qZceAA-o/UTjc6zEnX9I/AAAAAAAAKNE/Xz1H-tum0a8/s1600-h/image%25255B4%25255D.png) [![image](images/image_thumb_25255B5_25255D1.png)](http://lh5.ggpht.com/-438Ms2AjkOU/UTjc8XCLgtI/AAAAAAAAKNU/g7lUk_UndOk/s1600-h/image%25255B9%25255D.png) \
+
+But to me here, a simple/small git push took about 5 minutes of retries:
+
+[![image](images/image_thumb_25255B6_25255D1.png)](http://lh3.ggpht.com/-qPKliCE8uTo/UTjc-aaZj4I/AAAAAAAAKNk/eAX4KCPCWXw/s1600-h/image%25255B12%25255D.png)
+
+which doesn't look 'Normal' to me!
+
+I think **GitHub.com needs to improve their  the 'Normal' status definition and error reporting dashboard**
+
+Note that yesterday was the same thing.
+
+Something weird is going on in GitHub's land 

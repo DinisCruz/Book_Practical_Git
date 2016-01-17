@@ -1,4 +1,4 @@
-##  Seeing an NGit Diff by using reflection to access the internal Sharpen.ByteArrayOutputStream Class 
+## Seeing an NGit Diff by using reflection to access the internal Sharpen.ByteArrayOutputStream Class
 
 I was trying to get the NGif diff output stream, but hit on an issue that the **_Sharpen.ByteArrayOutputStream_** class is internal
 

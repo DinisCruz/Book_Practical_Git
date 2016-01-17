@@ -1,4 +1,4 @@
-##  GitHub.com needs to improve their the 'Normal' status definition and error reporting dashboard 
+## GitHub.com needs to improve their the 'Normal' status definition and error reporting dashboard
 
 At the moment (i.e. when I wrote this post), all should be 'Normal' with GitHub, since according [to their status](https://status.github.com/), their world looks like this:   
   

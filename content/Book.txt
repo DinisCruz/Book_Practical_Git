@@ -23,22 +23,22 @@ december2012.md
 #Minimum-required-files-to-run-git.exe-on-windows-for-clone,-push-and-pull.md
 #Rewriting-Git-History-(locally-and-at-GitHub).md
 
-january2013-2.md
+january2013.md
 GitHub-is-having-some-probs-today.md
 Dangerous-bug-between-Git,-GitHub-and-Windows.md
 Can-Git-be-used-instead-of-Word's-Track-Changes.md
 
-#march2013-2.txt
-#seeinganngitdiffbyusingreflectiontoaccesstheinternalsharpenbytearrayoutputstreamclass-2.txt
-#githubcomneedstoimprovetheirthenormalstatusdefinitionanderrorreportingdashboard-2.txt
-#anothergithubnormalstatusthatdoesntallowmetopush-2.txt
-#probwitholderversionofngitwhereitwasfailingtocreategitrepositoriesinazureteamcity-2.txt
-#creatinganewteammentortestsiteusingteamcitygithubandazure-2.txt
-#changingtheviewtmarticlebyanonymoususersstatusviagithub-2.txt
-#creatingaversionteammentorwhichusesthenewgituserdataconfigfile-2.txt
-#usinggitbranchestofixissuesaddedtoteammentorsgithubrepository-2.txt
-#extractingcontentfilesfromaazuredeployedversionofteammentorpre33gitsupportstartingwithafailedsftpattempandendingwithacsharpreplscript-2.txt
-#usingngittocreatenativegitsupportinazuredeployedappwithautomaticpushesandpulls-2.txt
+march2013.md
+Seeing-an-NGit-Diff-by-using-reflection-to-access-the-internal-Sharpen.ByteArrayOutputStream-Class.md
+GitHub.com-needs-to-improve-their-the-'Normal'-status-definition-and-error-reporting-dashboard.md
+Another-GitHub-'Normal'-status-that-doesn't-allow-me-to-Push.md
+Prob-with-(older-version-of)-NGit-where-it-was-failing-to-create-Git-repositories-in-Azure-TeamCity.md
+Creating-a-version-TeamMentor-which-uses-the-new-GitUserData.config-file.md
+Changing-the-'View-TM-article-by-anonymous-users'-status-via-GitHub.md
+Creating-a-new-TeamMentor-test-site-using-TeamCity,-GitHub-and-Azure.md
+Using-Git-Branches-to-fix-Issues-added-to-TeamMentor's-GitHub-repository.md
+Extracting-content-files-from-a-Azure-deployed-version-of-TeamMentor.md
+Using-NGit-to-create-native-Git-support-in-Azure-deployed-app-(with-automatic-pushes-and-pulls).md
 
 #april2013-2.txt
 #gitpullingateammentorlibraryandrenamingit-2.txt

@@ -1,4 +1,4 @@
-##  Using Git Branches to fix Issues added to TeamMentor's GitHub repository 
+## Using Git Branches to fix Issues added to TeamMentor's GitHub repository
 
 This is the currently workflow that I'm following when coding/fixing TeamMentor Issues added to the [TeamMentor/Master/Issues](https://github.com/TeamMentor/Master/issues) list.  
 

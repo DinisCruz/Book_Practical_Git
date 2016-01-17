@@ -1,4 +1,4 @@
-##  Prob with (older version of) NGit where it was failing to create Git repositories in Azure/TeamCity 
+## Prob with (older version of) NGit where it was failing to create Git repositories in Azure/TeamCity
 
 Using an NGit version from a couple months ago.  
 

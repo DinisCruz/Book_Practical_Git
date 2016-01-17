@@ -1,4 +1,4 @@
-##  Extracting content files from a Azure deployed version of TeamMentor (pre 3.3 git support), starting with a failed SFTP attemp and ending with a CSharp REPL script 
+## Extracting content files from a Azure deployed version of TeamMentor (pre 3.3 git support), starting with a failed SFTP attemp and ending with a CSharp REPL script
 
 I was asked by Serge to retrieve some changes he made to a test version of TM hosted in Azure.
 

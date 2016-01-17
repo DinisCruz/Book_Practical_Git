@@ -1,4 +1,4 @@
-##  Creating a version TeamMentor which uses the new GitUserData.config file 
+## Creating a version TeamMentor which uses the new GitUserData.config file
 
 Introduced in the 3.3 version of TM is a new feature to load the UserData repository from an external location (GitHub or local folder).
 

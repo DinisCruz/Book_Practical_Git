@@ -1,4 +1,4 @@
-##  Using NGit to create native Git support in Azure deployed app (with automatic pushes and pulls) 
+## Using NGit to create native Git support in Azure deployed app (with automatic pushes and pulls)
 
 This entry will show a pretty powerful new feature in [TeamMentor](http://teammentor.net/) (TM) which I'm very proud and excited about!
 

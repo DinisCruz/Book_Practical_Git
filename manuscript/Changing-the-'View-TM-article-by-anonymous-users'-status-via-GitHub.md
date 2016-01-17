@@ -1,4 +1,4 @@
-##  Changing the 'View TM article by anonymous users' status via GitHub 
+## Changing the 'View TM article by anonymous users' status via GitHub 
 
 From the 3.3. release of TeamMentor (TM) it is now possible to change configuration settings of live servers directly from GitHub.
 

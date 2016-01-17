@@ -1,4 +1,4 @@
-##  Creating a new TeamMentor test site using TeamCity, GitHub and Azure 
+## Creating a new TeamMentor test site using TeamCity, GitHub and Azure
 
 Serge just asked me to create a new TeamMentor (TM) website for him using a particular TM library, so here are the steps I took (note: some of this will be automated in the next TM release)  
   
