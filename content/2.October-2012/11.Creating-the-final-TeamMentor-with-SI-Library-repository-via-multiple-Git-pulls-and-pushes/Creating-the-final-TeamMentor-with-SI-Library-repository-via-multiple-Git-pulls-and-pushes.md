@@ -12,12 +12,11 @@ This is the scenario at the start:
 
 For background information on the current TeamMentor git architecture, take a look at:  
 
-* [Git and GitHub commands to create and deploy new version of TeamMentor](http://diniscruz.blogspot.co.uk/2012/10/git-and-github-commands-to-create-and.html) (this explains the subtree merge strategy, which is the reason why the multiple **git pull **used below actually work)
+* [Git and GitHub commands to create and deploy new version of TeamMentor](http://diniscruz.blogspot.co.uk/2012/10/git-and-github-commands-to-create-and.html) (this explains the subtree merge strategy, which is the reason why the multiple **git pull** used below actually work)
 * [New GitHub structure for the multiple TeamMentor development and deployment scenarios](http://diniscruz.blogspot.co.uk/2012/10/new-github-structure-for-multiple.html)  
 * [The need to create forks/clones for TeamMentor.net website](http://diniscruz.blogspot.co.uk/2012/10/the-need-to-create-forksclones-for.html)
 
-It all starts with a pull request from Roman the last content changes to be added to **_Library_SI_**  
-
+It all starts with a pull request from Roman the last content changes to be added to **_Library_SI_**
 ![](images/CropperCapture_5B21_5D1.jpg)
 
 Which I opened
@@ -84,7 +83,7 @@ A quick look at git shows how these multiple commits are being nicely merged tog
 
 ![](images/CropperCapture_5B40_5D.jpg)
 
-Finally lets do a git pull on the **_Library_SI _**(tm_library remote)
+Finally lets do a git pull on the **_Library_SI_** (tm_library remote)
 
 ![](images/CropperCapture_5B41_5D.jpg)
 
