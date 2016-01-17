@@ -1,5 +1,5 @@
-1.Leanpub-book-originally-based-on-Blog-posts.md
-2.Change-log.md
+#1.Leanpub-book-originally-based-on-Blog-posts.md
+#2.Change-log.md
 
 october2012.md
 1.Using-a-Git-Branch-to-fix-a-Bug.md
