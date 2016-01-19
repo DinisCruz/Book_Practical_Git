@@ -10,18 +10,18 @@ In a nutshell, we need to re-apply Michael's bug fixes to an earlier commit than
 
 To start, here is what Michael's branches look like at the moment (note that all have the **38bfcd54d8046372c0ace2409324ecc965761504** commit as parent):
 
-![](images/image_thumb_25255B8_25255D1.png)
+![](images/git-flow-moving-1.png)
 
 Here is the commit (**38bfcd54d8046372c0ace2409324ecc965761504)** that we want to have as the parent, since this is the commit that is currently on the 3.3.3. release (and will be the basis for the 3.4 release of TeamMentor):
 
-![](images/image_thumb_25255B9_25255D1.png)
+![](images/git-flow-moving-2.png)
 
 Basically, what we need to do is to 'just' backport the branches linked to **38bfcd54d8046372c0ace2409324ecc965761504** commit,  into the  _b97a470ffa173d67a9c74373593eea03eb7a2da_ commit  
 Note: since this post was getting quite long, I moved some workflows into Appendixes (included below) so that the key actions/changes can be read in sequence.
 
 Using the workflow described in the **_Appendix 1) Creating patches from Michael's branches_** here are the patches to apply (i.e. these are all changes from the branches currently available in Michael's dev repository):
 
-![](images/image_thumb_25255B33_25255D1.png)
+![](images/git-flow-moving-3.png)
 
 After:
 
@@ -34,15 +34,15 @@ After:
 
 ...we get the following TeamMentor/Dev '_not merged branches'_:
 
-![](images/image_thumb_25255B92_25255D.png)
+![](images/git-flow-moving-4.png)
 
 After the pull requests are made into a new 3.4_Release branch (see **_Appendix 5) Creating a 3.4_Release Feature branch_** for more details) we have 5 Issues/branches applied (and ready for QA):
 
-![](images/image_thumb_25255B108_25255D.png)
+![](images/git-flow-moving-5.png)
 
 Here is the graph view, with **_TeamMentor/Dev_** master (blue line below):
 
-![](images/image_thumb_25255B111_25255D.png)
+![](images/git-flow-moving-6.png)
 
 .... now being the parent of the **_Issue_142, Issue_51, Issue_400, Issue_475_** and **_Issue_459_** branches:
 
@@ -62,82 +62,82 @@ That said, it took me orders-of-magnitude more time to write this blog post, tha
 
 To create the patches, I grabbed a fresh clone of Michael's dev repo (which is a fork of TeamMentor/Dev)
 
-![](images/image_thumb1.png)
+![](images/git-flow-moving-7.png)
 
 Then, on a git bash of this repository, I created a new branch that pointed to the current  
 **_38bfcd54d8046372c0ace2409324ecc965761504_** commit, using the commands: **_$ git checkout 38bfcd54d8046372c0ace2409324ecc965761504 _** and **_$ git checkout -b Patch_Parent_**  
 
-![](images/image_thumb_25255B16_25255D1.png)
+![](images/git-flow-moving-8.png)
 
 The reason I picked the **_38bfcd54d8046372c0ace2409324ecc965761504_** commit is because this is the commit that all Michael's current branches are based on:
 
-![](images/image_thumb_25255B15_25255D1.png)
+![](images/git-flow-moving-9.png)
 
 Using the **$ git branch -a** command, we can see that this local repository/clone already contains the branches we need:
 
-![](images/image_thumb_25255B11_25255D1.png)
+![](images/git-flow-moving-10.png)
 
 Let's start with a simple one, for example the changes on [Issue 534](https://github.com/TeamMentor/Master/issues/534):
 
-![](images/image_thumb_25255B13_25255D1.png)
+![](images/git-flow-moving-11.png)
 
 whose changes are on branch **_Issue_534_**  
 
-![](images/image_thumb_25255B12_25255D1.png)
+![](images/git-flow-moving-12.png)
 
 In order to create the patch, I created a local tracking branch using the command **_$ git checkout -b Issue_534 remotes/origin/Issue_534_**  
 
-![](images/image_thumb_25255B20_25255D1.png)
+![](images/git-flow-moving-13.png)
 
 I then created a patch using **_$ git format-patch Patch_Parent_**  
 
-![](images/image_thumb_25255B21_25255D1.png)
+![](images/git-flow-moving-14.png)
 
 ...which created the file **_0001-Fixing-Issue_534.patch_**:
 
-![](images/image_thumb_25255B23_25255D1.png)
+![](images/git-flow-moving-15.png)
 
 ... containing these changes:
 
-![](images/image_thumb_25255B24_25255D1.png)
+![](images/git-flow-moving-16.png)
 
 ...the these ones:
 
-![](images/image_thumb_25255B25_25255D1.png)
+![](images/git-flow-moving-17.png)
 
 Note: the reason the patch is about 1Mb is because Michael (on this branch) also committed a bunch of \*.dlls which should not be there.
 
 One more little thing, since we are going to create a number of these patch files, it is better to put them on a dedicated folder. This can can be done using the command: **_$ git format-patch Patch_Parent -o ../_3.4_Patches_**  
 
-![](images/image_thumb_25255B26_25255D1.png)
+![](images/git-flow-moving-18.png)
 
 ... with the _'patch file'_ now being placed on the folder:
 
-![](images/image_thumb_25255B27_25255D1.png)
+![](images/git-flow-moving-19.png)
 
 Here is the same process for Issue_565:
 
-![](images/image_thumb_25255B28_25255D1.png)
+![](images/git-flow-moving-20.png)
 
 ... with the patch created in:
 
-![](images/image_thumb_25255B29_25255D1.png)
+![](images/git-flow-moving-21.png)
 
 We can also create the patches without creating a tracking branch. For example here is how to create a patch for the code at the Issue_51 branch:
 
-![](images/image_thumb_25255B30_25255D1.png)
+![](images/git-flow-moving-22.png)
 
 Note that the _0001-Fixing-Issue-51.patch_ file is much smaller (3k) then the others
 
-![](images/image_thumb_25255B31_25255D1.png)
+![](images/git-flow-moving-23.png)
 
 This is caused by this patch only containing text diffs (and no binaries), which is how all patches should be:
 
-![](images/image_thumb_25255B32_25255D1.png)
+![](images/git-flow-moving-24.png)
 
 Finally here are all the patch files created (containing all commits made by Michael's branches):
 
-![](images/image_thumb_25255B33_25255D1.png)
+![](images/git-flow-moving-25.png)
 
 **Appendix 2) Creating a 3.3.3 tag and branch in the _TeamMentor/Dev_ repository**  
 
@@ -145,50 +145,50 @@ In order to be able to apply the changes into the _TeamMentor/Master _master bra
 
 Since **_b97a470ffa173d67a9c74373593eea03eb7a2da4_**  is the last commit in **_TeamMentor/Master_** that also exists in **TeamMentor/Dev**, we are we are going to use as the parent for the patches/branches to apply:
 
-![](images/image_thumb_25255B4_25255D1.png)
+![](images/git-flow-moving-26.png)
 
 To do so, I started by opening up my local dev repo (currently in sync with the latest commit to Dev) , and executed **_$ git checkout b97a470ffa173d67a9c74373593eea03eb7a2da4_**   
 
-![](images/image_thumb_25255B3_25255D1.png)
+![](images/git-flow-moving-27.png)
 
 I then created a tracking branch (called 3.3.3_Release) and added a tag (called v3.3.3), using the commands: **_$ git checkout -b 3.3.3_Release_** and **_$ git tag -a v3.3.3  -m '3.3.3_ Release'**  
 
-![](images/image_thumb_25255B5_25255D1.png)
+![](images/git-flow-moving-18.png)
 
 I then pushed the _**3.3.3_Release**_ branch and **_v3.3.3_** tag into the **_TeamMentor/Dev_** repository, using the commands: **_$ git push dev 3.3.3_Release:3.3.3_Release_** and **_$ git push dev v3.3.3_**  
 
-![](images/image_thumb_25255B6_25255D1.png)
+![](images/git-flow-moving-29.png)
 
 Following these commands (and without the pushes that will happen next) we can see the **_3.3.3_Release_** tag in **_TeamMentor/Dev_** network graph  
 
-![](images/image_thumb_25255B1_25255D1.png)
+![](images/git-flow-moving-30.png)
 
 
 **Appendix 3) Applying patches**  
 
 We are now going to apply the patches files (previously created), into the 3.3.3_Release branch of the current local clone of **_TeamMentor/Dev_**
 
-![](images/image_thumb_25255B36_25255D1.png)
+![](images/git-flow-moving-31.png)
 
 Starting with the **_0001-Fixing-Issue_142.patch_** which is a simple change:
 
-![](images/image_thumb_25255B38_25255D1.png)
+![](images/git-flow-moving-32.png)
 
 To get a preview of what will change when we apply a patch, we can use the command: **_$ git apply --stat ../_3.4_Patches/0001-Fixing-Issue_142.patch_**  
 
-![](images/image_thumb_25255B39_25255D1.png)
+![](images/git-flow-moving-33.png)
 
 To see if we are going to have any errors when applying a patch, we can use the  command: **$ git apply --check ../_3.4_Patches/0001-Fixing-Issue_142.patch**  
 
-![](images/image_thumb_25255B41_25255D1.png)
+![](images/git-flow-moving-34.png)
 
 In this case, the fact that we saw no messages on the **---check** command (shown above), means that we can merge this patch file ok:
 
-![](images/image_thumb_25255B42_25255D1.png)
+![](images/git-flow-moving-35.png)
 
 ... in this case the change was applied on top of our current branch code (with no commit added)
 
-![](images/image_thumb_25255B43_25255D1.png)
+![](images/git-flow-moving-36.png)
 
 But that has the problem that there was no commit made (just the files changed on disk).
 
@@ -196,39 +196,39 @@ Since we want to preserve the original commit we, will need to can use another c
 
 First lets reset the current change:
 
-![](images/image_thumb_25255B49_25255D.png)
+![](images/git-flow-moving-37.png)
 
 ... and before we apply the **0001-Fixing-Issue_142.patch**, lets create the Issue_142 branch, using the command **git checkout --b Issue_142**  
 
-![](images/image_thumb_25255B53_25255D1.png)
+![](images/git-flow-moving-38.png)
 
 Now lets apply the patch this using the command: **_$ git am --signoff < ../_3.4_Patches/0001-Fixing-Issue_142.patch_**  
 
-![](images/image_thumb_25255B54_25255D1.png)
+![](images/git-flow-moving-39.png)
 
 ...which will add a commit containing the original commit message and author:
 
-![](images/image_thumb_25255B55_25255D1.png)
+![](images/git-flow-moving-40.png)
 
 Next we push this branch into TeamMentor/Dev
 
-![](images/image_thumb_25255B57_25255D1.png)
+![](images/git-flow-moving-41.png)
 
 And confirm that the Issue_142 changes are in the correct location (i.e with the **_b97a470ffa173d67a9c74373593eea03eb7a2da4_**  commit as its parent):
 
-![](images/image_thumb_25255B58_25255D1.png)
+![](images/git-flow-moving-42.png)
 
 Note how the light blue line is connected from the **_b97a470ffa173d67a9c74373593eea03eb7a2da4_**  commit (see above) into the newly pushed **5319e3028da01c64d09409b833c4f33bc49b7208** commit (see below)
 
-![](images/image_thumb_25255B59_25255D1.png)
+![](images/git-flow-moving-43.png)
 
 ... which is the current head of the **Issue_142** branch
 
-![](images/image_thumb_25255B60_25255D1.png)
+![](images/git-flow-moving-44.png)
 
 The next image shows how we can use GitHub's UI to create/view the pull request for this branch:
 
-![](images/image_thumb_25255B61_25255D1.png)
+![](images/git-flow-moving-45.png)
 
 Note how in the screenshot above the **_Issue_142_** branch is 129x commit behind master.
 
@@ -238,7 +238,7 @@ See **_Appendix 5) Creating a 3.4_Release Feature branch and merging branches_**
 
 After mapping the current master commit into a new the 3.5_Release branch and doing a force reset to the master branch, we get the **_Issue_142_** branch correctly set-up with 1x commits ahead and 0x commits behind the master branch:
 
-![](images/image_thumb_25255B87_25255D.png)
+![](images/git-flow-moving-46.png)
 
 With TeamMentor/Dev master branch in the correct location, lets apply more patches into it:
 
@@ -248,23 +248,23 @@ For example Issue 51, using the commands:
 **$ git checkout -b Issue_51** (create patch branch)  
 **$ git am --signoff < ../_3.4_Patches/0001-Fixing-Issue-51.patch**  (apply patch and preserve original commit)  **$ git push dev Issue_51:Issue_51** (push branch into GitHub)
 
-![](images/image_thumb_25255B89_25255D.png)
+![](images/git-flow-moving-47.png)
 
 This makes the **_Issue_51_** branch to also be 1x ahead and 0x behind commits of the master branch:
 
-![](images/image_thumb_25255B90_25255D.png)
+![](images/git-flow-moving-48.png)
 
 With this workflow in place, I quickly did the same workflow for the branches: **Issue_384 , Issue_400 , Issue_475** and **Issue_459**  
 
 At the moment we have these branches to merge (_Appendix 5) Creating a 3.4_Release Feature branch and merging branches_ will show them in action):
 
-![](images/image_thumb_25255B91_25255D.png)
+![](images/git-flow-moving-49.png)
 
 Note that there were numerous patches (534, 565, 193, 285, 461, 517, 504, 527,462 and 445) that didn't merge correctly.
 
 For example this is what happened for the **0001-Fixing-Issue-565.patch** when executing the command **$ git apply --check ../_3.4_Patches/0001-Fixing-Issue-565.patch**  
 
-![](images/image_thumb_25255B37_25255D1.png)
+![](images/git-flow-moving-50.png)
 
 These will need to be handled separately (which is a topic for another blog post, since this one is already getting a bit long :) )
 
@@ -274,62 +274,61 @@ In order to make the current **_TeamMentor/Dev_** match the **_TeamMentor/Master
 
 First step is to move into the current master using the command **_$ git checkout master_**  
 
-![](images/image_thumb_25255B63_25255D.png)
+![](images/git-flow-moving-51.png)
 
 Then we create the 3.5_Release feature branch using the command **_$ git checkout --b 3.5_Release_**  
 
-![](images/image_thumb_25255B64_25255D1.png)
+![](images/git-flow-moving-52.png)
 
 Next we push this branch into **_TeamMentor/Dev_**
 
-![](images/image_thumb_25255B65_25255D1.png)
+![](images/git-flow-moving-53.png)
 
 At this moment, in the GitHub repo, **TeamMentor/Dev**'s master and 3.5_Release point to the same commit (**16354b3ec1757f56f0ee1594de3c72bb506f6537**):
 
-![](images/image_thumb_25255B67_25255D1.png)
+![](images/git-flow-moving-54.png)
 
 Now comes the sledgehammer :)
 
 We're going to (first locally) do a hard reset into the **b97a470ffa173d67a9c74373593eea03eb7a2da4** commit, using the command **$ git reset --hard b97a470ffa173d67a9c74373593eea03eb7a2da4** (remember that this commit is the common one between _TeamMentor/Master_ and _TeamMentor/Dev_)
 
-![](images/image_thumb_25255B68_25255D1.png)
+![](images/git-flow-moving-55.png)
 
 After this hard reset, the **_TeamMentor/Dev_** master is aligned with the 3.3.3_Release branch and v3.3.3 tag (previously created)
 
-![](images/image_thumb_25255B69_25255D1.png)
+![](images/git-flow-moving-56.png)
 
 We can also double check this, by using the command **_$ git gui_**  
 
-![](images/image_thumb_25255B71_25255D.png)
+![](images/git-flow-moving-57.png)
 
 ... followed by the **_Visualize all Branch History_** menu option:
 
-![](images/image_thumb_25255B80_25255D.png)
+![](images/git-flow-moving-58.png)
 
 ...and see that the Issue_142 branch is now a child of the current **_TeamMentor/Dev_** master (which is in sync with the TeamMentor/Master master)
 
-![](images/image_thumb_25255B70_25255D1.png)
+![](images/git-flow-moving-59.png)
 
 Finally we are ready to apply the sledgehammer to the repository hosted at GitHub, by forcing a push using the command **_$ git push --f dev master:master_**  
 
-![](images/image_thumb_25255B81_25255D.png)
+![](images/git-flow-moving-60.png)
 
 Which makes the TeamMentor/Master look like this:
 
-![](images/image_thumb_25255B83_25255D.png)
+![](images/git-flow-moving-61.png)
 
 ... with the **Issue_142** branch having the master/3.3.3_Release branch as parent (see rouge/brown line)
 
-![](images/image_thumb_25255B84_25255D.png)
+![](images/git-flow-moving-62.png)
 
 ... and the 3.5_Release branch containing the commits that ware previously in the master branch (see yellow line)
 
-![](images/image_thumb_25255B85_25255D.png)
+![](images/git-flow-moving-63.png)
 
 Finally a look at the current branches in **_TeamMentor/Dev_** shows that the **Issue_142** is correctly 1x commit ahead and 0x behind the master branch (which means that it is ready for a pull request)
 
-
-![](images/image_thumb_25255B87_25255D.png)
+![](images/git-flow-moving-64.png)
 
 **Appendix 5) Creating a 3.4_Release Feature branch and merging branches**  
 
