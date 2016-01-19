@@ -38,11 +38,11 @@ Add a folder called **_WebRoot_Files_**:
 
 ![](images/creating-qa-8.png)
 
-Add a folder called **__Customizations_** (inside the **_WebRoot_Files_**)
+Add a folder called **_Customizations** (inside the **WebRoot_Files**)
 
 ![](images/creating-qa-9.png)
 
-Add a JavaScript file called **_TM_Custom_Settings.js_** inside the **__Customizations_** folder:
+Add a JavaScript file called **_TM_Custom_Settings.js_** inside the **_Customizations** folder:
 
 ![](images/creating-qa-10.png)
 

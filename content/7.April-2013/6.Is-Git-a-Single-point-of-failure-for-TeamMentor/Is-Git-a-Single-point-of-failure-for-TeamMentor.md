@@ -6,15 +6,15 @@ _"is it possible for Git to be a single point of failure for TM? If Git went dow
 
 The short answer is **"NO, in fact Git is a distributed point of success for TM"**  
 
-Let's start with the differences between **_Git _** and **_GitHub_**.
+Let's start with the differences between **Git** and **_GitHub_**.
 
-Think of **_Git_** as a **_'file-based database of multiple versions of a particular file, with one version shown in the file system',_** i.e. 'Git' is the **_.git_** folder and a checkout version of the files (in the file system)
+Think of **Git** as a **_'file-based database of multiple versions of a particular file, with one version shown in the file system',_** i.e. 'Git' is the **.git** folder and a checkout version of the files (in the file system)
 
-Think of **_GitHub_** as a **_'web based location to store and share the .git folder'_**  
+Think of **GitHub** as a **'web based location to store and share the .git folder'**  
 
-This means that a **_Git_** repository doesn't go '_down or offline'_. A Git repository is just a **_.git_** folder, and if you wanted to remove **_Git _**from a particular folder/repository, you could just delete that **_.git_** folder (and you would be left with the latest '_checked-out version of the files'_)
+This means that a **Git** repository doesn't go '_down or offline'_. A Git repository is just a **.git** folder, and if you wanted to remove **Git **from a particular folder/repository, you could just delete that .git** folder (and you would be left with the latest '_checked-out version of the files'_)
 
-In terms of **_GitHub_** going down, there are two main scenarios:
+In terms of **GitHub** going down, there are two main scenarios:
 
 **1) _GitHub_ loses the _.git_ folders that it hosts** (i.e. it loses the git repositories) - this would be a pain, but as long as there is one clone of those repositories, there shouldn't be much/anything lost. This is why I say that '**_Git has distributed points of success'_**, basically, every clone or fork that exists, is in effect a backup of the code (there are a couple things like remote information that is not cloned, but those are minor)
 

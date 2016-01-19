@@ -40,16 +40,16 @@
 #Extracting-content-files-from-a-Azure-deployed-version-of-TeamMentor.md
 #Using-NGit-to-create-native-Git-support-in-Azure-deployed-app-(with-automatic-pushes-and-pulls).md
 
-april2013.md
-Git-pulling-a-TeamMentor-Library-and-renaming-it.md
-Creating-QA-versions-of-TeamMentor-UserData-repository.md
-Changing-a-User's-ExpiryDate-from-GitHub-hosted-file.md
-Linus-gift-to-the-world-will-be-Git-not-Linux.md
-What-the-move-from-HTML-to-WikiText-looks-like-(in-GitHub).md
-Is-Git-a-Single-point-of-failure-for-TeamMentor.md
-Setting-up-Ian's-CI-Development-Environment.md
+#april2013.md
+#Git-pulling-a-TeamMentor-Library-and-renaming-it.md
+#Creating-QA-versions-of-TeamMentor-UserData-repository.md
+#Changing-a-User's-ExpiryDate-from-GitHub-hosted-file.md
+#Linus-gift-to-the-world-will-be-Git-not-Linux.md
+#What-the-move-from-HTML-to-WikiText-looks-like-(in-GitHub).md
+#Is-Git-a-Single-point-of-failure-for-TeamMentor.md
+#Setting-up-Ian's-CI-Development-Environment.md
 
-#may2013.md
+may2013.md
 Example-of-two-TeamMentor-sites-using-the-same-GitHub-Content-Library.md
 AzureGate-how-Azure-subscription-upgrade-crazy-mode.md
 Great-presentation-on-Git-Branching-(very-similar-to-the-model-we-are-using-in-TeamMentor).md
