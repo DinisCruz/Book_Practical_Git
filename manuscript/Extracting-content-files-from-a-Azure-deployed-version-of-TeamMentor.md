@@ -9,6 +9,7 @@ So my first attempt was to use SFTP (which Azure supports) to connect directly t
 To get the STFP address, I went into Azure's control panel for the tm-hashes site:
 
 ![](images/extracting-content-1.png)
+
 Copied the SFTP address and opened it in local windows explorer (which will require login into the **_tm-hashes\tmci_** account):
 
 ![](images/extracting-content-2.png)
