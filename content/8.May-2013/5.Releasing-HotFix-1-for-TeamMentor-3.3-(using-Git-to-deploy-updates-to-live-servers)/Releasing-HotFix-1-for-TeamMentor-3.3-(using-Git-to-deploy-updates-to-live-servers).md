@@ -34,7 +34,6 @@ Just to make sure all is good:
 
 ![](images/Screen_Shot_2013-05-21_at_18_14_34.png)
 
-
 **6) I then opened TBot's user management page** (for my user)
 
 ![](images/Screen_Shot_2013-05-21_at_18_15_14.png)
