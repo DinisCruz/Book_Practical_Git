@@ -28,7 +28,7 @@
 #Dangerous-bug-between-Git,-GitHub-and-Windows.md
 #Can-Git-be-used-instead-of-Word's-Track-Changes.md
 
-march2013.md
+#march2013.md
 #Seeing-an-NGit-Diff-by-using-reflection-to-access-the-internal-Sharpen.ByteArrayOutputStream-Class.md
 #GitHub.com-needs-to-improve-their-the-'Normal'-status-definition-and-error-reporting-dashboard.md
 #Another-GitHub-'Normal'-status-that-doesn't-allow-me-to-Push.md
@@ -36,53 +36,53 @@ march2013.md
 #Creating-a-version-TeamMentor-which-uses-the-new-GitUserData.config-file.md
 #Changing-the-'View-TM-article-by-anonymous-users'-status-via-GitHub.md
 #Creating-a-new-TeamMentor-test-site-using-TeamCity,-GitHub-and-Azure.md
-Using-Git-Branches-to-fix-Issues-added-to-TeamMentor's-GitHub-repository.md
-Extracting-content-files-from-a-Azure-deployed-version-of-TeamMentor.md
-Using-NGit-to-create-native-Git-support-in-Azure-deployed-app-(with-automatic-pushes-and-pulls).md
+#Using-Git-Branches-to-fix-Issues-added-to-TeamMentor's-GitHub-repository.md
+#Extracting-content-files-from-a-Azure-deployed-version-of-TeamMentor.md
+#Using-NGit-to-create-native-Git-support-in-Azure-deployed-app-(with-automatic-pushes-and-pulls).md
 
-#april2013-2.txt
-#gitpullingateammentorlibraryandrenamingit-2.txt
-#creatingqaversionsofteammentoruserdatarepositoryandusingbranchestoshowtestthemultipleconfigoptions-2.txt
-#changingausersexpirydatefromgithubhostedfile-2.txt
-#linusgifttotheworldwillbegitnotlinuxandwhataboutanosbuiltontopofanhashdrivenfilesystem-2.txt
-#whatthemovefromhtmltowikitextlookslikeingithub-2.txt
-#isgitasinglepointoffailureforteammentor-2.txt
-#settingupianscidevelopmentenvironmentforteammentor-2.txt
+april2013.md
+Git-pulling-a-TeamMentor-Library-and-renaming-it.md
+Creating-QA-versions-of-TeamMentor-UserData-repository.md
+Changing-a-User's-ExpiryDate-from-GitHub-hosted-file.md
+Linus-gift-to-the-world-will-be-Git-not-Linux.md
+What-the-move-from-HTML-to-WikiText-looks-like-(in-GitHub).md
+Is-Git-a-Single-point-of-failure-for-TeamMentor.md
+Setting-up-Ian's-CI-Development-Environment.md
 
-#may2013-2.txt
-#exampleoftwoteammentorsitesusingthesamegithubcontentlibrary-2.txt
-#azuregatehowazuressubscriptionupgradecrazymodecausedustostopusingazureforvmhostingandgitgithubsavedtheday-2.txt
-#greatpresentationongitbranchingverysimilartothemodelweareusinginteammentor-2.txt
-#fixingbugintbotusereditorviagitmergeoffixdevelopedonanotherreposbranch-2.txt
-#releasinghotfix1forteammentor33usinggittodeployupdatestoliveservers-2.txt
-#greatpostgitwhocaresaboutbranchesitsallaboutcollaborationandcodereviews-2.txt
-#creatingo2platformcomwebsiteusinggithubpageswithscreenshotsofalldesignoptions-2.txt
+#may2013.md
+Example-of-two-TeamMentor-sites-using-the-same-GitHub-Content-Library.md
+AzureGate-how-Azure-subscription-upgrade-crazy-mode.md
+Great-presentation-on-Git-Branching-(very-similar-to-the-model-we-are-using-in-TeamMentor).md
+Fixing-bug-in-TBot-user-editor-via-Git-merge-of-fix-developed-on-another-repo's-branch.md
+Releasing-HotFix-1-for-TeamMentor-3.3-(using-Git-to-deploy-updates-to-live-servers).md
+Great-post-Git-Who-cares-about-branches-Its-all-about-collaboration-and-code-reviews.md
+Creating-o2platform.com-website-using-GitHub-Pages-(with-screenshots-of-all-design-options).md
 
-#june2013-2.txt
-#creatingteammentorrelease33232versionwithhotfix2-2.txt
-#fixingacouplebugsandpushingnewteammentor34devversionfrom4to5-2.txt
-#gourcevisualisationofteammentorgitdevelopment18monthsin180seconds-2.txt
+#june2013.md
+Creating-TeamMentor-release-3.3.2-(3.2-version-with-HotFix-2).md
+Fixing-a-couple-bugs-and-pushing-new-TeamMentor-3.4-Dev-Version-(from-4-to-5).md
+Gource-Visualisation-of-TeamMentor-Git-Development---18-Months-in-180-Seconds.md
 
-#august2013-2.txt
-#creatingacloneofwebgoatongithub-2.md
+#august2013.md
+Creating-a-clone-of-WebGoat-on-GitHub.md
 
-#september2013-2.txt
-#gitflowmovingpatchesfromonecommitintoanothercommit-2.txt
-#exampleofusinggithubpullrequeststomergechangesmadeonbranches-2.txt
-#scripttogitclone13repositoriesinordertohaveallteammentorlibrariesinonefolder-2.txt
+#september2013.md
+Git-Flow---Moving-patches-from-one-Commit-into-another-Commit.md
+Example-of-using-GitHub-Pull-Requests-to-merge-changes-made-on-Branches.md
+Script-to-Git-Clone-13-repositories-in-order-to-have-all-TeamMentor-Libraries-in-one-folder.md
 
-#october2013-2.txt
-#fixingthemergeconflictcausedbyoneextracommitonteammentormaster-2.txt
-#enablinggithubtwofactorauthentication-2.txt
-#syncingallreleasestothesamecommitandtagforteammentorv34-2.txt
+#october2013.md
+Fixing-the-Merge-conflict-caused-by-one-extra-commit-on-TeamMentor-master.md
+Enabling-GitHub-Two-Factor-Authentication.md
+Syncing-all-releases-to-the-same-commit-and-Tag-(for-TeamMentor-v3.4).md
 
-#january2014-2.txt
-#howtoupdateaforkedgithubrepointhiscasetmsmelibvulnerabilities-2.txt
-#updatingthegithubreposforthe160releaseoftheeclipsefortifyplugin-2.txt
-#updatinggithubforkswithlatestcommitsfromgithubsparentrepo-2.txt
-#usingteammentor34tbotadminpagestoloadandsyncalibraryhostedongithub-2.txt
-#usingteammentor34tbotadminpagestoloadandsyncuserdatawithagithubhostedrepo-2.txt
-#addingfilestoteammentorswebrootviaauserdatafoldersyncedwithgithub-2.md
+#january2014.md
+How-to-update-a-forked-GitHub-repo-(in-this-case-tm-sme-Lib_Vulnerabilities).md
+Updating-the-GitHub-repos-for-the-1.6.0-release-of-the-Eclipse-Fortify-Plugin.md
+Updating-GitHub-Forks-with-latest-commits-from-GitHub's-'parent'-repo.md
+Using-TeamMentor-3.4-TBot-admin-pages-to-load-and-sync-a-Library-hosted-on-GitHub.md
+Using-TeamMentor-3.4-TBot-admin-pages-to-load-and-sync-UserData-with-a-GitHub-hosted-repo.md
+Adding-files-to-TeamMentor's-web-root-via-a-UserData-folder-(synced-with-GitHub).md
 
 #february2014-2.txt
-#revertingchangesmadestoteammentorarticles-2.txt
+Reverting-changes-mades-to-TeamMentor-articles.md
