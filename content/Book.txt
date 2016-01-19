@@ -53,7 +53,7 @@ may2013.md
 Example-of-two-TeamMentor-sites-using-the-same-GitHub-Content-Library.md
 AzureGate-how-Azure-subscription-upgrade-crazy-mode.md
 Great-presentation-on-Git-Branching-(very-similar-to-the-model-we-are-using-in-TeamMentor).md
-Fixing-bug-in-TBot-user-editor-via-Git-merge-of-fix-developed-on-another-repo's-branch.md
+Fixing-bug-in-TBot-user-editor-via-Git-merge-of-fix-developed-on-another-repo-branch.md
 Releasing-HotFix-1-for-TeamMentor-3.3-(using-Git-to-deploy-updates-to-live-servers).md
 Great-post-Git-Who-cares-about-branches-Its-all-about-collaboration-and-code-reviews.md
 Creating-o2platform.com-website-using-GitHub-Pages-(with-screenshots-of-all-design-options).md

@@ -49,7 +49,7 @@ A quick look at the server logs confirms that a git pull took place:
 
 ![](images/example-of-two-8.png)
 
-And the [https://tm4tm.teammentor.net**/article/Code_Example](https://tm4tm.teammentor.net/article/Code_Example)  is now updated with the latest content:
+And the [https://tm4tm.teammentor.net/article/Code_Example](https://tm4tm.teammentor.net/article/Code_Example)  is now updated with the latest content:
 
 ![](images/example-of-two-9.png)
 
