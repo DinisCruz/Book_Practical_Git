@@ -10,7 +10,7 @@ Then I reviewed the code from Ian's branch I want to merge:
 
 ![](images/fixing-bug-tbot-2.png)
 
-When happy with the changes, I used a **_ git fetch_** to get the latest version of Ian's fork of **_TeamMentor/Dev_**
+When happy with the changes, I used a **_git fetch** to get the latest version of Ian's fork of **_TeamMentor/Dev_**
 
 ![](images/fixing-bug-tbot-3.png)
 
@@ -44,8 +44,7 @@ changed the expiration date:
 
 Saved it
 
-
-![](images/image_thumb_25255B11_25255D1.png
+![](images/fixing-bug-tbot-9a.png)
 
 And confirmed that the user's xml data was changed on the in-memory version of the user xml files:
 
@@ -55,7 +54,7 @@ and on the file system:
 
 ![](images/fixing-bug-tbot-11.png)
 
-My final step is to push the HotFix branch into the live server:
+My final step was to push the HotFix branch into the live server:
 
 ![](images/fixing-bug-tbot-12.png)
 

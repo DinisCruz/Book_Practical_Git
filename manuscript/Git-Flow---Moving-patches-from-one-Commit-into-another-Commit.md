@@ -1,4 +1,4 @@
-##  Git Flow - Moving patches from one Commit into another Commit
+## Git Flow - Moving patches from one Commit into another Commit
 
 This (longish) post will cover detailed git workflows and is part of the series of blog posts that show how we use the Git Flow workflow to manage TeamMentor's source code (you will also see practical applications of GitHub's powerful  of powerful features like Network Graphs and Pull Requests).
 
