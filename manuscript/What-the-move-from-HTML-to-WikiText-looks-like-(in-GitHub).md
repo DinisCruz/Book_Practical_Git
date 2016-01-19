@@ -8,22 +8,22 @@ I just converted a couple (converted from Word doc) TM articles from HTML into W
 
 Here is what the article looks like:
 
-![](images/image_thumb1.png)
+![](images/what-move-1.png)
 
 And here is the ['Html to Wiki' Commit](https://github.com/TMContent/Lib_TM4TM/commit/ac0feb8f96b21151787a0c1f6fdf5de0806f9af4)
 
-![](images/image_thumb_25255B1_25255D1.png)
+![](images/what-move-2.png)
 
 **Example #2:** [Where to Post TeamMentor Issues/Comments](https://tm-tm4tm.azurewebsites.net/article/5e8f7cf1-85b2-43f4-9d15-3a560fe775ec)
 
-![](images/image_thumb_25255B3_25255D1.png)
+![](images/what-move-3.png)
 
 And here is the ['Html to Wiki' Commit](https://github.com/TMContent/Lib_TM4TM/commit/2d76a4135986a97caaa4ae97645c1c5b51d031aa)
 
-![](images/image_thumb_25255B4_25255D1.png)
+![](images/what-move-4.png)
 
-![](images/image_thumb_25255B7_25255D1.png)
+![](images/what-move-5.png)
 
 In this 2nd case, ironically the WikiText version looks better (look at the difference with the screenshot below with the above) because of the lack of HTML formatting mess:
 
-![](images/image_thumb_25255B2_25255D1.png)
+![](images/what-move-6.png)

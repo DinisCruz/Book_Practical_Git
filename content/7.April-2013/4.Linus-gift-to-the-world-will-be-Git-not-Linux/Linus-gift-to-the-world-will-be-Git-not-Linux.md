@@ -1,4 +1,4 @@
-##  Linus gift to the world will be Git not Linux (and what about an OS built on top of an hash-driven file system?) 
+## Linus gift to the world will be Git not Linux (and what about an OS built on top of an hash-driven file system?) 
 
 I know it is a big claim, but I think that **[Linus Torvalds](http://en.wikipedia.org/wiki/Linus_Torvalds) will be more famous for creating Git than for this work on Linux**
 
@@ -12,4 +12,4 @@ See [A must watch TED talk about GIT and democracy](http://blog.diniscruz.com/20
 
 Also think about the power of having a 'Git Powered' OS (where all files and actions are Git controlled/tracked). We could finally get a lot of security, resilience, quality assurance and traceable from the multiple software/APIs/Apps that we use/consume.
 
-Git also allows its technical users (like me) to be creative in finding ways to improve their productivity and workflows. See [Changing a User's ExpiryDate from GitHub hosted file](http://blog.diniscruz.com/2013/04/changing-users-expirydate-from-github.html) or these [Git](http://blog.diniscruz.com/search/label/Git),  [GitHub](http://blog.diniscruz.com/search/label/GitHub) and [NGit](http://blog.diniscruz.com/search/label/NGit) posts, for examples of the wide range of areas that I have been using git for (in [TeamMentor](http://teammentor.net/) and [O2Platform](http://blog.diniscruz.com/p/owasp-o2-platform.html) development) 
+Git also allows its technical users (like me) to be creative in finding ways to improve their productivity and workflows. See [Changing a User's ExpiryDate from GitHub hosted file](http://blog.diniscruz.com/2013/04/changing-users-expirydate-from-github.html) or these [Git](http://blog.diniscruz.com/search/label/Git),  [GitHub](http://blog.diniscruz.com/search/label/GitHub) and [NGit](http://blog.diniscruz.com/search/label/NGit) posts, for examples of the wide range of areas that I have been using git for (in [TeamMentor](http://teammentor.net/) and [O2Platform](http://blog.diniscruz.com/p/owasp-o2-platform.html) development)
