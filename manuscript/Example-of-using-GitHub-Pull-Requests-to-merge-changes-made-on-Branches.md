@@ -6,11 +6,11 @@ This post walks through my current workflow.
 
 At the moment there are a number of Pull Requests to process:  
 
-![](images/image_thumb1.png)
+![](images/example-git-pull-1.png)
 
 ... which were all created using Git Branches:
 
-![](images/image_thumb_25255B7_25255D1.png)
+![](images/example-git-pull-2.png)
 
 In the image above, the top lines show the commits/branches that have already been committed, and the bottom ones the branches that still need to be committed (currently on the 'open' Pull Requests)
 
@@ -19,55 +19,55 @@ In the image above, the top lines show the commits/branches that have already be
 
 1) open the Pull Request page:
 
-![](images/image_thumb_25255B1_25255D1.png)
+![](images/example-git-pull-3.png)
 
 2) click on the link to the issue that is being fixed:
 
-![](images/image_thumb_25255B3_25255D1.png)
+![](images/example-git-pull-4.png)
 
 3) read the issue (and its history)
 
-![](images/image_thumb_25255B4_25255D1.png)
+![](images/example-git-pull-5.png)
 
 4) back in GitHub's Pull Request, click on the **_Files Changed_** link to see the proposed code changes:
 
-![](images/image_thumb_25255B5_25255D1.png)
+![](images/example-git-pull-6.png)
 
 5) if I'm happy with the request, on the '_Discussion_' tab, I click on the **_Merge pull request_** button
 
-![](images/image_thumb_25255B6_25255D1.png)
+![](images/example-git-pull-7.png)
 
 ... followed by **_Confirm merge_**  
 
-![](images/image_thumb_25255B14_25255D1.png)
+![](images/example-git-pull-8.png)
 
 6) optional: if this was under a repo that I owned, I would also delete the branch, in this case, Michael will have to do it on his repo/fork)
 
-![](images/image_thumb_25255B15_25255D1.png)
+![](images/example-git-pull-9.png)
 
 7) optional: confirm on GitHub's Network Graph that the merge happened ok (i.e. the commit is now on the **_3.4_Release_** branch and the **_Issue_462_** branch no longer is shown on Michael's fork)
 
-![](images/image_thumb_25255B16_25255D1.png)
+![](images/example-git-pull-10.png)
 
 8) optional: check that the respective issue has been correctly tagged/linked with this pull request
 
-![](images/image_thumb_25255B20_25255D1.png)
+![](images/example-git-pull-11.png)
 
 ... do this for the other Pull Requests....
 
 Here is how the Network Graph looks like after all merges have occurred:
 
-![](images/image_thumb_25255B17_25255D1.png)
+![](images/example-git-pull-12.png)
 
 At the moment there are only two branches that need to be merged:
 
 1) [https://github.com/TeamMentor/Dev/pull/85](https://github.com/TeamMentor/Dev/pull/85) : currently conflicting (i.e the merge cannot happen automatically):
 
-![](images/image_thumb_25255B18_25255D1.png)
+![](images/example-git-pull-13.png)
 
 2) [https://github.com/TeamMentor/Dev/pull/87](https://github.com/TeamMentor/Dev/pull/87) -- no idea what issue this is fixing (the link to the GitHub issue is missing)
 
-![](images/image_thumb_25255B19_25255D1.png)
+![](images/example-git-pull-14.png)
 
 Hopefully this shows the power of Git and GitHub's commit/review workflow where:  
 
@@ -82,98 +82,98 @@ In fact, speaking of a manual step, now that we have the 3.4_Release with (just 
 
 To do that, I opened a (local) clone of TeamMentor/Dev:
 
-![](images/image_thumb_25255B21_25255D1.png)
+![](images/example-git-pull-15.png)
 
 ... updated it (since it is out of date with the changes made directly on the GitHub's version), using the command: **_$ git pull origin_**  
 
-![](images/image_thumb_25255B22_25255D1.png)
+![](images/example-git-pull-16.png)
 
 ... see all branches available, using the command:  **$ git branch --a**  
 
-![](images/image_thumb_25255B23_25255D1.png)
+![](images/example-git-pull-17.png)
 
 ... merged **_3.4_Release_** branch into **_master_** branch, using the command **$ git merge remotes/origin/3.4_Release**  
 
-![](images/image_thumb_25255B24_25255D1.png)
+![](images/example-git-pull-18.png)
 
 ... pushed these changes into GitHub, using the command **$ git push origin master:master**
 
-![](images/image_thumb_25255B25_25255D1.png)
+![](images/example-git-pull-19.png)
 
 (note how no files were changed with this push, since all data was already in the 3.4_Release branch, this commit was just saying to GitHub's version: '_please point the master branch into the 3.4_Release commit_')
 
 After this commit, GitHub's network graph will show that the **_master_** branch is now at the same commit as the **_3.4_Release_** branch
 
-![](images/image_thumb_25255B28_25255D1.png)
+![](images/example-git-pull-20.png)
 
 But we are not done here, we will still need to update the compiled TeamMentor Dlls (and see if any UnitTests broke)
 
 Let's start by opening up the solution file in VisualStudio 2010:
 
-![](images/image_thumb_25255B29_25255D1.png)
+![](images/example-git-pull-21.png)
 
 ... then clean and build the solution:
 
-![](images/image_thumb_25255B34_25255D1.png)
+![](images/example-git-pull-22.png)
 
 ... which succeeded ok:
 
-![](images/image_thumb_25255B35_25255D1.png)
+![](images/example-git-pull-23.png)
 
 Next, change the version number to **_TM 3.4 -- Dev 20_**  
 
-![](images/image_thumb_25255B36_25255D1.png)
+![](images/example-git-pull-24.png)
 
 And start TM locally (just to see is all looks good):
 
-![](images/image_thumb_25255B37_25255D1.png)
+![](images/example-git-pull-25.png)
 
 Now, its time to run all UnitTests (in this case using ReSharper NUnit plugin):
 
-![](images/image_thumb_25255B48_25255D1.png)
+![](images/example-git-pull-26.png)
 
 ... with two tests failing:
 
-![](images/image_thumb_25255B49_25255D1.png)
+![](images/example-git-pull-27.png)
 
 The first one was easy to fix (it was a case of updating the UnitTests to the changes made to the **_TM_User_** required fields):
 
 
-![](images/image_thumb_25255B50_25255D1.png)
+![](images/example-git-pull-28.png)
 
 The 2nd one was caused because the Google Analysis file has changed:
 
-![](images/image_thumb_25255B51_25255D1.png)
+![](images/example-git-pull-29.png)
 
 Here is the test that does this check:
 
-![](images/image_thumb_25255B52_25255D1.png)
+![](images/example-git-pull-30.png)
 
 ... which basically checks that the [http://www.google-analytics.com/ga.js](http://www.google-analytics.com/ga.js) we are using is still the same one served by google (this is a good security practice since TeamMentor's security is not dependent on Google's server).
 
 The fix is to update that file:
 
-![](images/image_thumb_25255B53_25255D1.png)
+![](images/example-git-pull-31.png)
 
 ... and rerun all tests (just to confirm it):
 
-![](images/image_thumb_25255B54_25255D1.png)
+![](images/example-git-pull-32.png)
 
 **Committing changes made locally.**
 
 Keeping up with the model of only doing commits on branches, I quickly created a new branch, using the command: **_$ git checkout --b 3.4_Dll_Updates_**  
 
-![](images/image_thumb_25255B55_25255D1.png)
+![](images/example-git-pull-33.png)
 
 (note how the small changes I made were also marked as 'Modified (namely the version change, the UnitTests fixes and the recompiled dlls)
 
 ... added the files to be committed using the command: **_$ git add ._**  
 
-![](images/image_thumb_25255B57_25255D1.png)
+![](images/example-git-pull-34.png)
 
 ... created an commit using the command: **_$ git commit -m 'Changing version, adding compiled Dlls, fixing couple UnitTests'_**  
 
-![](images/image_thumb_25255B58_25255D1.png)
+![](images/example-git-pull-35.png)
 
 ... pushed this branch to GitHub (not 100% necessary, but it will help with the graph), using the command **_$ git push origin 3.4_Dll_Updates:3.4_Dll_Updates_**  
 
@@ -184,13 +184,13 @@ Keeping up with the model of only doing commits on branches, I quickly created a
 * _$ git merge 3.4_Dll_Updates_
 * _$ git push origin 3.4_Release:3.4_Release_
 
-![](images/image_thumb_25255B59_25255D1.png)
+![](images/example-git-pull-36.png)
 
 (note that this is an example of a 'manual Pull Request')
 
 A quick look at GitHub's network graph, shows the **_3.4_Release_** branch at the same commit as **3.4_Dll_Updates** branch (both one commit behind the **_master_** branch)
 
-![](images/image_thumb_25255B61_25255D1.png)
+![](images/example-git-pull-37.png)
 
 Finally we update master with these changes, using the commands:  
 
@@ -198,11 +198,11 @@ Finally we update master with these changes, using the commands:
 * **_$ git merge 3.4_Release_**
 * **_$ git push origin master:master_**
 
-![](images/image_thumb_25255B62_25255D1.png)
+![](images/example-git-pull-38.png)
 
 ... and now all branches are at the same level:
 
-![](images/image_thumb_25255B64_25255D1.png)
+![](images/example-git-pull-39.png)
 
 **Testing QA version created by TeamCity and deployed to Azure:**  
 
@@ -215,7 +215,7 @@ In this case after the latest commit into GitHub TeamMentor/Dev master repo, Tea
 
 At the moment there is one unit failing:
 
-![](images/image_thumb_25255B71_25255D1.png)
+![](images/example-git-pull-40.png)
 
 ... which doesn't look problematic (it fells like a TeamCity specific case).
 

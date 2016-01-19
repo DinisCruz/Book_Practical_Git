@@ -336,7 +336,7 @@ At this point we have these branches ready to commit (via a pull request)
 
 ![](images/image_thumb_25255B93_25255D.png)
 
-Instead of merging them into the **_TeamMentor/Dev_** master branch, we are going to create a **_TeamMentor/Dev _** **_3.4_Release_** branch using the command **_$ git checkout -b 3.4_Release_** and push it to TeamMentor/Dev using the command **_$ git push dev 3.4_Release:3.4_Release_**  
+Instead of merging them into the **_TeamMentor/Dev_** master branch, we are going to create a **_TeamMentor/Dev_** **_3.4_Release_** branch using the command **_$ git checkout -b 3.4_Release_** and push it to TeamMentor/Dev using the command **_$ git push dev 3.4_Release:3.4_Release_**  
 
 ![](images/image_thumb_25255B94_25255D.png)
 
@@ -404,7 +404,7 @@ One important note is that the **_Issue_384_** didn't merge automatically with t
 
 ![](images/image_thumb_25255B110_25255D.png)
 
-****Wrapping up: Feedback and better git commands:**
+**Wrapping up: Feedback and better git commands:**
 
 If you made it this far to the end, it would be great to have some feedback on this git workflow (and solution).
 

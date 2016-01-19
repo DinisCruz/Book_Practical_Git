@@ -49,7 +49,7 @@
 #Is-Git-a-Single-point-of-failure-for-TeamMentor.md
 #Setting-up-Ian's-CI-Development-Environment.md
 
-may2013.md
+#may2013.md
 #Example-of-two-TeamMentor-sites-using-the-same-GitHub-Content-Library.md
 #AzureGate-how-Azure-subscription-upgrade-crazy-mode.md
 #Great-presentation-on-Git-Branching-(very-similar-to-the-model-we-are-using-in-TeamMentor).md
@@ -58,16 +58,16 @@ may2013.md
 #Great-post-Git-Who-cares-about-branches-Its-all-about-collaboration-and-code-reviews.md
 #Creating-o2platform.com-website-using-GitHub-Pages-(with-screenshots-of-all-design-options).md
 
-june2013.md
+#june2013.md
 #Creating-TeamMentor-release-3.3.2-(3.2-version-with-HotFix-2).md
 #Fixing-a-couple-bugs-and-pushing-new-TeamMentor-3.4-Dev-Version-(from-4-to-5).md
-Gource-Visualisation-of-TeamMentor-Git-Development---18-Months-in-180-Seconds.md
+#Gource-Visualisation-of-TeamMentor-Git-Development---18-Months-in-180-Seconds.md
 
-august2013.md
+#august2013.md
 #Creating-a-clone-of-WebGoat-on-GitHub.md
 
 september2013.md
-Git-Flow---Moving-patches-from-one-Commit-into-another-Commit.md
+#Git-Flow---Moving-patches-from-one-Commit-into-another-Commit.md
 Example-of-using-GitHub-Pull-Requests-to-merge-changes-made-on-Branches.md
 Script-to-Git-Clone-13-repositories-in-order-to-have-all-TeamMentor-Libraries-in-one-folder.md
 
