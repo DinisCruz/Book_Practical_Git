@@ -54,7 +54,7 @@ The solution is to:
 
 In a local clone of [TeamMentor/Dev](https://github.com/TeamMentor/Dev/)   we start by to create a branch that is pointing to **b97a470ffa173d67a9c74373593eea03eb7a2da4**   
 
-This can be done using the command: **$ git checkout **b97a470ffa173d67a9c74373593eea03eb7a2da4** **  
+This can be done using the command: **$ git checkout b97a470ffa173d67a9c74373593eea03eb7a2da4**
 
 ![](images/image_thumb_25255B12_25255D1.png)
 
