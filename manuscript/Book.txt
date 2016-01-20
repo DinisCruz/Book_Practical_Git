@@ -69,7 +69,7 @@
 september2013.md
 #Git-Flow---Moving-patches-from-one-Commit-into-another-Commit.md
 #Example-of-using-GitHub-Pull-Requests-to-merge-changes-made-on-Branches.md
-Script-to-Git-Clone-13-repositories-in-order-to-have-all-TeamMentor-Libraries-in-one-folder.md
+#Script-to-Git-Clone-13-repositories-in-order-to-have-all-TeamMentor-Libraries-in-one-folder.md
 
 #october2013.md
 Fixing-the-Merge-conflict-caused-by-one-extra-commit-on-TeamMentor-master.md

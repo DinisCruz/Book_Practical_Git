@@ -6,7 +6,7 @@ I just enabled it, and I strongly recommend that you do it to.
 
 As per the instructions in GitHub's [Two-factor Authentication](https://github.com/blog/1614-two-factor-authentication) post, the first step is to go to [https://github.com/settings/admin](https://github.com/settings/admin) and click on the **_Set up two-factor authentication'_** button:  
 
-![](images/image_thumb1.png)
+![](images/enable-git-2fa-1.png)
 
 ... which requires the current password to be entered:
 
@@ -38,10 +38,10 @@ This is done one the **_Applications_** Settings page:
 
 ... where new tokens can be created:
 
-![](images/image_thumb_25255B8_25255D1.png)
+![](images/enable-git-2fa-2.png)
 
 ... which can now be used instead of passwords (with the great advantage of being revocable and assignable for a particular use (lets say a particular deployment or app))
 
-![](images/image_thumb_25255B9_25255D1.png)
+![](images/enable-git-2fa-3.png)
 
 I really like this functionality, and hope to eventually add something similar to TeamMentor
