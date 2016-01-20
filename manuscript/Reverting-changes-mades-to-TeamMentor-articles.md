@@ -21,19 +21,19 @@ a) clone the target repo and create a test branch
 
 b) do a git reset hard into where I wanted to go:  
 
-> **$ ****git reset --hard e794cc839689dfc7915099d39972abde643a969d**
+> **$ git reset --hard e794cc839689dfc7915099d39972abde643a969d**
 
 c) then do a git reset soft into the current master
 
-> **$ ****git reset --soft a8b755098884173a8f6eced1faddefc0c34a987e**
+> **$ git reset --soft a8b755098884173a8f6eced1faddefc0c34a987e**
 
 d) use the gitk tool to confirm that the local changes (about to be committed) exist after the current HEAD commit of the mergeTest branch
 
-> **$ ****gitk**
+> **$ gitk**
 
 e) committed the changes
 
-> **$ ****git commit -m 'reverting back to e794cc839689dfc7915099d39972abde643a969d commit'**
+> **$ git commit -m 'reverting back to e794cc839689dfc7915099d39972abde643a969d commit'**
 
 f) checkout master branch and merged with mergeTest branch
 
@@ -43,15 +43,15 @@ f) checkout master branch and merged with mergeTest branch
 
 > _Updating c530020..a2b3297__Fast-forward__ _      
 > _Attack/2d684518-be94-4454-8d3b-e57f025b0083.xml | 206 +++++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------__ _    
->_Attack/36208a74-52f2-4a48-9ecf-4d032d845f2b.xml | 162 ++++++++++++++++++++++++++++++++++++++++------------------------------_  
->_ Attack/4c053210-1a24-44c2-a3f9-f0cf5008eb3f.xml | 138 ++++++++++++++++++++++++++++++++----------------------------_  
->_ Attack/5af411c1-4606-4f7e-920c-186af71436c5.xml | 130 ++++++++++++++++++++++++++++++--------------------------_  
->_ Attack/6ce03806-c25d-4dbc-8df0-3343085d31d0.xml |  74 ++++++++++++++++----------------_  
->_ Attack/7dfbe9c9-481e-46d2-b1a5-9a776578d6c2.xml | 137 ++++++++++++++++++++++++++++++-----------------------------_  
->_ Attack/adf5df06-2b67-4e2a-ace2-6d7060e0bd95.xml | 209 ++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------_  
->_ Attack/d4b48303-d535-4549-90fc-474b99eff901.xml | 180 +++++++++++++++++++++++++++++++++++++++---------------------------------------_  
->_ Attack/dcf4e714-d7e2-4c7d-8609-6ab5bd309476.xml | 134 +++++++++++++++++++++++++++++++---------------------------_  
->_ 9 files changed, 734 insertions(+), 636 deletions(-)_
+> _Attack/36208a74-52f2-4a48-9ecf-4d032d845f2b.xml | 162 ++++++++++++++++++++++++++++++++++++++++------------------------------_
+> _ Attack/4c053210-1a24-44c2-a3f9-f0cf5008eb3f.xml | 138 ++++++++++++++++++++++++++++++++----------------------------_
+> _ Attack/5af411c1-4606-4f7e-920c-186af71436c5.xml | 130 ++++++++++++++++++++++++++++++--------------------------_
+> _ Attack/6ce03806-c25d-4dbc-8df0-3343085d31d0.xml |  74 ++++++++++++++++----------------_
+> _ Attack/7dfbe9c9-481e-46d2-b1a5-9a776578d6c2.xml | 137 ++++++++++++++++++++++++++++++-----------------------------_
+> _ Attack/adf5df06-2b67-4e2a-ace2-6d7060e0bd95.xml | 209 ++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------_
+> _ Attack/d4b48303-d535-4549-90fc-474b99eff901.xml | 180 +++++++++++++++++++++++++++++++++++++++---------------------------------------_
+> _ Attack/dcf4e714-d7e2-4c7d-8609-6ab5bd309476.xml | 134 +++++++++++++++++++++++++++++++---------------------------_
+> _ 9 files changed, 734 insertions(+), 636 deletions(-)_
 
 
 f) pushed into GitHub  
