@@ -71,18 +71,18 @@
 #Example-of-using-GitHub-Pull-Requests-to-merge-changes-made-on-Branches.md
 #Script-to-Git-Clone-13-repositories-in-order-to-have-all-TeamMentor-Libraries-in-one-folder.md
 
-october2013.md
+#october2013.md
 #Fixing-the-Merge-conflict-caused-by-one-extra-commit-on-TeamMentor-master.md
 #Enabling-GitHub-Two-Factor-Authentication.md
 Syncing-all-releases-to-the-same-commit-and-Tag-(for-TeamMentor-v3.4).md
 
 january2014.md
-How-to-update-a-forked-GitHub-repo-(in-this-case-tm-sme-Lib_Vulnerabilities).md
+#How-to-update-a-forked-GitHub-repo-(in-this-case-tm-sme-Lib_Vulnerabilities).md
 Updating-the-GitHub-repos-for-the-1.6.0-release-of-the-Eclipse-Fortify-Plugin.md
 Updating-GitHub-Forks-with-latest-commits-from-GitHub's-'parent'-repo.md
 Using-TeamMentor-3.4-TBot-admin-pages-to-load-and-sync-a-Library-hosted-on-GitHub.md
 Using-TeamMentor-3.4-TBot-admin-pages-to-load-and-sync-UserData-with-a-GitHub-hosted-repo.md
 Adding-files-to-TeamMentor's-web-root-via-a-UserData-folder-(synced-with-GitHub).md
 
-#february2014-2.txt
+february2014-2.txt
 Reverting-changes-mades-to-TeamMentor-articles.md

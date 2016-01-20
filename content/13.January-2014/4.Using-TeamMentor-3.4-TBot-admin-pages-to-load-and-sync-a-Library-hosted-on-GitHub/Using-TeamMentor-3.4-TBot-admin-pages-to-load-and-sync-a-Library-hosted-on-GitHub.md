@@ -10,7 +10,6 @@ Lets start with an Azure hosted TeamMentor server, for example this one:
 
 ![](images/Screen_Shot_2014-01-29_at_11_01_02.png)
 
-
 Since we don't need all those libraries in there (and in fact we want to make changes to the .NET 3.5 Library), lets remove them all.
 
 The easiest way to do it is to change the backend location of the TeamMentor XML files, which can easily be done by going into TBot:

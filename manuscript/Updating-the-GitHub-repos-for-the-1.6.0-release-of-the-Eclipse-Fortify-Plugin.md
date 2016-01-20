@@ -12,12 +12,9 @@ One interesting point here is that for this release I did not use my main GitHub
 
 To see this in action, note how the Pull Request commits (into the master and develop branch) are made using the **_DinisCruz_** account:  
 
-
 ![](images/Screen_Shot_2014-01-25_at_01_04_21.png)
 
 ...  and the development commits are made using the **_DinisCruz-Dev_** account:  
-
-
 ![](images/Screen_Shot_2014-01-25_at_01_04_30.png)
 
 What I did was to fork into the **_DinisCruz-Dev_** account, the [TeamMentor/TeamMentor_Eclipse_Plugin](https://github.com/TeamMentor/TeamMentor_Eclipse_Plugin) repo:
